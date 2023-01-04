@@ -26,7 +26,10 @@ if ($_SERVER['REQUEST_METHOD'] == "OPTIONS") {
     $end = $start;
     if (isset($_GET['end']))
         $end = strtotime($_GET['end']);
-    $cal = kerkkalender($start, $end);
+    $filter = 2;
+    if (isset($_GET['filter']))
+        $filter = intval($_GET['filter']);
+    $cal = kerkkalender($start, $end, $filter);
 
     print $cal;
 }

@@ -1,22 +1,23 @@
 <?php
 
-$fname_db = dirname(__FILE__) . '/../data/calendar.sqlite3';
+$kerkkalender_db = dirname(__FILE__) . '/../data/calendar.sqlite3';
 $fname_script = __FILE__;
 $dirname_cache = dirname(__FILE__) . '/../temp';
 
-function kalender_data($y)
+function kalender_data($y, $filter)
 {
-    global $fname_db;
+    global $kerkkalender_db;
     
 	$data=array();
-    $con = new SQLite3($fname_db, SQLITE3_OPEN_READONLY);
+    $con = new SQLite3($kerkkalender_db, SQLITE3_OPEN_READONLY);
     $statement = $con->prepare(
         'SELECT
             maand,dag,prioriteit,soort_feest,naam_lang,naam_kort,liturgische_tijd,liturgische_kleur,code_eigen,code_gem,code_dag,naam_code
         FROM calendar
-        WHERE jaar_vanaf <= :jaar AND jaar_tot >= :jaar;'
+        WHERE jaar_vanaf <= :jaar AND jaar_tot >= :jaar AND bereik & :filter;'
     );
     $statement->bindValue(':jaar', $y);
+    $statement->bindValue(':filter', $filter);
     $res = $statement->execute();
     while ($row = $res->fetchArray(SQLITE3_NUM)) {
         $row []= "950";
@@ -107,7 +108,7 @@ function ny2dm($n,$y)
     return array($d, $m);
 }
 
-function kerkkalender($van = NULL, $tot = NULL)
+function kerkkalender($van = NULL, $tot = NULL, $filter = 2) /* 1: Eucharistie, 2: Algemeen, 4: Bisdomsite etc */
 {
 	if (!$van) {
 		$van = time();
@@ -122,7 +123,7 @@ function kerkkalender($van = NULL, $tot = NULL)
 
 	$j = [];
 	for ($y = $van_date["year"]; $y < $tot_date["year"] + 1; $y++) {
-		$j += json_decode(jaarkalender($y), true);
+		$j += json_decode(jaarkalender($y, $filter), true);
 	}
 
     $jj = [];
@@ -134,24 +135,24 @@ function kerkkalender($van = NULL, $tot = NULL)
     return json_encode($jj);
 }
 
-function jaarkalender($y)
+function jaarkalender($y, $filter)
 {
-    global $fname_db, $fname_script, $dirname_cache;
+    global $kerkkalender_db, $fname_script, $dirname_cache;
     
 	$jaarabc=array(0=>"c2",1=>"a1",2=>"b2",3=>"c1",4=>"a2",5=>"b1");
 	$data=array();
 
-    $jaarbestand = $dirname_cache . "/jaar" . strval($y) . ".json";
+    $jaarbestand = $dirname_cache . "/jaar" . strval($y) . "_" . $filter . ".json";
     if(file_exists($jaarbestand))
     {
         $t=filemtime($jaarbestand);
-        if($t>filemtime($fname_script) && $t>filemtime($fname_db)) // cachebestand bestaat en is niet verouderd
+        if($t>filemtime($fname_script) && $t>filemtime($kerkkalender_db)) // cachebestand bestaat en is niet verouderd
         {
             return file_get_contents($jaarbestand);
         }
     }
 
-    $data=kalender_data($y);
+    $data=kalender_data($y, $filter);
 	$aantal_dagen=dmy2n(31,12,$y)+1;
 	$kalender=array();
 	for($d=0;$d<2*$aantal_dagen;$d++)
@@ -444,7 +445,7 @@ function jaarkalender($y)
 		{
 			$week="Kersttijd";
 		}
-		$vandedag=0; // vinden van dagcode en liturgische tijd
+		$vandedag=""; // vinden van dagcode en liturgische tijd
 		for($x=0;$x<count($kalender[2*$n]);$x++)
 		{
 			if($kalender[2*$n][$x][4])
