@@ -1,0 +1,671 @@
+* { box-sizing: border-box; font-family: 'Helvetica Neue',HelveticaNeue, Arial, Helvetica, sans-serif; }
+
+body { margin: 0; }
+
+div#kalender {
+	margin: auto;
+	border: 0px solid #CCCCCC; 
+	width: 100%;
+	min-width: 10em;
+	max-width: 55em;
+	box-shadow: 0 0 0.1em 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (max-width: 55em) {
+	div#kalender { box-shadow: none; }
+}
+
+div#kalender div.liturgie {
+	/* padding: 0.5em; */
+}
+
+div.liturgie	.tabs,
+div.liturgie	.controls {
+	background-color: #ADD1EB;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+div.liturgie button {
+	padding: 0.2em 2em;
+	padding-right: min( 4vw, 2em );
+	padding-left: min( 4vw, 2em );
+	height: 3em;
+	background-color: white;
+	border-radius: 0.5em;
+	margin: 0.5em 1em;
+	border: solid 0.3em white;
+	box-shadow: 0 0 0.1em 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	font-weight: bold;
+	font-size: 1em;
+}
+
+div.liturgie button.active {
+	background-color: #ADD1EB;
+	color: white;
+}
+
+div.liturgie > div.tabs {
+	display: flex; 
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+div.liturgie > div.settings {
+	background-color: #ADD1EB;
+	padding: 0.5em 1em;
+}
+
+div.settings > div {
+	background-color: white;
+	border-radius: 0.5em;
+	padding: 0.5em;
+}
+
+div.settings > .checkbox > label {
+	display: inline-block;
+	margin-left: 0.5em;
+}
+
+div.liturgie > div.loading {
+	opacity: 0.3;
+}
+
+.controls	{ display: flex; justify-content: space-around; }
+
+/* MonthMode */
+
+.monthMode {
+	background-color: #ADD1EB;
+	padding: 0.1em;
+	padding-right: 0.5em;
+	display: grid;
+	grid-template-columns: 0.2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+	grid-template-rows: auto;
+	grid-template-areas:
+		"maand maand maand maand maand maand maand maand"
+		"weeknummer zondag maandag dinsdag woensdag donderdag vrijdag zaterdag"
+		"nr1 pos1 pos2 pos3 pos4 pos5 pos6 pos7"
+		"nr2 pos8 pos9 pos10 pos11 pos12 pos13 pos14"
+		"nr3 pos15 pos16 pos17 pos18 pos19 pos20 pos21"
+		"nr4 pos22 pos23 pos24 pos25 pos26 pos27 pos28"
+		"nr5 pos29 pos30 pos31 pos32 pos33 pos34 pos35"
+		"nr6 pos36 pos37 pos38 pos39 pos40 pos41 pos42";
+}
+
+.monthMode	.monthName		{ 
+	grid-area: maand; 
+	color: white; 
+	font-weight: bold; font-size: 1.5em;
+	text-transform: capitalize; 
+	padding: 0.2em; text-align: center; 
+}
+
+.monthMode	.header.nummer	{ grid-area: weeknummer; }
+.monthMode	.header.zondag	{ grid-area: zondag; }
+.monthMode	.header.maandag	{ grid-area: maandag; }
+.monthMode	.header.dinsdag	{ grid-area: dinsdag; }
+.monthMode	.header.woensdag	{ grid-area: woensdag; }
+.monthMode	.header.donderdag	{ grid-area: donderdag; }
+.monthMode	.header.vrijdag	{ grid-area: vrijdag; }
+.monthMode	.header.zaterdag	{ grid-area: zaterdag; }
+
+.monthMode	.header					{ color: white; font-size: 1em; text-align: center; text-transform: capitalize; font-weight: bold; padding-top: 0.5em; padding-bottom: 0.3em; }
+.monthMode	.header.nummer			{ display: none; }
+
+.monthMode	.weeknummer.nr1	{ grid-area: nr1; }
+.monthMode	.weeknummer.nr2	{ grid-area: nr2; }
+.monthMode	.weeknummer.nr3	{ grid-area: nr3; }
+.monthMode	.weeknummer.nr4	{ grid-area: nr4; }
+.monthMode	.weeknummer.nr5	{ grid-area: nr5; }
+.monthMode	.weeknummer.nr6	{ grid-area: nr6; }
+
+.monthMode	.weeknummer		{ 
+	color: white; 
+	font-size: 0.8em; 
+	padding-top: 0.2em; padding-right: 0.4em; 
+	text-align: right; }
+
+.monthMode	.day.pos1	{ grid-area: pos1; }
+.monthMode	.day.pos2	{ grid-area: pos2; }
+.monthMode	.day.pos3	{ grid-area: pos3; }
+.monthMode	.day.pos4	{ grid-area: pos4; }
+.monthMode	.day.pos5	{ grid-area: pos5; }
+.monthMode	.day.pos6	{ grid-area: pos6; }
+.monthMode	.day.pos7	{ grid-area: pos7; }
+.monthMode	.day.pos8	{ grid-area: pos8; }
+.monthMode	.day.pos9	{ grid-area: pos9; }
+.monthMode	.day.pos10	{ grid-area: pos10; }
+.monthMode	.day.pos11	{ grid-area: pos11; }
+.monthMode	.day.pos12	{ grid-area: pos12; }
+.monthMode	.day.pos13	{ grid-area: pos13; }
+.monthMode	.day.pos14	{ grid-area: pos14; }
+.monthMode	.day.pos15	{ grid-area: pos15; }
+.monthMode	.day.pos16	{ grid-area: pos16; }
+.monthMode	.day.pos17	{ grid-area: pos17; }
+.monthMode	.day.pos18	{ grid-area: pos18; }
+.monthMode	.day.pos19	{ grid-area: pos19; }
+.monthMode	.day.pos20	{ grid-area: pos20; }
+.monthMode	.day.pos21	{ grid-area: pos21; }
+.monthMode	.day.pos22	{ grid-area: pos22; }
+.monthMode	.day.pos23	{ grid-area: pos23; }
+.monthMode	.day.pos24	{ grid-area: pos24; }
+.monthMode	.day.pos25	{ grid-area: pos25; }
+.monthMode	.day.pos26	{ grid-area: pos26; }
+.monthMode	.day.pos27	{ grid-area: pos27; }
+.monthMode	.day.pos28	{ grid-area: pos28; }
+.monthMode	.day.pos29	{ grid-area: pos29; }
+.monthMode	.day.pos30	{ grid-area: pos30; }
+.monthMode	.day.pos31	{ grid-area: pos31; }
+.monthMode	.day.pos32	{ grid-area: pos32; }
+.monthMode	.day.pos33	{ grid-area: pos33; }
+.monthMode	.day.pos34	{ grid-area: pos34; }
+.monthMode	.day.pos35	{ grid-area: pos35; }
+.monthMode	.day.pos36	{ grid-area: pos36; }
+.monthMode	.day.pos37	{ grid-area: pos37; }
+.monthMode	.day.pos38	{ grid-area: pos38; }
+.monthMode	.day.pos39	{ grid-area: pos39; }
+.monthMode	.day.pos40	{ grid-area: pos40; }
+.monthMode	.day.pos41	{ grid-area: pos41; }
+.monthMode	.day.pos42	{ grid-area: pos42; }
+
+.monthMode	.label 			{ display: none; }
+
+.monthMode	.day			{ 
+	display: block; 
+	margin: 0.1em; 
+	padding: 0.2em 0.3em 0.2em 0.3em; 
+	text-align: right; 
+	background-color: white; 
+	position: relative; 
+	cursor: pointer; 
+}
+.monthMode	div.day:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+  float: left;
+}
+
+.monthMode	.day >	div	{ display: none; }
+.monthMode	.day >	a	{ display: none; }
+
+.monthMode	.day		.dayNumber	{ display: block; font-size: 1.5em; }
+.monthMode	.day.zondag	.dayNumber	{ color: #C5283D; font-style: normal; font-weight: bold; }
+
+.monthMode	.day > .item		{ 
+	display: block; 
+	margin: 0.2em 0; 
+	border-radius: 2px; 
+	font-size: 0.7em; 
+	text-align: left; 
+	padding: 0.2em;
+}
+
+.monthMode	.day	.item.groen	{ background-color: #BCC557; }
+.monthMode	.day	.item.rood	{ background-color: #C5283D; color: white; }
+.monthMode	.day	.item.wit	{ background-color: #FFBB33; }
+.monthMode	.day	.item.paars	{ background-color: #754461; color: white; }
+.monthMode	.day	.item.roze	{ background-color: #E78895; }
+
+.monthMode	.day.selected	{ background-color: white; }
+/* .monthMode	.day.modeldate		{ background-color: red; } */
+
+.monthMode	.day >	.item >	div	{ display: none; }
+.monthMode	.day >	.item >	a	{ display: none; }
+
+.monthMode	.day >	.item > .titleShort	{ display: block; }
+.monthMode	.day > 	.item.feest > .titleShort { font-weight: bold; }
+.monthMode	.day > 	.item.hoogfeest > .titleShort { font-weight: bold; }
+
+div#kalender	.vandaag { text-align: center; font-size: 0.8em; padding-top: 0.2em; }
+
+@media screen and (max-width: 40em) {
+	/* .monthMode { display: block; padding-right: 0.1em; } */
+	.monthMode {
+		display: grid;
+		grid-template-columns: 1fr; 
+		grid-template-rows: auto;
+		grid-template-areas:
+			"maand"
+			"nr1"
+			"pos1"
+			"pos2"
+			"pos3"
+			"pos4"
+			"pos5"
+			"pos6"
+			"pos7"
+			"nr2"
+			"pos8"
+			"pos9"
+			"pos10"
+			"pos11"
+			"pos12"
+			"pos13"
+			"pos14"
+			"nr3"
+			"pos15"
+			"pos16"
+			"pos17"
+			"pos18"
+			"pos19"
+			"pos20"
+			"pos21"
+			"nr4"
+			"pos22"
+			"pos23"
+			"pos24"
+			"pos25"
+			"pos26"
+			"pos27"
+			"pos28"
+			"nr5"
+			"pos29"
+			"pos30"
+			"pos31"
+			"pos32"
+			"pos33"
+			"pos34"
+			"pos35"
+			"nr6"
+			"pos36"
+			"pos37"
+			"pos38"
+			"pos39"
+			"pos40"
+			"pos41"
+			"pos42";
+	}
+	.monthMode .header { display: none; }
+	.monthMode .weeknummer { text-align: left; margin: 0 0.2em; }
+	.monthMode .weeknummer::before { content: "Week "; }
+	.monthMode .day { margin: 0.4em 0.2em; }
+	.monthMode .day > .weekDayName { display: block; }
+	.monthMode .day.zondag > .weekDayName { font-weight: bold; color: #C5283D; }
+	.monthMode	.day > .item { font-size: 0.9em; }
+}
+
+
+/* DayMode */
+
+.dayMode	{ background-color: #ADD1EB; padding: 1em; }
+
+.dayMode	.datum	{ display: block; background-color: white; padding: 0.3em 0.3em 0.3em 0.3em; font-weight: bold; text-transform: capitalize; }
+.dayMode	.datum	.label	{ display: none; }
+
+.dayMode 	.day >	div,
+.dayMode	.day >	a		{ display: none; padding: 0.3em 0.3em 0.3em 0.3em; background-color: white; }
+
+.dayMode	.day >	.missaalUrl	{ display: inline-block; }
+.dayMode	.day	.label	{ display: inline-block; width: 10em; }
+.dayMode	.day	.yearABC	{ display: block; }
+.dayMode	.day	.year12		{ display: block; }
+.dayMode	.day	.season		{ display: block; }
+
+.dayMode	.day	.item		{ 
+	display: grid;
+	grid-template-columns: 4fr 1fr; 
+	grid-template-rows: auto;
+	grid-template-areas:
+		"titel kleur"
+		"soortFeest soortFeest"
+		"eucharistie eucharistie"
+		"getijdengebed getijdengebed";
+	margin: 0.5em 0; 
+}
+
+.dayMode	.day	.item.groen	{ border: solid 0.30em #BCC557; }
+.dayMode	.day	.item.rood	{ border: solid 0.30em #C5283D; }
+.dayMode	.day	.item.wit	{ border: solid 0.30em #FFBB33; }
+.dayMode	.day	.item.paars	{ border: solid 0.30em #754461; }
+.dayMode	.day	.item.roze	{ border: solid 0.30em #E78895; }
+
+.dayMode	.day	.item > div	{ display: none; }
+.dayMode	.day	.item	.label	{ display: none; }
+.dayMode	.day	.item	.typeLong	{ display: block; grid-area: soortFeest; font-style: italic; }
+.dayMode	.day	.item	.titleLong	{ display: block; grid-area: titel; font-weight: bold; }
+.dayMode	.day	.item	.color		{ display: block; grid-area: kleur; text-align: right; }
+
+.dayMode 	.day	.item	.eucharistie { display: block; grid-area: eucharistie; }
+.dayMode	.day	.item	.eucharistie > div { padding: 0.3em 0.3em 0.3em 0.6em; }
+.dayMode	.day	.item	.eucharistie	.kopje	{ font-style: italic; margin-top: 0.5em; }
+
+.dayMode	.day	.item	.getijdengebed { display: block; grid-area: getijdengebed; }
+.dayMode	.day	.item	.getijdengebed > div { padding: 0.3em 0.3em 0.3em 0.6em; }
+.dayMode	.day	.item	.getijdengebed	.kopje	{ font-style: italic; margin-top: 0.5em; }
+
+.dayMode	.day	.item >	a.missaalUrl	{ display: block; }
+
+
+/* YearMode */
+
+.yearMode {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: flex-start;
+	align-content: flex-start;
+	gap: 1em;
+	padding: 1em;
+	background-color: #ADD1EB;
+}
+
+.yearMode .month {
+	padding: 0.3em;
+	background-color: #ADD1EB;
+	box-shadow: 0 0 0.1em 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border: solid 3px white;
+	display: grid;
+	grid-template-columns: 0.8fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+	grid-template-rows: auto;
+	grid-template-areas:
+		"maand maand maand maand maand maand maand maand"
+		"weeknummer zondag maandag dinsdag woensdag donderdag vrijdag zaterdag"
+		"nr1 pos1 pos2 pos3 pos4 pos5 pos6 pos7"
+		"nr2 pos8 pos9 pos10 pos11 pos12 pos13 pos14"
+		"nr3 pos15 pos16 pos17 pos18 pos19 pos20 pos21"
+		"nr4 pos22 pos23 pos24 pos25 pos26 pos27 pos28"
+		"nr5 pos29 pos30 pos31 pos32 pos33 pos34 pos35"
+		"nr6 pos36 pos37 pos38 pos39 pos40 pos41 pos42";
+}
+
+.yearMode .month	.monthName		{ grid-area: maand; color: white; font-weight: bold; text-transform: capitalize; padding: 0.2em; text-align: center; cursor: pointer; }
+
+.yearMode .month	.header.nummer	{ grid-area: weeknummer; }
+.yearMode .month	.header.zondag	{ grid-area: zondag; }
+.yearMode .month	.header.maandag	{ grid-area: maandag; }
+.yearMode .month	.header.dinsdag	{ grid-area: dinsdag; }
+.yearMode .month	.header.woensdag	{ grid-area: woensdag; }
+.yearMode .month	.header.donderdag	{ grid-area: donderdag; }
+.yearMode .month	.header.vrijdag	{ grid-area: vrijdag; }
+.yearMode .month	.header.zaterdag	{ grid-area: zaterdag; }
+
+.yearMode .month	.header					{ font-size: 0; text-align: center; color: white; font-weight: bold; }
+.yearMode .month	.header:first-letter	{ font-size: 1rem; }
+.yearMode .month	.header.nummer:first-letter	{ font-size: 0; }
+
+.yearMode .month	.weeknummer.nr1	{ grid-area: nr1; }
+.yearMode .month	.weeknummer.nr2	{ grid-area: nr2; }
+.yearMode .month	.weeknummer.nr3	{ grid-area: nr3; }
+.yearMode .month	.weeknummer.nr4	{ grid-area: nr4; }
+.yearMode .month	.weeknummer.nr5	{ grid-area: nr5; }
+.yearMode .month	.weeknummer.nr6	{ grid-area: nr6; }
+
+.yearMode .month	.weeknummer		{ font-size: 0.8em; padding-top: 0.5em; padding-right: 0.4em; text-align: right; color: white; }
+
+.yearMode .month	.day.pos1	{ grid-area: pos1; }
+.yearMode .month	.day.pos2	{ grid-area: pos2; }
+.yearMode .month	.day.pos3	{ grid-area: pos3; }
+.yearMode .month	.day.pos4	{ grid-area: pos4; }
+.yearMode .month	.day.pos5	{ grid-area: pos5; }
+.yearMode .month	.day.pos6	{ grid-area: pos6; }
+.yearMode .month	.day.pos7	{ grid-area: pos7; }
+.yearMode .month	.day.pos8	{ grid-area: pos8; }
+.yearMode .month	.day.pos9	{ grid-area: pos9; }
+.yearMode .month	.day.pos10	{ grid-area: pos10; }
+.yearMode .month	.day.pos11	{ grid-area: pos11; }
+.yearMode .month	.day.pos12	{ grid-area: pos12; }
+.yearMode .month	.day.pos13	{ grid-area: pos13; }
+.yearMode .month	.day.pos14	{ grid-area: pos14; }
+.yearMode .month	.day.pos15	{ grid-area: pos15; }
+.yearMode .month	.day.pos16	{ grid-area: pos16; }
+.yearMode .month	.day.pos17	{ grid-area: pos17; }
+.yearMode .month	.day.pos18	{ grid-area: pos18; }
+.yearMode .month	.day.pos19	{ grid-area: pos19; }
+.yearMode .month	.day.pos20	{ grid-area: pos20; }
+.yearMode .month	.day.pos21	{ grid-area: pos21; }
+.yearMode .month	.day.pos22	{ grid-area: pos22; }
+.yearMode .month	.day.pos23	{ grid-area: pos23; }
+.yearMode .month	.day.pos24	{ grid-area: pos24; }
+.yearMode .month	.day.pos25	{ grid-area: pos25; }
+.yearMode .month	.day.pos26	{ grid-area: pos26; }
+.yearMode .month	.day.pos27	{ grid-area: pos27; }
+.yearMode .month	.day.pos28	{ grid-area: pos28; }
+.yearMode .month	.day.pos29	{ grid-area: pos29; }
+.yearMode .month	.day.pos30	{ grid-area: pos30; }
+.yearMode .month	.day.pos31	{ grid-area: pos31; }
+.yearMode .month	.day.pos32	{ grid-area: pos32; }
+.yearMode .month	.day.pos33	{ grid-area: pos33; }
+.yearMode .month	.day.pos34	{ grid-area: pos34; }
+.yearMode .month	.day.pos35	{ grid-area: pos35; }
+.yearMode .month	.day.pos36	{ grid-area: pos36; }
+.yearMode .month	.day.pos37	{ grid-area: pos37; }
+.yearMode .month	.day.pos38	{ grid-area: pos38; }
+.yearMode .month	.day.pos39	{ grid-area: pos39; }
+.yearMode .month	.day.pos40	{ grid-area: pos40; }
+.yearMode .month	.day.pos41	{ grid-area: pos41; }
+.yearMode .month	.day.pos42	{ grid-area: pos42; }
+
+.yearMode .month	.label 			{ display: none; }
+
+.yearMode .month	.day			{ display: block; margin: 0.1em; padding: 0.2em 0.3em 0.2em 0.3em; text-align: right; background-color: white; position: relative; cursor: pointer; }
+.yearMode .month	.day >	div		{ display: none; }
+.yearMode .month	.day >	a		{ display: none; }
+
+.yearMode .month	.day		.dayNumber	{ display: block; }
+.yearMode .month	.day.zondag	.dayNumber	{ color: #C5283D; font-style: normal; font-weight: bold; }
+
+.yearMode .month	.day > .item		{ display: block; position: absolute; top: 0; left: 0; width: calc(100%); height: calc(100%); margin: 0em; border-radius: 2px; }
+.yearMode .month	.day > .item ~ .item { display: none; }
+
+.yearMode .month	.day	.item.groen	{ border: solid 0.15em #BCC557; }
+.yearMode .month	.day	.item.rood	{ border: solid 0.15em #C5283D; }
+.yearMode .month	.day	.item.wit	{ border: solid 0.15em #FFBB33; }
+.yearMode .month	.day	.item.paars	{ border: solid 0.15em #754461; }
+.yearMode .month	.day	.item.roze	{ border: solid 0.15em #E78895; }
+
+/* .yearMode .month	.day.selected	{ background-color: #ADD1EB; } */
+/* .yearMode .month	.day.modeldate		{ background-color: red; } */
+
+.yearMode .month	.day >	.item >	div	{display: none; }
+.yearMode .month	.day >	.item > a	{ display: none; }
+
+.yearMode .month	.vandaag { text-align: center; font-size: 0.8em; padding-top: 0.2em; }
+
+/* ListMode */
+
+.listMode { background-color: #ADD1EB; padding-top: 0.1em; padding-bottom: 0.5em; }
+
+.listMode	.label	{ display: none; }
+
+.listMode	.header,
+.listMode	.weeknummer	{ display: none; }
+.listMode	.monthName	{ color: white; font-weight: bold; text-transform: capitalize; margin: 1em 0.5em; text-align: left; font-size: 1.2em; }
+
+.listMode	.day { 
+	cursor: pointer;
+	margin: 0.2em 0.5em;
+	display: grid;
+	grid-template-columns: 1.49em 2em auto;
+	grid-template-rows: auto;
+	grid-template-areas:
+		"weekdag dagnummer item";
+}
+
+/*
+.listMode	.day.zondag {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}*/
+
+.listMode	.day > div { display: none; }
+.listMode	.day > a { display: none; }
+
+.listMode	.day	.weekDayName {
+	display: block;
+	text-transform: capitalize;
+	word-break: break-all;
+	overflow: hidden;
+	height: 1.4em;
+	grid-area: weekdag;
+	color: white;
+	padding-top: 0.3em;
+}
+.listMode	.day.zondag	.weekDayName {
+	color: #C5283D;
+	font-weight: bold;
+	padding-top: 1em;
+	height: 2.1em;
+}
+
+.listMode	.day	.dayNumber {
+	display: block;
+	grid-area: dagnummer;
+	text-align: right; 
+	padding: 0.3em;
+	padding-right: 0.5em;
+	color: white;
+}
+
+.listMode	.day.zondag	.dayNumber {
+	font-weight: bold;
+	padding-top: 1em;
+}
+
+.listMode	.day	.item {
+	grid-area: item;
+	display: grid;
+	grid-template-columns: auto 3em;
+	grid-template-rows: auto;
+	grid-template-areas:
+		"titel soortFeest";
+}
+.listMode	.day	.item ~ .item {
+	display: none;
+}
+
+.listMode	.day	.item	div	{ display: none; }
+.listMode	.day	.item	a	{ display: none; }
+.listMode	.day	.item	.titleLong	{ 
+	display: block; 
+	padding: 0.3em 0.7em;
+	grid-area: titel;
+}
+
+.listMode	.day.zondag	.item	.titleLong	{
+	padding: 1em 0.7em;
+	font-weight: bold;
+}
+
+.listMode	.day	.item	.typeShort	{
+	display: block;
+	grid-area: soortFeest;
+	font-style: italic;
+	word-break: break-all;
+	overflow: hidden;
+	height: 1.5em;
+	padding: 0.3em 1em;
+	text-align: right;
+}
+
+.listMode	.day.zondag	.item	.typeShort {
+	padding: 1.3em 1em;
+}
+
+.listMode	.day	.item.groen	{ background-color: #BCC557; }
+.listMode	.day	.item.rood	{ background-color: #C5283D; color: white; }
+.listMode	.day	.item.wit	{ background-color: #FFBB33; }
+.listMode	.day	.item.paars	{ background-color: #754461; color: white; }
+.listMode	.day	.item.roze	{ background-color: #E78895; }
+
+
+/* WeekMode */
+
+.weekMode	{
+	background-color: #ADD1EB;
+	padding: 1em; 
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: 
+		"zondag weekinfo"
+		"maandag dinsdag"
+		"woensdag donderdag"
+		"vrijdag zaterdag";
+	grid-row-gap: 0.5em;
+	grid-column-gap: 1.5em;
+}
+
+.weekMode	.day.zondag		{ grid-area: zondag; }
+.weekMode	.day.maandag	{ grid-area: maandag; }
+.weekMode	.day.dinsdag	{ grid-area: dinsdag; }
+.weekMode	.day.woensdag	{ grid-area: woensdag; }
+.weekMode	.day.donderdag	{ grid-area: donderdag; }
+.weekMode	.day.vrijdag	{ grid-area: vrijdag; }
+.weekMode	.day.zaterdag	{ grid-area: zaterdag; }
+
+.weekMode	.day {
+	background-color: white;
+	padding: 0.5em;
+	display: grid;
+	cursor: pointer;
+	grid-template-columns: 1fr 7fr;
+	grid-template-rows: 3em auto;
+	grid-template-areas:
+		"header1 header2"
+		"item1 item1"
+		"item2 item2"
+		"item3 item3"
+		"item4 item4"
+		"item5 item5"
+		"item6 item6"
+		"item7 item7"
+		"item8 item8"
+		"item9 item9"
+		"item10 item10";
+}
+
+.weekMode	.day > div	{ display: none; }
+.weekMode	.day > a	{ display: none; }
+.weekMode	.label	{ display: none; }
+
+.weekMode	.weekinfo	{ display: block; grid-area: weekinfo; color: white; font-weight: bold; }
+.weekMode	.weekinfo	div	{ padding: 0.3em; }
+.weekMode	.weekinfo	.label	{ display: inline-block; width: 10em; }
+
+.weekMode	.day	.dayNumber	{ display: block; grid-area: header1; font-size: 2em; }
+.weekMode	.day.zondag	.dayNumber	{ color: #C5283D; font-weight: bold; }
+.weekMode	.day	.weekDayName	{ display: block; grid-area: header2; }
+.weekMode	.day.zondag	.weekDayName	{ color: #C5283D; font-weight: bold; }
+
+.weekMode	.day	.item		{ 
+	grid-area: item1;
+	display: grid;
+	grid-template-columns: 4fr 1fr; 
+	grid-template-rows: auto;
+	grid-template-areas:
+		"titel kleur"
+		"soortFeest soortFeest";
+	margin: 0.5em 0; 
+	padding: 0.5em; 
+}
+
+.weekMode	.day	.item ~ .item { grid-area: item2; }
+.weekMode	.day	.item ~ .item ~ .item	{ grid-area: item3; }
+.weekMode	.day	.item ~ .item ~ .item ~ .item	{ grid-area: item4; }
+.weekMode	.day	.item ~ .item ~ .item ~ .item ~ .item	{ grid-area: item5; }
+.weekMode	.day	.item ~ .item ~ .item ~ .item ~ .item ~ .item	{ grid-area: item6; }
+.weekMode	.day	.item ~ .item ~ .item ~ .item ~ .item ~ .item ~ .item	{ grid-area: item7; }
+.weekMode	.day	.item ~ .item ~ .item ~ .item ~ .item ~ .item ~ .item ~ .item	{ grid-area: item8; }
+.weekMode	.day	.item ~ .item ~ .item ~ .item ~ .item ~ .item ~ .item ~ .item ~ .item	{ grid-area: item9; }
+.weekMode	.day	.item ~ .item ~ .item ~ .item ~ .item ~ .item ~ .item ~ .item ~ .item ~ .item	{ grid-area: item10; }
+
+.weekMode	.day	.item.groen	{ border: solid 0.30em #BCC557; }
+.weekMode	.day	.item.rood	{ border: solid 0.30em #C5283D; }
+.weekMode	.day	.item.wit	{ border: solid 0.30em #FFBB33; }
+.weekMode	.day	.item.paars	{ border: solid 0.30em #754461; }
+.weekMode	.day	.item.roze	{ border: solid 0.30em #E78895; }
+
+.weekMode	.day	.item > div	{ display: none; }
+.weekMode	.day	.item > a	{ display: none; }
+.weekMode	.day	.item	.label	{ display: none; }
+.weekMode	.day	.item	.typeLong	{ display: block; grid-area: soortFeest; font-style: italic; }
+.weekMode	.day	.item	.titleLong	{ display: block; grid-area: titel; font-weight: bold; }
+.weekMode	.day	.item	.color		{ display: block; grid-area: kleur; text-align: right; }
+
+div#footer {
+	text-align: center;
+	font-size: 0.8em;
+	margin-bottom: 2em;
+}
