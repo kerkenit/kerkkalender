@@ -1,0 +1,18 @@
+AddType application/x-lsphp81 .php
+
+RewriteEngine on
+
+RewriteRule ^jaar/ index.html [L]
+RewriteRule ^jaar$ index.html [L]
+
+RewriteRule ^lijst/ index.html [L]
+RewriteRule ^lijst$ index.html [L]
+
+RewriteRule ^maand/ index.html [L]
+RewriteRule ^maand$ index.html [L]
+
+RewriteRule ^week/ index.html [L]
+RewriteRule ^week$ index.html [L]
+
+RewriteRule ^dag/ index.html [L]
+RewriteRule ^dag$ index.html [L]
