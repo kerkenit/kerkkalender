@@ -190,24 +190,24 @@ function jaarkalender($y, $filter)
 
 	foreach($data as $row)
 	{
-		if(trim($row[10])=="015" && ($kerstmis-$zondag)%7==1) /* 3e advents zondag op 17 december */
+		if(trim($row[10] ?? '')=="015" && ($kerstmis-$zondag)%7==1) /* 3e advents zondag op 17 december */
 		{
 			$row[10]="997";
 		}
-		if(trim($row[8])=="990") /* 4e advents zondag */
+		if(trim($row[8] ?? '')=="990") /* 4e advents zondag */
 		{
 			$row[8]="".(990+($kerstmis-$zondag)%7);
 		}
-		switch(trim($row[0]))
+		switch(trim($row[0] ?? ''))
 		{
 			case "A":
-				$n=$adventzondag1+intval(trim($row[1]));
+				$n=$adventzondag1+intval(trim($row[1] ?? ''));
 				break;
 			case "N": // na adventzondag1 in nieuwe jaar
-				$n=$adventzondag1oud+intval(trim($row[1]));
+				$n=$adventzondag1oud+intval(trim($row[1] ?? ''));
 				break;
 			case "D":
-				$dag=intval(trim($row[1]));
+				$dag=intval(trim($row[1] ?? ''));
 				if(idiv($dag,7)+1<$dhjweek)
 				{
 					$n=$doorhetjaar+$dag;
@@ -222,10 +222,10 @@ function jaarkalender($y, $filter)
 				}
 				break;
 			case "P":
-				$n=$pasen+intval(trim($row[1]));
+				$n=$pasen+intval(trim($row[1] ?? ''));
 				break;
 			case "X":
-				switch(intval(trim($row[1])))
+				switch(intval(trim($row[1] ?? '')))
 				{
 					case 1: /* Heilige familie */
 						$n=$kerstmis;
@@ -250,7 +250,7 @@ function jaarkalender($y, $filter)
 						{
 							$n++;
 						}
-						$n+=intval(trim($row[1]))-2;
+						$n+=intval(trim($row[1] ?? ''))-2;
 						break;
 					case 9: /* Doop van de Heer */
 						$n=$doopvandeheer;
@@ -296,13 +296,13 @@ function jaarkalender($y, $filter)
 				}
 				break;
 			default:
-				$n=dmy2n(intval(trim($row[1])),intval(trim($row[0])),$y);
+				$n=dmy2n(intval(trim($row[1] ?? '')),intval(trim($row[0] ?? '')),$y);
 				break;
 		}
 		$n*=2; // ivm met dubbele lijst per dag: voor vinden hoofditem en de subitems
 		if(!isset($kalender[$n]))
 			continue;
-		$p=intval(trim($row[2]));
+		$p=intval(trim($row[2] ?? ''));
 		if($p==120) /* vrije gedachtenis */
 			$p=140; /* allerlaagste prioriteit, dus komt niet aan bod */
 		if(strpos($row[4],":")==false) /* algemeen */
@@ -312,14 +312,14 @@ function jaarkalender($y, $filter)
 			{
 				if($p<$kalender[$n][$d][0]) /* juiste plaats gevonden */
 				{
-					$r[]=array($p,trim($row[3]),trim($row[4]),trim($row[5]),trim($row[6]),trim($row[7]),trim($row[8]),trim($row[9]),trim($row[10]),trim($row[11]),trim($row[12]));
+					$r[]=array($p,trim($row[3] ?? ''),trim($row[4] ?? ''),trim($row[5] ?? ''),trim($row[6] ?? ''),trim($row[7] ?? ''),trim($row[8] ?? ''),trim($row[9] ?? ''),trim($row[10] ?? ''),trim($row[11] ?? ''),trim($row[12] ?? ''));
 					$p=999; /* voorkomen dat huidige meer keer wordt geplaatst */
 				}
 				$r[]=$kalender[$n][$d];
 			}
 			if(count($kalender[$n])==count($r)) /* als huidige niet toegevoegd ivm laagste prioriteit, alsnog als laatste toevoegen */
 			{
-				$r[]=array($p,trim($row[3]),trim($row[4]),trim($row[5]),trim($row[6]),trim($row[7]),trim($row[8]),trim($row[9]),trim($row[10]),trim($row[11]),trim($row[12]));
+				$r[]=array($p,trim($row[3] ?? ''),trim($row[4] ?? ''),trim($row[5] ?? ''),trim($row[6] ?? ''),trim($row[7] ?? ''),trim($row[8] ?? ''),trim($row[9] ?? ''),trim($row[10] ?? ''),trim($row[11] ?? ''),trim($row[12] ?? ''));
 			}
 			$kalender[$n]=$r; /* kalenderdag vernieuwd met toegevoegd item */
 		}
@@ -335,14 +335,14 @@ function jaarkalender($y, $filter)
 			{
 				if($p<$kalender[$n+1][$d][0])
 				{
-					$r[]=array($p,trim($row[3]),trim($row[4]),trim($row[5]),trim($row[6]),trim($row[7]),trim($row[8]),trim($row[9]),trim($row[10]),trim($row[11]),trim($row[12]));
+					$r[]=array($p,trim($row[3] ?? ''),trim($row[4] ?? ''),trim($row[5] ?? ''),trim($row[6] ?? ''),trim($row[7] ?? ''),trim($row[8] ?? ''),trim($row[9] ?? ''),trim($row[10] ?? ''),trim($row[11] ?? ''),trim($row[12] ?? ''));
 					$p=999;
 				}
 				$r[]=$kalender[$n+1][$d];
 			}
 			if(count($kalender[$n+1])==count($r)) // nog niet toegevoegd, daarom alsnog als laatste
 			{
-				$r[]=array($p,trim($row[3]),trim($row[4]),trim($row[5]),trim($row[6]),trim($row[7]),trim($row[8]),trim($row[9]),trim($row[10]),trim($row[11]),trim($row[12]));
+				$r[]=array($p,trim($row[3] ?? ''),trim($row[4] ?? ''),trim($row[5] ?? ''),trim($row[6] ?? ''),trim($row[7] ?? ''),trim($row[8] ?? ''),trim($row[9] ?? ''),trim($row[10] ?? ''),trim($row[11] ?? ''),trim($row[12] ?? ''));
 			}
 			$kalender[$n+1]=$r;
 		}
