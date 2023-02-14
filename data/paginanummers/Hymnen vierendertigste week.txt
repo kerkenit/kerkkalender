@@ -1,0 +1,9 @@
+dag	weken	vooravond	Lezingendienst	morgengebed	Middaggebed	Avondgebed	Dagsluiting
+zondag	1,3				757-758 (voor) of 758-759 (op) of 760 (na)		766-767
+zondag	2,4				757-758 (voor) of 758-759 (op) of 760 (na)		766-767
+maandag	1,2,3,4		722-723 (34e week) of 700 (nacht) of 700-701 (overdag)	723-724 (34e week) of 701-702	757-758 (voor) of 758-759 (op) of 760 (na)	724-725 (34e week) of 703-704	766-767
+dinsdag	1,2,3,4		722-723 (34e week) of 704 (nacht) of 704-705 (overdag)	723-724 (34e week) of 705-706	757-758 (voor) of 758-759 (op) of 760 (na)	724-725 (34e week) of 706-707	766-767
+woensdag	1,2,3,4,		722-723 (34e week) of 708 (nacht) of 708-709 (overdag)	723-724 (34e week) of 709-710	757-758 (voor) of 758-759 (op) of 760 (na)	724-725 (34e week) of 710-711	766-767
+donderdag	1,2,3,4		722-723 (34e week) of 711-712 (nacht) of 712-713 (overdag)	723-724 (34e week) of 713-714	757-758 (voor) of 758-759 (op) of 760 (na)	724-725 (34e week) of 714-716	766-767
+vrijdag	1,2,3,4		722-723 (34e week) of 716 (nacht) of 717 (overdag)	723-724 (34e week) of 717-718	757-758 (voor) of 758-759 (op) of 760 (na)	724-725 (34e week) of 718-720	766-767
+zaterdag	1,2,3,4		722-723 (34e week) of 720 (nacht) of 720-721 (overdag)	723-724 (34e week) of 721-722	757-758 (voor) of 758-759 (op) of 760 (na)		766-767

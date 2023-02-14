@@ -1,0 +1,750 @@
+maand	dag	jaar_vanaf	jaar_tot	code_bisdom	prioriteit	soort_feest	naam_lang	naam_kort	liturgische_tijd	liturgische_kleur	code_eigen	code_gem	code_dag	paginanummers
+A	0	1970	2300	65535	20		Eerste zondag van de advent		a	p			001	[]
+A	1	1970	2300	65535	130		Maandag in de eerste week van de advent		a	p			002	[]
+A	2	1970	2300	65535	130		Dinsdag in de eerste week van de advent		a	p			003	[]
+A	3	1970	2300	65535	130		Woensdag in de eerste week van de advent		a	p			004	[]
+A	4	1970	2300	65535	130		Donderdag in de eerste week van de advent		a	p			005	[]
+A	5	1970	2300	65535	130		Vrijdag in de eerste week van de advent		a	p			006	[]
+A	6	1970	2300	65535	130		Zaterdag in de eerste week van de advent		a	p			007	[]
+A	7	1970	2300	65535	20		Tweede zondag van de advent		a	p			008	[]
+A	8	1970	2300	65535	130		Maandag in de tweede week van de advent		a	p			009	[]
+A	9	1970	2300	65535	130		Dinsdag in de tweede week van de advent		a	p			010	[]
+A	10	1970	2300	65535	130		Woensdag in de tweede week van de advent		a	p			011	[]
+A	11	1970	2300	65535	130		Donderdag in de tweede week van de advent		a	p			012	[]
+A	12	1970	2300	65535	130		Vrijdag in de tweede week van de advent		a	p			013	[]
+A	13	1970	2300	65535	130		Zaterdag in de tweede week van de advent		a	p			014	[]
+A	14	1970	2300	65535	20		Derde zondag van de advent		a	o			015	[]
+A	15	1970	2300	65535	130		Maandag in de derde week van de advent		a	p			016	[]
+A	16	1970	2300	65535	130		Dinsdag in de derde week van de advent		a	p			017	[]
+A	17	1970	2300	65535	130		Woensdag in de derde week van de advent		a	p			018	[]
+A	18	1970	2300	65535	130		Donderdag in de derde week van de advent		a	p			019	[]
+A	19	1970	2300	65535	130		Vrijdag in de derde week van de advent		a	p			020	[]
+A	21	1970	2300	65535	20		Vierde zondag van de advent		b	p	990		021	[]
+A	20	1970	2300	65535	135		zaterdag 3						159	[]
+A	22	1970	2300	65535	135		maandag 4						161	[]
+A	23	1970	2300	65535	135		dinsdag 4						162	[]
+A	24	1970	2300	65535	135		woensdag 4						163	[]
+A	25	1970	2300	65535	135		donderdag 4						164	[]
+A	26	1970	2300	65535	135		vrijdag 4						165	[]
+A	27	1970	2300	65535	135		zaterdag 4						166	[]
+A	28	1970	2300	65535	135		zondag 5						167	[]
+A	29	1970	2300	65535	135		maandag 5						168	[]
+A	30	1970	2300	65535	135		dinsdag 5						169	[]
+A	31	1970	2300	65535	135		woensdag 5						170	[]
+A	32	1970	2300	65535	135		donderdag 5						171	[]
+A	33	1970	2300	65535	135		vrijdag 5						172	[]
+A	34	1970	2300	65535	135		zaterdag 5						173	[]
+N	29	1970	2300	65535	135		maandag 5						168	[]
+N	30	1970	2300	65535	135		dinsdag 5						169	[]
+N	31	1970	2300	65535	135		woensdag 5						170	[]
+N	32	1970	2300	65535	135		donderdag 5						171	[]
+N	33	1970	2300	65535	135		vrijdag 5						172	[]
+N	34	1970	2300	65535	135		zaterdag 5						173	[]
+N	35	1970	2300	65535	135		zondag 6						174	[]
+N	36	1970	2300	65535	135		maandag 6						175	[]
+N	37	1970	2300	65535	135		dinsdag 6						176	[]
+N	38	1970	2300	65535	135		woensdag 6						177	[]
+N	39	1970	2300	65535	135		donderdag 6						178	[]
+N	40	1970	2300	65535	135		vrijdag 6						179	[]
+N	41	1970	2300	65535	135		zaterdag 6						180	[]
+N	42	1970	2300	65535	135		zondag 7						181	[]
+N	43	1970	2300	65535	135		maandag 7						182	[]
+N	44	1970	2300	65535	135		dinsdag 7						183	[]
+N	45	1970	2300	65535	135		woensdag 7						184	[]
+N	46	1970	2300	65535	135		donderdag 7						185	[]
+N	47	1970	2300	65535	135		vrijdag 7						186	[]
+N	48	1970	2300	65535	135		zaterdag 7						187	[]
+12	17	1970	2300	65535	90	a	17 december		b	p	022			[]
+12	18	1970	2300	65535	90	a	18 december		b	p	023			[]
+12	19	1970	2300	65535	90	a	19 december		b	p	024			[]
+12	20	1970	2300	65535	90	a	20 december		b	p	025			[]
+12	21	1970	2300	65535	90	a	21 december		b	p	026			[]
+12	22	1970	2300	65535	90	a	22 december		b	p	027			[]
+12	23	1970	2300	65535	90	a	23 december		b	p	028			[]
+12	24	1970	2300	65535	90	a	24 december		b	p	029			[]
+12	24	1970	2300	65535	90	h	Kerstmis: Vigiliemis	Kerst: Vigiliemis	b	w	596			[]
+12	24	1970	2300	65535	90	h	Kerstmis: Nachtmis	Kerst: Nachtmis	b	w	599			[]
+12	25	1970	2300	65535	19	h	Kerstmis - Dagmis	Kerstmis - Dagmis	k	w	030			[]
+12	25	1970	2300	65535	19	h	Kerstmis: Dageraadsmis	Kerstmis: Dageraadsmis	k	w	595			[]
+X	1	1970	2300	65535	60	f	Heilige Familie, Jezus, Maria en Jozef	Heilige Familie	k	w	031			[]
+12	26	1970	2300	65535	70	f	Heilige Stefanus, eerste martelaar	Heilige Stefanus	k	r	032			[]
+12	27	1970	2300	65535	70	f	Heilige Johannes, apostel en evangelist (patroon van het bisdom 's-Hertogenbosch)	Heilige Johannes	k	w	033			[]
+12	28	1970	2300	65535	70	f	HH. Onnozele kinderen, martelaren	HH. Onnozele kinderen	k	r	034			[]
+12	29	1970	2300	65535	90		Vijfde dag onder het Octaaf van Kerstmis	Vijfde dag kerstoctaaf	k	w	035			[]
+12	30	1970	2300	65535	90		Zesde dag onder het Octaaf van Kerstmis	Zesde dag kerstoctaaf	k	w	036			[]
+12	31	1970	2300	65535	90		Zevende dag onder het Octaaf van Kerstmis	Zevende dag kerstoctaaf	k	w	037			[]
+1	1	1970	2300	65535	30	h	Heilige Maria, Moeder van God	Heilige Maria	k	w	038	902		[]
+1	2	1970	2300	65535	134		2 januari		k	w	039			[]
+1	3	1970	2300	65535	134		3 januari		k	w	040			[]
+1	4	1970	2300	65535	134		4 januari		k	w	041			[]
+1	5	1970	2300	65535	134		5 januari		k	w	042			[]
+1	6	1970	2300	65535	134		6 januari		k	w	043			[]
+1	7	1970	2300	65535	134		7 januari		k	w	044			[]
+X	2	1970	2300	65535	20	h	Openbaring des Heren	Openbaring des Heren	l	w	045			[]
+X	3	1970	2300	65535	132		Maandag na Openbaring des Heren		l	w			046	[]
+X	4	1970	2300	65535	132		Dinsdag na Openbaring des Heren		l	w			047	[]
+X	5	1970	2300	65535	132		Woensdag na Openbaring des Heren		l	w			048	[]
+X	6	1970	2300	65535	132		Donderdag na Openbaring des Heren		l	w			049	[]
+X	7	1970	2300	65535	132		Vrijdag na Openbaring des Heren		l	w			050	[]
+X	8	1970	2300	65535	132		Zaterdag na Openbaring des Heren		l	w			051	[]
+X	9	1970	2300	65535	50	f	Doop van de Heer	Doop van de Heer	l	w	052			[]
+P	-46	1970	2300	65535	20		Aswoensdag	Aswoensdag	v	p	053			[]
+P	-45	1970	2300	65535	90		Donderdag na Aswoensdag		v	p			054	[]
+P	-44	1970	2300	65535	90		Vrijdag na Aswoensdag		v	p			055	[]
+P	-43	1970	2300	65535	90		Zaterdag na Aswoensdag		v	p			056	[]
+P	-42	1970	2300	65535	20		Eerste zondag in de veertigdagentijd		v	p			057	[]
+P	-41	1970	2300	65535	90		Maandag in de eerste week van de veertigdagentijd		v	p			058	[]
+P	-40	1970	2300	65535	90		Dinsdag in de eerste week van de veertigdagentijd		v	p			059	[]
+P	-39	1970	2300	65535	90		Woensdag in de eerste week van de veertigdagentijd		v	p			060	[]
+P	-38	1970	2300	65535	90		Donderdag in de eerste week van de veertigdagentijd		v	p			061	[]
+P	-37	1970	2300	65535	90		Vrijdag in de eerste week van de veertigdagentijd		v	p			062	[]
+P	-36	1970	2300	65535	90		Zaterdag in de eerste week van de veertigdagentijd		v	p			063	[]
+P	-35	1970	2300	65535	20		Tweede zondag in de veertigdagentijd		v	p			064	[]
+P	-34	1970	2300	65535	90		Maandag in de tweede week van de veertigdagentijd		v	p			065	[]
+P	-33	1970	2300	65535	90		Dinsdag in de tweede week van de veertigdagentijd		v	p			066	[]
+P	-32	1970	2300	65535	90		Woensdag in de tweede week van de veertigdagentijd		v	p			067	[]
+P	-31	1970	2300	65535	90		Donderdag in de tweede week van de veertigdagentijd		v	p			068	[]
+P	-30	1970	2300	65535	90		Vrijdag in de tweede week van de veertigdagentijd		v	p			069	[]
+P	-29	1970	2300	65535	90		Zaterdag in de tweede week van de veertigdagentijd		v	p			070	[]
+P	-28	1970	2300	65535	20		Derde zondag in de veertigdagentijd		v	p			071	[]
+P	-27	1970	2300	65535	90		Maandag in de derde week van de veertigdagentijd		v	p			072	[]
+P	-26	1970	2300	65535	90		Dinsdag in de derde week van de veertigdagentijd		v	p			073	[]
+P	-25	1970	2300	65535	90		Woensdag in de derde week van de veertigdagentijd		v	p			074	[]
+P	-24	1970	2300	65535	90		Donderdag in de derde week van de veertigdagentijd		v	p			075	[]
+P	-23	1970	2300	65535	90		Vrijdag in de derde week van de veertigdagentijd		v	p			076	[]
+P	-22	1970	2300	65535	90		Zaterdag in de derde week van de veertigdagentijd		v	p			077	[]
+P	-21	1970	2300	65535	20		Vierde zondag in de veertigdagentijd		v	o			078	[]
+P	-20	1970	2300	65535	90		Maandag in de vierde week van de veertigdagentijd		v	p			079	[]
+P	-19	1970	2300	65535	90		Dinsdag in de vierde week van de veertigdagentijd		v	p			080	[]
+P	-18	1970	2300	65535	90		Woensdag in de vierde week van de veertigdagentijd		v	p			081	[]
+P	-17	1970	2300	65535	90		Donderdag in de vierde week van de veertigdagentijd		v	p			082	[]
+P	-16	1970	2300	65535	90		Vrijdag in de vierde week van de veertigdagentijd		v	p			083	[]
+P	-15	1970	2300	65535	90		Zaterdag in de vierde week van de veertigdagentijd		v	p			084	[]
+P	-14	1970	2300	65535	20		Vijfde zondag in de veertigdagentijd		v	p			085	[]
+P	-13	1970	2300	65535	90		Maandag in de vijfde week van de veertigdagentijd		v	p			086	[]
+P	-12	1970	2300	65535	90		Dinsdag in de vijfde week van de veertigdagentijd		v	p			087	[]
+P	-11	1970	2300	65535	90		Woensdag in de vijfde week van de veertigdagentijd		v	p			088	[]
+P	-10	1970	2300	65535	90		Donderdag in de vijfde week van de veertigdagentijd		v	p			089	[]
+P	-9	1970	2300	65535	90		Vrijdag in de vijfde week van de veertigdagentijd		v	p			090	[]
+P	-8	1970	2300	65535	90		Zaterdag in de vijfde week van de veertigdagentijd		v	p			091	[]
+P	-7	1970	2300	65535	20	h	Palm- en passiezondag	Palm- en passiezondag	v	r	092			[]
+P	-6	1970	2300	65535	20		Maandag in de Goede Week		v	p	093			[]
+P	-5	1970	2300	65535	20		Dinsdag in de Goede Week		v	p	094			[]
+P	-4	1970	2300	65535	20		Woensdag in de Goede Week		v	p	095			[]
+P	-3	1970	2300	65535	20		Witte Donderdag		v	w	598			[]
+P	-2	1970	2300	65535	10		Goede Vrijdag	Goede Vrijdag	v	r	097			[]
+P	-1	1970	2300	65535	10	h	Paaswake	Paaswake	v	w	597			[]
+P	0	1970	2300	65535	10		Paaszondag - Verrijzenis van de Heer	Paaszondag	p	w	099			[]
+P	1	1970	2300	65535	20		Maandag onder het octaaf van Pasen	Octaaf van Pasen	p	w	100			[]
+P	2	1970	2300	65535	20		Dinsdag onder het octaaf van Pasen	Octaaf van Pasen	p	w	101			[]
+P	3	1970	2300	65535	20		Woensdag onder het octaaf van Pasen	Octaaf van Pasen	p	w	102			[]
+P	4	1970	2300	65535	20		Donderdag onder het octaaf van Pasen	Octaaf van Pasen	p	w	103			[]
+P	5	1970	2300	65535	20		Vrijdag onder het octaaf van Pasen	Octaaf van Pasen	p	w	104			[]
+P	6	1970	2300	65535	20		Zaterdag onder het octaaf van Pasen	Octaaf van Pasen	p	w	105			[]
+P	7	1970	2300	65535	20		Tweede zondag van Pasen		p	w			106	[]
+P	8	1970	2300	65535	130		Maandag in de tweede week van Pasen		p	w			107	[]
+P	9	1970	2300	65535	130		Dinsdag in de tweede week van Pasen		p	w			108	[]
+P	10	1970	2300	65535	130		Woensdag in de tweede week van Pasen		p	w			109	[]
+P	11	1970	2300	65535	130		Donderdag in de tweede week van Pasen		p	w			110	[]
+P	12	1970	2300	65535	130		Vrijdag in de tweede week van Pasen		p	w			111	[]
+P	13	1970	2300	65535	130		Zaterdag in de tweede week van Pasen		p	w			112	[]
+P	14	1970	2300	65535	20		Derde zondag van Pasen		p	w			113	[]
+P	15	1970	2300	65535	130		Maandag in de derde week van Pasen		p	w			114	[]
+P	16	1970	2300	65535	130		Dinsdag in de derde week van Pasen		p	w			115	[]
+P	17	1970	2300	65535	130		Woensdag in de derde week van Pasen		p	w			116	[]
+P	18	1970	2300	65535	130		Donderdag in de derde week van Pasen		p	w			117	[]
+P	19	1970	2300	65535	130		Vrijdag in de derde week van Pasen		p	w			118	[]
+P	20	1970	2300	65535	130		Zaterdag in de derde week van Pasen		p	w			119	[]
+P	21	1970	2300	65535	20		Vierde zondag van Pasen		p	w			120	[]
+P	22	1970	2300	65535	130		Maandag in de vierde week van Pasen		p	w			121	[]
+P	23	1970	2300	65535	130		Dinsdag in de vierde week van Pasen		p	w			122	[]
+P	24	1970	2300	65535	130		Woensdag in de vierde week van Pasen		p	w			123	[]
+P	25	1970	2300	65535	130		Donderdag in de vierde week van Pasen		p	w			124	[]
+P	26	1970	2300	65535	130		Vrijdag in de vierde week van Pasen		p	w			125	[]
+P	27	1970	2300	65535	130		Zaterdag in de vierde week van Pasen		p	w			126	[]
+P	28	1970	2300	65535	20		Vijfde zondag van Pasen		p	w			127	[]
+P	29	1970	2300	65535	130		Maandag in de vijfde week van Pasen		p	w			128	[]
+P	30	1970	2300	65535	130		Dinsdag in de vijfde week van Pasen		p	w			129	[]
+P	31	1970	2300	65535	130		Woensdag in de vijfde week van Pasen		p	w			130	[]
+P	32	1970	2300	65535	130		Donderdag in de vijfde week van Pasen		p	w			131	[]
+P	33	1970	2300	65535	130		Vrijdag in de vijfde week van Pasen		p	w			132	[]
+P	34	1970	2300	65535	130		Zaterdag in de vijfde week van Pasen		p	w			133	[]
+P	35	1970	2300	65535	20		Zesde zondag van Pasen		p	w			134	[]
+P	36	1970	2300	65535	130		Maandag in de zesde week van Pasen		p	w			135	[]
+P	37	1970	2300	65535	130		Dinsdag in de zesde week van Pasen		p	w			136	[]
+P	38	1970	2300	65535	130		Woensdag in de zesde week van Pasen		p	w			137	[]
+P	39	1970	2300	65535	20	h	Hemelvaart van de Heer	Hemelvaart	p	w	138			[]
+P	40	1970	2300	65535	130		Vrijdag in de zesde week van Pasen		p	w			139	[]
+P	41	1970	2300	65535	130		Zaterdag in de zesde week van Pasen		p	w			140	[]
+P	42	1970	2300	65535	20		Zevende zondag van Pasen		p	w			141	[]
+P	43	1970	2300	65535	130		Maandag in de zevende week van Pasen		p	w			142	[]
+P	44	1970	2300	65535	130		Dinsdag in de zevende week van Pasen		p	w			143	[]
+P	45	1970	2300	65535	130		Woensdag in de zevende week van Pasen		p	w			144	[]
+P	46	1970	2300	65535	130		Donderdag in de zevende week van Pasen		p	w			145	[]
+P	47	1970	2300	65535	130		Vrijdag in de zevende week van Pasen		p	w			146	[]
+P	48	1970	2300	65535	130		Zaterdag in de zevende week van Pasen		p	w			147	[]
+P	49	1970	2300	65535	20	h	Pinksteren	Pinksteren	p	r	148			[]
+P	50	1970	2300	65535	100	g	Maria, Moeder van de Kerk	Maria, Moeder van de Kerk		w	576	902		[]
+P	53	1970	2300	65535	50	f	Nederland: Onze Heer Jezus Christus, eeuwige Hogepriester	Nederland: Christus, Hogepriester		w	567			[]
+P	56	1970	2300	65535	30	h	Heilige Drieëenheid	Heilige Drieëenheid		w	149			[]
+P	60	1970	2300	65535	30	h	Buiten Nederland: Sacramentsdag	Buiten Nederland: Sacramentsdag		w	150			[]
+P	63	1970	2300	65535	30	h	Nederland: Sacramentsdag	Nederland: Sacramentsdag		w	150			[]
+P	68	1970	2300	65535	30	h	Heilig Hart van Jezus	Heilig Hart		w	151			[]
+A	-7	1970	2300	65535	30	h	Christus, Koning van het heelal	Christus Koning		w	152			[]
+1	2	1970	2300	65535	100	g	HH. Basilius de Grote en Gregorius van Nazianze, bisschoppen en kerkleraren	HH. Basilius de Grote en Gregorius van Nazianze		w	200	908 910		[]
+1	3	1970	2300	65535	120		De heilige Naam Jezus	De heilige Naam Jezus		w	546			[]
+1	5	1970	2300	65535	120		Roermond: H. Gerlach, kluizenaar	Roermond: H. Gerlach		w	203	920		[]
+1	5	1970	2300	65535	120		Roermond: H. Karel van Sint Andries, priester	Roermond: H. Karel van Sint Andries		w	204	909 920		[]
+1	7	1970	2300	65535	120		H. Raimundus van Penyafort, priester	H. Raimundus van Penyafort		w	205	909		[]
+1	13	1970	2300	65535	120		H. Hilarius, bisschop en kerkleraar	H. Hilarius		w	207	908 910		[]
+1	14	1970	2300	65535	120		Breda: Z. Petrus Donders, priester	Breda: Z. Petrus Donders		w	208	909 923		[]
+1	14	1970	2300	65535	110	g	's-Hertogenbosch: Z. Petrus Donders, priester	's-Hertogenbosch: Z. Petrus Donders		w	208	909 923		[]
+1	15	1970	2300	65535	110	g	Roermond: H. Arnold Janssen, priester	Roermond: H. Arnold Janssen		w	210	909 920		[]
+1	17	1970	2300	65535	100	g	H. Antonius, abt	H. Antonius		w	211	920		[]
+1	20	1970	2300	65535	120		H. Fabianus, paus en martelaar	H. Fabianus		r	212	905 907		[]
+1	20	1970	2300	65535	120		H. Sebastianus, martelaar	H. Sebastianus		r	213	905		[]
+1	21	1970	2300	65535	100	g	H. Agnes, maagd en martelares	H. Agnes		r	214	906 913		[]
+1	22	1970	2300	65535	120		H. Vincentius, diaken en martelaar	H. Vincentius		r	215	905		[]
+1	24	1970	2300	65535	100	g	H. Franciscus van Sales, bisschop en kerkleraar	H. Franciscus van Sales		w	216	908 910		[]
+1	25	1970	2300	65535	70	f	Bekering van de heilige apostel Paulus	Bekering H. apostel Paulus		w	217	903		[]
+1	26	1970	2300	65535	100	g	HH. Timoteüs en Titus, bisschoppen	HH. Timoteüs en Titus		w	218	908		[]
+1	27	1970	2300	65535	120		H. Angela Merici, maagd	H. Angela Merici		w	219	912 927		[]
+1	28	1970	2300	65535	100	g	H. Thomas van Aquino, priester en kerkleraar	H. Thomas van Aquino		w	220	910		[]
+1	31	1970	2300	65535	100	g	H. Johannes Bosco, priester	H. Johannes Bosco		w	223	909 929		[]
+2	2	1970	2300	65535	50	f	Opdracht van de Heer in de tempel, Maria Lichtmis	Opdracht v/d Heer in de tempel		w	224			[]
+2	3	1970	2300	65535	120		H. Blasius, bisschop en martelaar	H. Blasius		r	225	905 908		[]
+2	3	1970	2300	65535	120		H. Ansgarius, bisschop	H. Ansgarius		w	226	908		[]
+2	5	1970	2300	65535	100	g	H. Agatha, maagd en martelares	H. Agatha		r	228	906 913		[]
+2	6	1970	2300	65535	100	g	HH. Paulus Miki en gezellen, martelaren	HH. Paulus Miki en gezellen		r	229	904		[]
+2	6	1970	2300	65535	90		Breda:  H. Amandus, bisschop	Breda:  H. Amandus		w	232	931		[]
+2	6	1970	2300	65535	90		Breda: HH. Paulus Miki en gezellen, martelaren	Breda: HH. Paulus Miki en gezellen		r	229	904		[]
+2	8	1970	2300	65535	120		H. Hieronymus Emiliani	H. Hieronymus Emiliani		w	235	929		[]
+2	8	1970	2300	65535	120		H. Josephina Bakhita, maagd	H. Josephina Bakhita		w	547	912		[]
+2	10	1970	2300	65535	100	g	H. Scholastica, maagd	H. Scholastica		w	236	912		[]
+2	11	1970	2300	65535	120		Heilige maagd Maria van Lourdes	H. Maria van Lourdes		w	237	902		[]
+2	14	1970	2300	65535	100	g	HH. Cyrillus, monnik, en Methodius, bisschop	HH. Cyrillus en Methodius		w	240	909		[]
+2	14	1970	2300	65535	70	f	Europa: HH. Cyrillus, monnik, en Methodius, bisschop, patronen van het continent	Europa: HH. Cyrillus en Methodius		w	240	909		[]
+2	17	1970	2300	65535	120		Zeven HH. Stichters van de servieten	HH. Stichters v/d servieten		w	241	915		[]
+2	21	1970	2300	65535	120		H. Petrus Damiani, bisschop en kerkleraar	H. Petrus Damiani		w	246	908 910		[]
+2	22	1970	2300	65535	70	f	Cathedra van de heilige apostel Petrus	St. Petrus' Stoel		w	247	903		[]
+2	23	1970	2300	65535	100	g	H. Polycarpus, bisschop en martelaar	H. Polycarpus		r	248	905 908		[]
+3	1	1970	2300	65535	120		Utrecht en Rotterdam: H. Swietbert, bisschop	Utrecht en Rotterdam: H. Swietbert		w	251	931		[]
+3	3	1970	2300	65535	120		Groningen: H. Frederik, abt	Groningen: H. Frederik		w	254	920		[]
+3	4	1970	2300	65535	120		H. Casimir	H. Casimir		w	255	915		[]
+3	7	1970	2300	65535	100	g	HH. Perpetua en Felicitas, martelaressen	HH. Perpetua en Felicitas		r	258	904		[]
+3	8	1970	2300	65535	120		H. Johannes a Deo, kloosterling	H. Johannes a Deo		w	259	920 923		[]
+3	9	1970	2300	65535	120		H. Francisca Romana, kloosterlinge	H. Francisca Romana		w	260	921		[]
+3	17	1970	2300	65535	120		H. Patricius, bisschop	H. Patricius		w	261	908		[]
+3	17	1970	2300	65535	120		Breda: H. Gertrudis, maagd	Breda: H. Gertrudis		w	262	912 921		[]
+3	18	1970	2300	65535	120		H. Cyrillus van Jeruzalem, bisschop en kerkleraar	H. Cyrillus van Jeruzalem		w	263	908 910		[]
+X	10	1970	2300	65535	30	h	H. Jozef, bruidegom van de heilige maagd Maria	H. Jozef		w	264	909		[]
+3	23	1970	2300	65535	120		H. Turibius de Mogrovejo, bisschop	H. Turibius de Mogrovejo		w	265	908		[]
+X	11	1970	2300	65535	30	h	Aankondiging van de Heer - Maria Boodschap	Maria Boodschap		w	266			[]
+3	26	1970	2300	65535	120		Utrecht en Groningen: H. Ludger, bisschop	Utrecht en Groningen: H. Ludger		w	267	908 931		[]
+4	2	1970	2300	65535	120		H. Franciscus van Paola, kluizenaar	H. Franciscus van Paola		w	268	920		[]
+4	4	1970	2300	65535	120		H. Isidorus, bisschop en kerkleraar	H. Isidorus		w	269	908 910		[]
+4	5	1970	2300	65535	120		H. Vincentius Ferrer, priester	H. Vincentius Ferrer		w	270	909		[]
+4	7	1970	2300	65535	100	g	H. Johannes Baptista de la Salle, priester	H. Johannes Baptista de la Salle		w	271	909 929		[]
+4	11	1970	2300	65535	100	g	H. Stanislaus, bisschop en martelaar	H. Stanislaus		r	272	905 908		[]
+4	13	1970	2300	65535	120		H. Martinus I, paus en martelaar	H. Martinus I		r	273	905 907		[]
+4	21	1970	2300	65535	120		H. Anselmus, bisschop en kerkleraar	H. Anselmus		w	276	908 910		[]
+4	23	1970	2300	65535	120		H. Joris, martelaar	H. Joris		r	277	905		[]
+4	23	1970	2300	65535	120		H. Adalbert, bisschop en martelaar	H. Adalbert		r	542	908 905		[]
+4	24	1970	2300	65535	120		H. Fidelis van Sigmaringen, priester en martelaar	H. Fidelis van Sigmaringen		r	278	905		[]
+4	24	1970	2300	65535	80	f	Ordinariaat voor de Ned. Strijdkrachten: Verjaardag van de wijding van de bisschopskerk	Ned. Strijdkrachten: Verjaardag wijding bisschopskerk		w	279	901		[]
+4	25	1970	2300	65535	70	f	H. Marcus, evangelist	H. Marcus		r	280	903		[]
+4	26	1970	2300	65535	120		Ordinariaat voor de Ned. Strijdkrachten: H. Fidelis van Sigmaringen, priester en martelaar	Ned. Strijdkrachten: H. Fidelis van Sigmaringen		r	278	905		[]
+4	27	1970	2300	65535	120		Nederland: H. Petrus Canisius, priester en kerkleraar	Nederland: H. Petrus Canisius		w	282	909 910		[]
+4	28	1970	2300	65535	120		H. Petrus Chanel, priester en martelaar	H. Petrus Chanel		r	283	905		[]
+4	28	1970	2300	65535	120		H. Lodewijk Maria Grignion van Montfort, priester	H. Lodewijk Maria van Montfort		w	543	909 915		[]
+4	29	1970	2300	65535	100	g	H. Catharina van Siena, maagd en kerklerares	H. Catharina van Siena		w	285	912		[]
+4	29	1970	2300	65535	80	f	Europa: H. Catharina van Siena, maagd en kerklerares, patrones van het continent	Europa: H. Catharina van Siena		w	539	912		[]
+4	30	1970	2300	65535	120		H. Pius V, paus	H. Pius V		w	286	907		[]
+5	1	1970	2300	65535	120		H. Jozef, de arbeider	H.Jozef, de arbeider		w	287	909		[]
+5	2	1970	2300	65535	100	g	H. Athanasius, bisschop en kerkleraar	H. Athanasius		w	288	908 910		[]
+5	2	1970	2300	65535	80	f	Haarlem: Verjaardag van de wijding van de kathedraal	Haarlem: Verjaardag wijding kathedraal		w	289	901		[]
+5	3	1970	2300	65535	70	f	HH. Filippus en Jakobus, apostelen	HH. Filippus en Jakobus		r	290	903		[]
+5	4	1970	2300	65535	110	g	Haarlem: H. Athanasius, bisschop en kerkleraar	Haarlem: H. Athanasius		w	288	908 910		[]
+5	8	1970	2300	65535	80	f	Rotterdam: Verjaardag van de wijding van de kathedraal	Rotterdam: Verjaardag wijding kathedraal		w	292	901		[]
+5	8	1970	2300	65535	120		Roermond: HH. Wiro, Plechelmus en Otger	Roermond: HH. Wiro, Plechelmus en Otger		w	293	930		[]
+5	8	1970	2300	65535	120		Roermond: Z. Clara van het arme Kind Jezus, maagd	Roermond: Z. Clara van het arme Kind Jezus		w	578	912 925		[]
+5	12	1970	2300	65535	120		HH. Nereus en Achilles, martelaren	HH. Nereus en Achilles		r	295	904		[]
+5	12	1970	2300	65535	120		H. Pancratius, martelaar	H. Pancratius		r	296	905		[]
+5	13	1970	2300	65535	80	f	Roermond: H. Servatius, bisschop	Roermond: H. Servatius		w	297	931 908		[]
+5	13	1970	2300	65535	120		's-Hertogenbosch: H. Servatius, bisschop	's-Hertogenbosch: H. Servatius		w	298	931		[]
+5	13	1970	2300	65535	120		H. Maagd Maria van Fatima	H. Maria van Fatima		w	548	902		[]
+5	14	1970	2300	65535	70	f	H. Mattias, apostel	H. Mattias		r	301	903		[]
+5	15	1970	2300	65535	120		Roermond: Alle heilige Bisschoppen van Maastricht	Roermond: HH. Bisschoppen van Maastricht		w	302	908		[]
+5	18	1970	2300	65535	120		H. Johannes I, paus en martelaar	H. Johannes I		r	305	905 907		[]
+5	20	1970	2300	65535	120		H. Bernardinus van Siena, priester	H. Bernardinus van Siena		w	306	909		[]
+5	20	1970	2300	65535	120		Roermond: Z. Josefa Stenmanns, maagd	Roermond: Z. Josefa Stenmanns		w	580	912		[]
+5	21	1970	2300	65535	120		H. Christophorus Magallaen, priester, en gezellen, martelaren	H. Christophorus Magallaen en gezellen		r	549	904		[]
+5	22	1970	2300	65535	120		H. Rita van Cassia, kloosterlinge	H. Rita van Cassia		w	550	921		[]
+5	24	1970	2300	65535	120		Groningen: H. Beda de Eerbiedwaardige, priester en kerkleraar	Groningen: H. Beda de Eerbiedwaardige		w	307	910 920		[]
+5	24	1970	2300	65535	120		Groningen: H. Gregorius VII, paus	Groningen: H. Gregorius VII		w	308	907		[]
+5	24	1970	2300	65535	120		Groningen: H. Maria Magdalena de'Pazzi, maagd	Groningen: H. Maria Magdalena de'Pazzi		w	309	912 921		[]
+5	25	1970	2300	65535	120		H. Beda de Eerbiedwaardige, priester en kerkleraar	H. Beda de Eerbiedwaardige		w	307	910 920		[]
+5	25	1970	2300	65535	120		H. Gregorius VII, paus	H. Gregorius VII		w	308	907		[]
+5	25	1970	2300	65535	120		H. Maria Magdalena de'Pazzi, maagd	H. Maria Magdalena de'Pazzi		w	309	912 921		[]
+5	25	1970	2300	65535	80	f	Groningen: Verjaardag van de wijding van de kathedraal	Groningen: Verjaardag wijding kathedraal		w	432	901		[]
+5	26	1970	2300	65535	100	g	H. Filippus Neri, priester	H. Filippus Neri		w	310	909 920		[]
+5	27	1970	2300	65535	120		H. Augustinus van Canterbury, bisschop	H. Augustinus van Canterbury		w	311	908		[]
+5	29	1970	2300	65535	120		H. Paulus VI, paus	H. Paulus VI		w	577	907		[]
+5	31	1970	2300	65535	70	f	Maria Bezoek	Maria Bezoek		w	312	902		[]
+P	69	1970	2300	65535	100	g	Onbevlekt Hart van Maria	Onbevlekt Hart van Maria		w	313	902		[]
+6	1	1970	2300	65535	100	g	H. Justinus, martelaar	H. Justinus		r	314	905		[]
+6	2	1970	2300	65535	120		HH. Marcellinus en Petrus, martelaren	HH. Marcellinus en Petrus		r	315	904		[]
+6	3	1970	2300	65535	100	g	HH. Carolus Lwanga en gezellen, martelaren van Oeganda	HH. Carolus Lwanga en gezellen		r	316	904		[]
+6	5	1970	2300	65535	100	g	H. Bonifatius, bisschop en martelaar	H. Bonifatius		r	318	904 908		[]
+6	5	1970	2300	65535	90	g	Nederland: HH. Bonifatius, bisschop, en gezellen, martelaren (Haarlem: bijpatronen van het bisdom)	Nederland: HH. Bonifatius en gezellen		r	319	904		[]
+6	5	1970	2300	65535	80	f	Groningen: HH. Bonifatius, bisschop, patroon van het bisdom, en gezellen, martelaren	Groningen: HH. Bonifatius en gezellen		r	320	904		[]
+6	6	1970	2300	65535	120		H. Norbertus, bisschop	H. Norbertus		w	321	908		[]
+6	9	1970	2300	65535	120		H. Efrem, diaken en kerkleraar	H. Efrem		w	324	910		[]
+6	11	1970	2300	65535	100	g	H. Barnabas, apostel	H. Barnabas		r	325	903		[]
+6	12	1970	2300	65535	110	g	's-Hertogenbosch: H. Odulfus, priester	's-Hertogenbosch: H. Odulfus		w	326	909		[]
+6	13	1970	2300	65535	100	g	H. Antonius van Padua, priester en kerkleraar	H. Antonius van Padua		w	327	909 910 920		[]
+6	14	1970	2300	65535	80	f	Nederland: H. Lidwina, maagd	Nederland: H. Lidwina		w	328	912		[]
+6	19	1970	2300	65535	120		H. Romualdus, abt	H. Romualdus		w	330	920		[]
+6	21	1970	2300	65535	100	g	H. Aloïsius Gonzaga, kloosterling	H. Aloïsius Gonzaga		w	331	920		[]
+6	22	1970	2300	65535	120		H. Paulinus van Nola, bisschop	H. Paulinus van Nola		w	332	908		[]
+6	22	1970	2300	65535	120		HH. John Fisher, bisschop, en Thomas More, martelaren	HH. John Fisher en Thomas More		r	333	904		[]
+6	24	1970	2300	65535	30	h	Geboorte van de H. Johannes de Doper	Geboorte van de H. Johannes de Doper		w	335	909		[]
+6	25	1970	2300	65535	110	g	Haarlem: H. Adalbert, diaken	Haarlem: H. Adalbert		w	336	931		[]
+6	26	1970	2300	65535	120		Haarlem en Utrecht: H. Jozefmaria Escrivá, priester	Haarlem en Utrecht: H. Jozefmaria Escrivá		w	575	909		[]
+6	26	1970	2300	65535	40	h	Opus Dei: H. Jozefmaria Escrivá, priester	Opus Dei: H. Jozefmaria Escrivá		w	575	909		[]
+6	27	1970	2300	65535	120		H. Cyrillus van Alexandrië, bisschop en kerkleraar	H. Cyrillus van Alexandrië		w	337	908 910		[]
+6	28	1970	2300	65535	100	g	H. Ireneus, bisschop en martelaar	H. Ireneus		r	338	905 908		[]
+6	29	1970	2300	65535	30	h	HH. Petrus en Paulus, apostelen	HH. Petrus en Paulus		r	339	903		[]
+6	30	1970	2300	65535	120		HH. Eerste Martelaren van Rome	HH. Eerste Martelaren van Rome		r	340	904		[]
+7	3	1970	2300	65535	70	f	H. Thomas, apostel	H. Thomas		r	342	903		[]
+7	4	1970	2300	65535	120		H. Elisabeth van Portugal	H. Elisabeth van Portugal		w	343	925		[]
+7	5	1970	2300	65535	120		H. Antonius Maria Zaccaria, priester	H. Antonius Maria Zaccaria		w	345	909 929 920		[]
+7	6	1970	2300	65535	120		H. Maria Goretti, maagd en martelares	H. Maria Goretti		r	346	906 913		[]
+7	7	1970	2300	65535	120		's-Hertogenbosch: Heilige maagd Maria, Zoete Moeder van Den Bosch	's-Hertogenbosch: H. Maria, Zoete Moeder van Den Bosch		w	349	902		[]
+7	7	1970	2300	65535	80	f	's-Hertogenbosch (stad): Heilige maagd Maria, Zoete Moeder van Den Bosch	's-Hertogenbosch (stad): H. Maria, Zoete Moeder van Den Bosch		w	349	902		[]
+7	8	1970	2300	65535	80	f	Breda: HH. Maria Adolfina en gezellinnen, maagden en martelaressen	Breda: HH. Maria Adolfina en gezellinnen		r	350	904		[]
+7	9	1970	2300	65535	80	f	Nederland: HH. Martelaren van Gorcum	Nederland: HH. Martelaren van Gorcum		r	352	904		[]
+7	9	1970	2300	65535	120		HH. Augustinus Zhao Rong, priester, en gezellen, martelaren	HH. Augustinus Zhao Rong en gezellen		r	551	904		[]
+7	11	1970	2300	65535	100	g	H. Benedictus, abt	H. Benedictus		w	356	920		[]
+7	11	1970	2300	65535	70	f	Europa: H. Benedictus, abt, patroon van het continent	Europa: H. Benedictus		w	357	920		[]
+7	13	1970	2300	65535	120		H. Henricus	H. Henricus		w	358	915		[]
+7	14	1970	2300	65535	120		H. Camillus de Lellis, priester	H. Camillus de Lellis		w	359	923		[]
+7	15	1970	2300	65535	100	g	H. Bonaventura, bisschop en kerkleraar	H. Bonaventura		w	360	908 910		[]
+7	16	1970	2300	65535	120		Heilige maagd Maria van de berg Karmel	H. Maria v/d berg Karmel		w	361	902		[]
+7	20	1970	2300	65535	120		H. Apollinaris, bisschop en martelaar	H. Apollinaris		r	552	905		[]
+7	21	1970	2300	65535	120		H. Laurentius van Brindisi, priester en kerkleraar	H. Laurentius van Brindisi		w	365	909 910		[]
+7	22	1970	2300	65535	70	f	H. Maria Magdalena	H. Maria Magdalena		w	366	917		[]
+7	23	1970	2300	65535	120		H. Birgitta, kloosterlinge	H. Birgitta		w	367	921		[]
+7	23	1970	2300	65535	80	f	Europa: H. Birgitta, kloosterlinge, patrones van het continent	Europa: H. Birgitta		w	540	921		[]
+7	24	1970	2300	65535	120		H. Charbel Makhlūf, priester	H. Charbel Makhlūf		w	553	909 920		[]
+7	25	1970	2300	65535	70	f	H. Jakobus, apostel (Bisdom bij de Belg. krijgsmacht - Titelfeest van de hoofdkerk)	H. Jakobus		r	369	903		[]
+7	26	1970	2300	65535	100	g	HH. Joachim en Anna, ouders van de heilige maagd Maria	HH. Joachim en Anna		w	371	914		[]
+7	27	1970	2300	65535	110	g	Nederland: Z. Titus Brandsma, priester en martelaar	Nederland: Z. Titus Brandsma		r	372	905 909 920		[]
+7	29	1970	2300	65535	100	g	H. Marta	H. Marta		w	374	917		[]
+7	30	1970	2300	65535	120		H. Petrus Chrysologus, bisschop en kerkleraar	H. Petrus Chrysologus		w	375	908 910		[]
+7	31	1970	2300	65535	100	g	H. Ignatius van Loyola, priester	H. Ignatius van Loyola		w	376	909 920		[]
+8	1	1970	2300	65535	100	g	H. Alfonsus Maria de'Liguori, bisschop en kerkleraar	H. Alfonsus Maria de'Liguori		w	377	908 910		[]
+8	2	1970	2300	65535	120		H. Eusebius van Vercelli, bisschop	H. Eusebius van Vercelli		w	378	908		[]
+8	2	1970	2300	65535	120		H. Petrus Julianus Eymard, priester	H. Petrus Julianus Eymard		w	544	909 920		[]
+8	4	1970	2300	65535	100	g	H. Johannes Maria Vianney, priester - H. Pastoor van Ars	H. Johannes Maria Vianney		w	379	909		[]
+8	5	1970	2300	65535	120		Kerkwijding van de basiliek van Maria de Meerdere	Kerkwijding basiliek van Maria de Meerdere		w	380	902		[]
+8	6	1970	2300	65535	50	f	Gedaanteverandering van de Heer	Gedaanteverandering v/d Heer		w	381			[]
+8	7	1970	2300	65535	120		HH. Sixtus II, paus, en gezellen, martelaren	HH. Sixtus II en gezellen		r	382	904		[]
+8	7	1970	2300	65535	120		H. Cajetanus, priester	H. Cajetanus		w	383	909 920		[]
+8	8	1970	2300	65535	100	g	H. Dominicus, priester	H. Dominicus		w	385	909 920		[]
+8	9	1970	2300	65535	120		H. Teresia Benedicta van het Kruis (Edith Stein), maagd en martelares	H. Teresia Benedicta v/h Kruis		r	386	906 921		[]
+8	9	1970	2300	65535	80	f	Europa: H. Teresia Benedicta van het Kruis, maagd en martelares, patrones van het continent	Europa: H. Teresia Benedicta v/h Kruis		r	541	906 921		[]
+8	10	1970	2300	65535	70	f	H. Laurentius, diaken en martelaar (patroon van het bisdom Rotterdam)	H. Laurentius		r	388	905		[]
+8	11	1970	2300	65535	100	g	H. Clara, maagd	H. Clara		w	390	912 921		[]
+8	12	1970	2300	65535	120		H. Johanna Francisca de Chantal, kloosterlinge	H. Johanna Francisca de Chantal		w	523	921		[]
+8	13	1970	2300	65535	120		HH. Pontianus, paus, en Hippolytus, priester, martelaren	HH. Pontianus en Hippolytus		r	392	904 909		[]
+8	14	1970	2300	65535	100	g	H. Maximiliaan Maria Kolbe, priester en martelaar	H. Maximiliaan Maria Kolbe		r	393	904 909		[]
+8	15	1970	2300	65535	30	h	Maria Tenhemelopneming (patroonsfeest van bisdom Antwerpen en Breda)	Maria Tenhemelopneming		w	394	902		[]
+8	16	1970	2300	65535	120		H. Stefanus van Hongarije	H. Stefanus van Hongarije		w	396	915		[]
+8	17	1970	2300	65535	120		Rotterdam: H. Jeroen, priester en martelaar	Rotterdam: H. Jeroen		r	398	905 931		[]
+8	19	1970	2300	65535	120		H. Johannes Eudes, priester	H. Johannes Eudes		w	399	909 920		[]
+8	20	1970	2300	65535	100	g	H. Bernardus, abt en kerkleraar	H. Bernardus		w	401	910 920		[]
+8	21	1970	2300	65535	100	g	H. Pius X, paus	H. Pius X		w	402	907		[]
+8	22	1970	2300	65535	100	g	Heilige maagd Maria, koningin	H. Maria, koningin		w	403	902		[]
+8	22	1970	2300	65535	80	f	Utrecht: Verjaardag van de wijding van de kathedraal	Utrecht: Verjaardag wijding kathedraal		w	404	901		[]
+8	23	1970	2300	65535	120		H. Rosa van Lima, maagd	H. Rosa van Lima		w	405	912 921		[]
+8	24	1970	2300	65535	70	f	H. Bartolomeüs, apostel	H. Bartolomeüs		r	406	903		[]
+8	25	1970	2300	65535	120		H. Lodewijk	H. Lodewijk		w	407	915		[]
+8	25	1970	2300	65535	120		H. Jozef de Calasanz, priester	H. Jozef de Calasanz		w	408	929 909		[]
+8	25	1970	2300	65535	80	f	's-Hertogenbosch: Verjaardag van de wijding van de kathedraal	's-Hertogenbosch: Verjaardag wijding kathedraal		w	409	901		[]
+8	27	1970	2300	65535	100	g	H. Monica	H. Monica		w	410	917		[]
+8	28	1970	2300	65535	100	g	H. Augustinus, bisschop en kerkleraar	H. Augustinus		w	411	908 910		[]
+8	29	1970	2300	65535	100	g	Marteldood van de H. Johannes de Doper	Marteldood H. Johannes de Doper		r	412	905		[]
+8	30	1970	2300	65535	120		's-Hertogenbosch: Z. Eustachius van Lieshout, priester	's-Hertogenbosch: Z. Eustachius van Lieshout		w	568	909		[]
+9	3	1970	2300	65535	100	g	H. Gregorius de Grote, paus en kerkleraar	H. Gregorius de Grote		w	415	907 910		[]
+9	3	1970	2300	65535	80	f	Roermond: Verjaardag van de wijding van de kathedraal	Roermond: Verjaardag wijding kathedraal		w	416	901		[]
+9	4	1970	2300	65535	110	g	Roermond: H. Gregorius de Grote, paus en kerkleraar	Roermond: H. Gregorius de Grote		w	415	907 910		[]
+9	8	1970	2300	65535	70	f	Maria Geboorte	Maria Geboorte		w	420	902		[]
+9	9	1970	2300	65535	120		H. Petrus Claver, priester	H. Petrus Claver		w	545	909 923		[]
+9	12	1970	2300	65535	120		De heilige naam van Maria	De heilige naam van Maria		w	554	902		[]
+9	13	1970	2300	65535	100	g	H. Johannes Chrysostomus, Bisschop en kerkleraar	H. Johannes Chrysostomus		w	424	908 910		[]
+9	14	1970	2300	65535	50	f	Kruisverheffing	Kruisverheffing		r	425			[]
+9	15	1970	2300	65535	100	g	Heilige maagd Maria, Moeder van Smarten	H. Maria, Moeder van Smarten		w	426	902		[]
+9	16	1970	2300	65535	100	g	HH. Cornelius, paus, en Cyprianus, bisschop, martelaren	HH. Cornelius en Cyprianus		r	427	904 909		[]
+9	17	1970	2300	65535	120		H. Robertus Bellarmino, bisschop en kerkleraar	H. Robertus Bellarmino		w	428	908 910		[]
+9	17	1970	2300	65535	120		Breda, 's-Hertogenbosch en Roermond: H. Lambertus, bisschop en martelaar	Breda, 's-Hertogenbosch en Roermond: H. Lambertus		r	429	905 908 931		[]
+9	19	1970	2300	65535	120		H. Januarius, bisschop en martelaar	H. Januarius		r	431	905 908		[]
+9	20	1970	2300	65535	100	g	HH. Andreas Kim Taegŏn, priester, en Paulus Chŏng Hasang, en gezellen, martelaren van Korea	HH. Andreas Kim Taegŏn, Paulus Chŏng en gezellen		r	433	904		[]
+9	21	1970	2300	65535	70	f	H. Matteüs, apostel en evangelist	H. Matteüs		r	434	903		[]
+9	23	1970	2300	65535	100	g	H. Pius van Pietrelcina, priester, gedachtenis	H. Pius van Pietrelcina		w	555	909 920		[]
+9	26	1970	2300	65535	120		HH. Cosmas en Damianus, martelaren	HH. Cosmas en Damianus		r	437	904		[]
+9	27	1970	2300	65535	100	g	H. Vincentius de Paul, priester	H. Vincentius de Paul		w	438	909 923		[]
+9	28	1970	2300	65535	120		H. Wenceslaus, martelaar	H. Wenceslaus		r	439	905		[]
+9	28	1970	2300	65535	120		HH. Laurentius Ruiz en gezellen, martelaren van Japan	HH. Laurentius Ruiz en gezellen		r	440	904		[]
+9	29	1970	2300	65535	70	f	HH. Michaël, Gabriël en Rafaël, aartsengelen	HH. Michaël, Gabriël en Rafaël		w	441			[]
+9	30	1970	2300	65535	100	g	H. Hieronymus, priester en kerkleraar	H. Hieronymus		w	442	910		[]
+10	1	1970	2300	65535	100	g	H. Teresia van het Kind Jezus, maagd en kerklerares	H. Teresia v/h Kind Jezus		w	443	912		[]
+10	2	1970	2300	65535	100	g	HH. Engelbewaarders	HH. Engelbewaarders		w	447			[]
+10	3	1970	2300	65535	110	g	Haarlem: H. Bavo	Haarlem: H. Bavo		w	445	915		[]
+10	4	1970	2300	65535	100	g	H. Franciscus van Assisi	H. Franciscus van Assisi		w	449	920		[]
+10	5	1970	2300	65535	120		H. Faustina Kowalska, maagd	H. Faustina Kowalska		w	579	912		[]
+10	6	1970	2300	65535	120		H. Bruno, priester	H. Bruno		w	451	909 920		[]
+10	7	1970	2300	65535	100	g	Heilige maagd Maria van de Rozenkrans	H. Maria v/d Rozenkrans		w	453	902		[]
+10	9	1970	2300	65535	120		HH. Dionysius, bisschop, en gezellen, martelaren	HH. Dionysius en gezellen		r	454	904		[]
+10	9	1970	2300	65535	120		H. Johannes Leonardi, priester	H. Johannes Leonardi		w	455	909 923		[]
+10	10	1970	2300	65535	110	g	Roermond: H. Maagd Maria, Sterre der Zee	Roermond: H. Maria, Sterre der Zee		w	563	902		[]
+10	10	1970	2300	65535	80	f	Maastricht: H. Maagd Maria, Sterre der Zee	Maastricht: H. Maria, Sterre der Zee		w	564	902		[]
+10	11	1970	2300	65535	120		H. Johannes XXIII, paus	H. Johannes XXIII		w	574	907		[]
+10	14	1970	2300	65535	120		H. Callistus I, paus en martelaar	H. Callistus I		r	458	905 907		[]
+10	15	1970	2300	65535	100	g	H. Teresia van Jezus, maagd en kerklerares	H. Teresia van Jezus		w	460	912		[]
+10	16	1970	2300	65535	120		H. Hedwig, kloosterlinge	H. Hedwig		w	461	925 921		[]
+10	16	1970	2300	65535	120		H. Margareta-Maria Alacoque, maagd	H. Margareta-Maria Alacoque		w	462	912 921		[]
+10	17	1970	2300	65535	100	g	H. Ignatius van Antiochië, bisschop en martelaar	H. Ignatius van Antiochië		r	463	905 908		[]
+10	18	1970	2300	65535	70	f	H. Lucas, evangelist	H. Lucas		r	464	903		[]
+10	18	1970	2300	65535	69	f	Haastrecht: Maria ter Weghe - Onze Lieve Vrouw van Haastrecht	Haastrecht: Maria ter Weghe		w	561	902		[]
+10	19	1970	2300	65535	120		HH. Johannes de Brébeuf en Isaac Jogues, priesters, en gezellen, martelaren	HH. Johannes de Brébeuf, Isaac Jogues en gezellen		r	465	904 909		[]
+10	19	1970	2300	65535	120		H. Paulus van het Kruis, priester	H. Paulus v/h Kruis		w	466	909 920		[]
+10	20	1970	2300	65535	120		Rotterdam: Maria ter Weghe - Onze Lieve Vrouw van Haastrecht	Rotterdam: Maria ter Weghe		w	560	902		[]
+10	20	1970	2300	65535	80	f	Haastrecht: H. Lucas, evangelist	Haastrecht: H. Lucas		r	464	903		[]
+10	22	1970	2300	65535	120		H. Johannes Paulus II, paus	H. Johannes Paulus II		w	569	907		[]
+10	23	1970	2300	65535	120		H. Johannes van Capestrano, priester	H. Johannes van Capestrano		w	468	909		[]
+10	24	1970	2300	65535	120		H. Antonius Maria Claret, bisschop	H. Antonius Maria Claret		w	472	908		[]
+10	25	1970	2300	65535	40	h	Nederland: Verjaardag van de wijding van alle kerken waarvan de wijdingsdatum niet bekend is	Nederland: Verjaardag kerken met onbekende wijdingsdatum		w	473	900		[]
+10	28	1970	2300	65535	70	f	HH. Simon en Judas, apostelen	HH. Simon en Judas		r	474	903		[]
+10	30	1970	2300	65535	120		Roermond: Z. Maria Teresa van de H. Jozef, maagd	Roermond: Z. Maria Teresa van de H. Jozef		w	565	912		[]
+11	1	1970	2300	65535	30	h	Allerheiligen	Allerheiligen		w	476			[]
+11	2	1970	2300	65535	61		Gedachtenis van alle overleden gelovigen - Allerzielen	Allerzielen		p	477			[]
+11	3	1970	2300	65535	120		H. Martinus de Porres, kloosterling	H. Martinus de Porres		w	478	920		[]
+11	3	1970	2300	65535	120		Breda, 's-Hertogenbosch en Roermond: H. Hubertus, bisschop	Breda, 's-Hertogenbosch en Roermond: H. Hubertus		w	479	908 931		[]
+11	4	1970	2300	65535	100	g	H. Carolus Borromeo, bisschop	H. Carolus Borromeo		w	481	908		[]
+11	6	1970	2300	65535	80	f	Nederland: Alle HH. Verkondigers van het geloof in onze streken	Nederland: HH. geloofsverkondigers in onze streken		w	483	930		[]
+11	7	1970	2300	65535	40	h	Nederland: H. Willibrord, bisschop, verkondiger van ons geloof, patroon van de kerkprovincie (patroon van bisdom Utrecht en Haarlem)	Nederland: H. Willibrord		w	484	908		[]
+11	8	1970	2300	65535	110	g	Utrecht: Alle HH. Bisschoppen van Utrecht, Albrik, Ansfried, Bernulf, Frederik, Hunger, Radboud en abt Gregorius	Utrecht: HH. Bisschoppen van Utrecht		w	487	930		[]
+11	8	1970	2300	65535	110	g	Groningen: H. Willehad, bisschop	Groningen: H. Willehad		w	488	931		[]
+11	9	1970	2300	65535	50	f	Kerkwijding van de basiliek van Lateranen	Kerkwijding basiliek van Lateranen		w	489	901		[]
+11	10	1970	2300	65535	100	g	H. Leo de Grote, paus en kerkleraar	H. Leo de Grote		w	490	907 910		[]
+11	11	1970	2300	65535	100	g	H. Martinus van Tours, bisschop	H. Martinus van Tours		w	491	908		[]
+11	11	1970	2300	65535	80	f	Ordinariaat voor de Ned. Strijdkrachten: H. Martinus van Tours, bisschop, patroon van het ordinariaat	Ned. Strijdkrachten: H. Martinus van Tours		w	492	908		[]
+11	12	1970	2300	65535	100	g	H. Josafat, bisschop en martelaar	H. Josafat		r	493	905 908		[]
+11	15	1970	2300	65535	120		H. Albertus de Grote, bisschop en kerkleraar	H. Albertus de Grote		w	496	908 910		[]
+11	16	1970	2300	65535	120		H. Margarita van Schotland	H. Margarita van Schotland		w	497	925		[]
+11	16	1970	2300	65535	120		H. Gertrudis, maagd	H. Gertrudis		w	498	912 921		[]
+11	17	1970	2300	65535	100	g	H. Elisabeth van Hongarije, kloosterlinge	H. Elisabeth van Hongarije		w	499	925		[]
+11	18	1970	2300	65535	120		Kerkwijding van de basilieken van de apostelen Petrus en Paulus	Kerkwijding basilieken v/d HH. Petrus en Paulus		w	500	903		[]
+11	21	1970	2300	65535	100	g	Opdracht van de heilige maagd Maria	Opdracht v/d H. Maria		w	501	902		[]
+11	22	1970	2300	65535	100	g	H. Cecilia, maagd en martelares	H. Cecilia		r	502	906 913		[]
+11	23	1970	2300	65535	120		H. Clemens I, paus en martelaar	H. Clemens I		r	503	905 907		[]
+11	23	1970	2300	65535	120		H. Columbanus, abt	H. Columbanus		w	504	909 920		[]
+11	24	1970	2300	65535	100	g	HH. Andreas Dung-Lac, priester, en gezellen, martelaren van Viëtnam	HH. Andreas Dung-Lac en gezellen		r	506	904		[]
+11	25	1970	2300	65535	120		H. Catharina van Alexandrië, maagd en martelares	H. Catharina van Alexandrië		r	556	906 913		[]
+11	27	1970	2300	65535	120		's-Hertogenbosch: H. Oda, maagd	's-Hertogenbosch: H. Oda		w	570	912		[]
+11	28	1970	2300	65535	120		Roermond: Z. Maria Helena Stollenwerk, maagd	Roermond: Z. Maria Helena Stollenwerk		w	559	912		[]
+11	30	1970	2300	65535	70	f	H. Andreas, apostel	H. Andreas		r	512	903		[]
+12	1	1970	2300	65535	120		Breda: H. Eligius, bisschop	Breda: H. Eligius		w	514	908 931		[]
+12	3	1970	2300	65535	100	g	H. Franciscus Xaverius, priester	H. Franciscus Xaverius		w	516	909		[]
+12	4	1970	2300	65535	120		H. Johannes van Damascus, priester en kerkleraar	H. Johannes van Damascus		w	517	909 910		[]
+12	6	1970	2300	65535	120		H. Nicolaas, bisschop	H. Nicolaas		w	518	908		[]
+12	7	1970	2300	65535	100	g	H. Ambrosius, bisschop en kerkleraar	H. Ambrosius		w	519	908 910		[]
+12	8	1970	2300	65535	30	h	Onbevlekte Ontvangenis van de heilige maagd Maria (patroonsfeest van het bisdom Roermond)	Onbevlekte Ontvangenis v/d H. Maria		w	520	902		[]
+12	9	1970	2300	65535	120		H. Juan Diego Cuauhtlatoatzin	H. Juan Diego Cuauhtlatoatzin		w	557	915		[]
+12	10	1970	2300	65535	120		H. Maagd Maria van Loreto	H. Maria van Loreto		w	581	902		[]
+12	11	1970	2300	65535	120		H. Damasus I, paus	H. Damasus I		w	522	907		[]
+12	12	1970	2300	65535	120		H. Maagd Maria van Guadalupe	H. Maria van Guadalupe		w	558	902		[]
+12	12	1970	2300	65535	80	f	Breda: Verjaardag van de wijding van de bisschopskerk	Breda: Verjaardag wijding bisschopskerk		w	528	901		[]
+12	13	1970	2300	65535	100	g	H. Lucia, maagd en martelares	H. Lucia		r	524	906 913		[]
+12	14	1970	2300	65535	100	g	H. Johannes van het Kruis, priester en kerkleraar	H. Johannes van het Kruis		w	525	909 910		[]
+12	21	1970	2300	65535	120		Buiten Nederland: H. Petrus Canisius, priester en kerkleraar	Buiten Nederland: H. Petrus Canisius		w	529	910		[]
+12	23	1970	2300	65535	120		H. Johannes van Kenty, priester	H. Johannes van Kenty		w	530	923		[]
+12	29	1970	2300	65535	120		H. Thomas Becket, bisschop en martelaar	H. Thomas Becket		r	534	905		[]
+12	31	1970	2300	65535	120		H. Silvester I, paus	H. Silvester I		w	535	907		[]
+X	12	1970	2300	65535	120		Haarlem: Mirakel van het H. Sacrament te Amsterdam	Haarlem: Mirakel v/h H. Sacrament te Amsterdam		w	536			[]
+X	14	1970	2300	65535	110	g	Haarlem: Onze Lieve Vrouw ter Nood	Haarlem: O.L. Vrouw ter Nood		w	538	902		[]
+														[]
+														[]
+D	0				60		1e zondag door het jaar		d	g			600	[]
+D	1				130		Maandag in de 1e week door het jaar		d	g			601	"{""ui"":{""an"":""792""},""lz"":{""ps"":""792-794"",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""Afsluitend gebed""},""mo"":{""a"":""794-798"",""ps"":""795-797"",""np"":""797-798""},""mi"":{""a"":""798-802"",""ps"":""799-801"",""np"":""801-802""},""av"":{""a"":""802-806"",""ps"":""802-805"",""np"":""805-806""},""ds"":{""a"":""onbekend""}}"
+D	2				130		Dinsdag in de 1e week door het jaar		d	g			602	"{""ui"":{""an"":""806""},""lz"":{""ps"":""806-809"",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""Afsluitend gebed""},""mo"":{""a"":""809-814"",""ps"":""809-813"",""np"":""813-814""},""mi"":{""a"":""814-817"",""ps"":""814-816"",""np"":""816-817""},""av"":{""a"":""817-821"",""ps"":""817-820"",""np"":""820-821""},""ds"":{""a"":""onbekend""}}"
+D	3				130		Woensdag in de 1e week door het jaar		d	g			603	"{""ui"":{""an"":""821""},""lz"":{""ps"":""821-824"",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""Afsluitend gebed""},""mo"":{""a"":""824-828"",""ps"":""824-827"",""np"":""827-828""},""mi"":{""a"":""828-831"",""ps"":""828-830"",""np"":""830-831""},""av"":{""a"":""831-835"",""ps"":""831-834"",""np"":""834-835""},""ds"":{""a"":""onbekend""}}"
+D	4				130		Donderdag in de 1e week door het jaar		d	g			604	"{""ui"":{""an"":""""},""lz"":{""ps"":"""",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""Afsluitend gebed""},""mo"":{""a"":"""",""ps"":"""",""np"":""""},""mi"":{""a"":"""",""ps"":"""",""np"":""""},""av"":{""a"":"""",""ps"":"""",""np"":""""},""ds"":{""a"":""onbekend""}}"
+D	5				130		Vrijdag in de 1e week door het jaar		d	g			605	"{""ui"":{""an"":""""},""lz"":{""ps"":"""",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""Afsluitend gebed""},""mo"":{""a"":"""",""ps"":"""",""np"":""""},""mi"":{""a"":"""",""ps"":"""",""np"":""""},""av"":{""a"":"""",""ps"":"""",""np"":""""},""ds"":{""a"":""onbekend""}}"
+D	6				130		Zaterdag in de 1e week door het jaar		d	g			606	"{""ui"":{""an"":""""},""lz"":{""ps"":"""",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""Afsluitend gebed""},""mo"":{""a"":"""",""ps"":"""",""np"":""""},""mi"":{""a"":"""",""ps"":"""",""np"":""""},""av"":{""a"":"""",""ps"":"""",""np"":""""},""ds"":{""a"":""onbekend""}}"
+D	6				120		Maria op zaterdag	Maria op zaterdag		w	599			[]
+D	7				60		2e zondag door het jaar		d	g			607	"{""va"":{""a"":null,""b"":{""hy"":""onbekend"",""ag"":""588""}},""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""588""},""mo"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""588""}},""mi"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""588""}},""av"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""588""}},""ds"":{""a"":""onbekend""}}"
+D	8				130		Maandag in de 2e week door het jaar		d	g			608	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""588""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	9				130		Dinsdag in de 2e week door het jaar		d	g			609	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""588""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	10				130		Woensdag in de 2e week door het jaar		d	g			610	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""588""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	11				130		Donderdag in de 2e week door het jaar		d	g			611	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""588""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	12				130		Vrijdag in de 2e week door het jaar		d	g			612	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""588""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	13				130		Zaterdag in de 2e week door het jaar		d	g			613	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""588""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	13				120		Maria op zaterdag	Maria op zaterdag		w	599			[]
+D	14				60		3e zondag door het jaar		d	g			614	"{""va"":{""a"":null,""b"":{""hy"":""onbekend"",""ag"":""589""}},""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""589""},""mo"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""589""}},""mi"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""589""}},""av"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""589""}},""ds"":{""a"":""onbekend""}}"
+D	15				130		Maandag in de 3e week door het jaar		d	g			615	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""589""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	16				130		Dinsdag in de 3e week door het jaar		d	g			616	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""589""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	17				130		Woensdag in de 3e week door het jaar		d	g			617	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""589""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	18				130		Donderdag in de 3e week door het jaar		d	g			618	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""589""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	19				130		Vrijdag in de 3e week door het jaar		d	g			619	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""589""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	20				130		Zaterdag in de 3e week door het jaar		d	g			620	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""589""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	20				120		Maria op zaterdag	Maria op zaterdag		w	599			[]
+D	21				60		4e zondag door het jaar		d	g			621	"{""va"":{""a"":null,""b"":{""hy"":""onbekend"",""ag"":""591""}},""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""591""},""mo"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""591""}},""mi"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""591""}},""av"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""591""}},""ds"":{""a"":""onbekend""}}"
+D	22				130		Maandag in de 4e week door het jaar		d	g			622	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""591""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	23				130		Dinsdag in de 4e week door het jaar		d	g			623	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""591""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	24				130		Woensdag in de 4e week door het jaar		d	g			624	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""591""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	25				130		Donderdag in de 4e week door het jaar		d	g			625	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""591""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	26				130		Vrijdag in de 4e week door het jaar		d	g			626	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""591""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	27				130		Zaterdag in de 4e week door het jaar		d	g			627	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""591""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	27				120		Maria op zaterdag	Maria op zaterdag		w	599			[]
+D	28				60		5e zondag door het jaar		d	g			628	"{""va"":{""a"":""771-775"",""b"":{""hy"":""onbekend"",""ag"":""592-593""}},""ui"":{""an"":""775""},""lz"":{""ps"":""776-779"",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""592-593""},""mo"":{""a"":""779-784"",""ps"":""779-783"",""np"":""783-784"",""b"":{""ag"":""592-593""}},""mi"":{""a"":""784-787"",""ps"":""784-786"",""np"":""786-787"",""b"":{""ag"":""592-593""}},""av"":{""a"":""787-791"",""ps"":""787-790"",""np"":""791"",""b"":{""ag"":""592-593""}},""ds"":{""a"":""onbekend""}}"
+D	29				130		Maandag in de 5e week door het jaar		d	g			629	"{""ui"":{""an"":""792""},""lz"":{""ps"":""792-794"",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""592-593""},""mo"":{""a"":""794-798"",""ps"":""795-797"",""np"":""797-798""},""mi"":{""a"":""798-802"",""ps"":""799-801"",""np"":""801-802""},""av"":{""a"":""802-806"",""ps"":""802-805"",""np"":""805-806""},""ds"":{""a"":""onbekend""}}"
+D	30				130		Dinsdag in de 5e week door het jaar		d	g			630	"{""ui"":{""an"":""806""},""lz"":{""ps"":""806-809"",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""592-593""},""mo"":{""a"":""809-814"",""ps"":""809-813"",""np"":""813-814""},""mi"":{""a"":""814-817"",""ps"":""814-816"",""np"":""816-817""},""av"":{""a"":""817-821"",""ps"":""817-820"",""np"":""820-821""},""ds"":{""a"":""onbekend""}}"
+D	31				130		Woensdag in de 5e week door het jaar		d	g			631	"{""ui"":{""an"":""821""},""lz"":{""ps"":""821-824"",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""592-593""},""mo"":{""a"":""824-828"",""ps"":""824-827"",""np"":""827-828""},""mi"":{""a"":""828-831"",""ps"":""828-830"",""np"":""830-831""},""av"":{""a"":""831-835"",""ps"":""831-834"",""np"":""834-835""},""ds"":{""a"":""onbekend""}}"
+D	32				130		Donderdag in de 5e week door het jaar		d	g			632	"{""ui"":{""an"":""""},""lz"":{""ps"":"""",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""592-593""},""mo"":{""a"":"""",""ps"":"""",""np"":""""},""mi"":{""a"":"""",""ps"":"""",""np"":""""},""av"":{""a"":"""",""ps"":"""",""np"":""""},""ds"":{""a"":""onbekend""}}"
+D	33				130		Vrijdag in de 5e week door het jaar		d	g			633	"{""ui"":{""an"":""""},""lz"":{""ps"":"""",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""592-593""},""mo"":{""a"":"""",""ps"":"""",""np"":""""},""mi"":{""a"":"""",""ps"":"""",""np"":""""},""av"":{""a"":"""",""ps"":"""",""np"":""""},""ds"":{""a"":""onbekend""}}"
+D	34				130		Zaterdag in de 5e week door het jaar		d	g			634	"{""ui"":{""an"":""""},""lz"":{""ps"":"""",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""592-593""},""mo"":{""a"":"""",""ps"":"""",""np"":""""},""mi"":{""a"":"""",""ps"":"""",""np"":""""},""av"":{""a"":"""",""ps"":"""",""np"":""""},""ds"":{""a"":""onbekend""}}"
+D	34				120		Maria op zaterdag	Maria op zaterdag		w	599			[]
+D	35				60		6e zondag door het jaar		d	g			635	"{""va"":{""a"":null,""b"":{""hy"":""onbekend"",""ag"":""594""}},""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""594""},""mo"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""594""}},""mi"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""594""}},""av"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""594""}},""ds"":{""a"":""onbekend""}}"
+D	36				130		Maandag in de 6e week door het jaar		d	g			636	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""594""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	37				130		Dinsdag in de 6e week door het jaar		d	g			637	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""594""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	38				130		Woensdag in de 6e week door het jaar		d	g			638	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""594""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	39				130		Donderdag in de 6e week door het jaar		d	g			639	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""594""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	40				130		Vrijdag in de 6e week door het jaar		d	g			640	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""594""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	41				130		Zaterdag in de 6e week door het jaar		d	g			641	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""594""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	41				120		Maria op zaterdag	Maria op zaterdag		w	599			[]
+D	42				60		7e zondag door het jaar		d	g			642	"{""va"":{""a"":null,""b"":{""hy"":""onbekend"",""ag"":""596""}},""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""596""},""mo"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""596""}},""mi"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""596""}},""av"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""596""}},""ds"":{""a"":""onbekend""}}"
+D	43				130		Maandag in de 7e week door het jaar		d	g			643	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""596""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	44				130		Dinsdag in de 7e week door het jaar		d	g			644	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""596""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	45				130		Woensdag in de 7e week door het jaar		d	g			645	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""596""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	46				130		Donderdag in de 7e week door het jaar		d	g			646	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""596""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	47				130		Vrijdag in de 7e week door het jaar		d	g			647	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""596""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	48				130		Zaterdag in de 7e week door het jaar		d	g			648	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""596""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	48				120		Maria op zaterdag	Maria op zaterdag		w	599			[]
+D	49				60		8e zondag door het jaar		d	g			649	"{""va"":{""a"":null,""b"":{""hy"":""onbekend"",""ag"":""""}},""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""mi"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""av"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""ds"":{""a"":""onbekend""}}"
+D	50				130		Maandag in de 8e week door het jaar		d	g			650	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	51				130		Dinsdag in de 8e week door het jaar		d	g			651	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	52				130		Woensdag in de 8e week door het jaar		d	g			652	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	53				130		Donderdag in de 8e week door het jaar		d	g			653	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	54				130		Vrijdag in de 8e week door het jaar		d	g			654	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	55				130		Zaterdag in de 8e week door het jaar		d	g			655	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	55				120		Maria op zaterdag	Maria op zaterdag		w	599			[]
+D	56				60		9e zondag door het jaar		d	g			656	"{""va"":{""a"":""771-775"",""b"":{""hy"":""onbekend"",""ag"":""""}},""ui"":{""an"":""775""},""lz"":{""ps"":""776-779"",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":""779-784"",""ps"":""779-783"",""np"":""783-784"",""b"":{""ag"":""""}},""mi"":{""a"":""784-787"",""ps"":""784-786"",""np"":""786-787"",""b"":{""ag"":""""}},""av"":{""a"":""787-791"",""ps"":""787-790"",""np"":""791"",""b"":{""ag"":""""}},""ds"":{""a"":""onbekend""}}"
+D	57				130		Maandag in de 9e week door het jaar		d	g			657	"{""ui"":{""an"":""792""},""lz"":{""ps"":""792-794"",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":""794-798"",""ps"":""795-797"",""np"":""797-798""},""mi"":{""a"":""798-802"",""ps"":""799-801"",""np"":""801-802""},""av"":{""a"":""802-806"",""ps"":""802-805"",""np"":""805-806""},""ds"":{""a"":""onbekend""}}"
+D	58				130		Dinsdag in de 9e week door het jaar		d	g			658	"{""ui"":{""an"":""806""},""lz"":{""ps"":""806-809"",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":""809-814"",""ps"":""809-813"",""np"":""813-814""},""mi"":{""a"":""814-817"",""ps"":""814-816"",""np"":""816-817""},""av"":{""a"":""817-821"",""ps"":""817-820"",""np"":""820-821""},""ds"":{""a"":""onbekend""}}"
+D	59				130		Woensdag in de 9e week door het jaar		d	g			659	"{""ui"":{""an"":""821""},""lz"":{""ps"":""821-824"",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":""824-828"",""ps"":""824-827"",""np"":""827-828""},""mi"":{""a"":""828-831"",""ps"":""828-830"",""np"":""830-831""},""av"":{""a"":""831-835"",""ps"":""831-834"",""np"":""834-835""},""ds"":{""a"":""onbekend""}}"
+D	60				130		Donderdag in de 9e week door het jaar		d	g			660	"{""ui"":{""an"":""""},""lz"":{""ps"":"""",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":"""",""ps"":"""",""np"":""""},""mi"":{""a"":"""",""ps"":"""",""np"":""""},""av"":{""a"":"""",""ps"":"""",""np"":""""},""ds"":{""a"":""onbekend""}}"
+D	61				130		Vrijdag in de 9e week door het jaar		d	g			661	"{""ui"":{""an"":""""},""lz"":{""ps"":"""",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":"""",""ps"":"""",""np"":""""},""mi"":{""a"":"""",""ps"":"""",""np"":""""},""av"":{""a"":"""",""ps"":"""",""np"":""""},""ds"":{""a"":""onbekend""}}"
+D	62				130		Zaterdag in de 9e week door het jaar		d	g			662	"{""ui"":{""an"":""""},""lz"":{""ps"":"""",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":"""",""ps"":"""",""np"":""""},""mi"":{""a"":"""",""ps"":"""",""np"":""""},""av"":{""a"":"""",""ps"":"""",""np"":""""},""ds"":{""a"":""onbekend""}}"
+D	62				120		Maria op zaterdag	Maria op zaterdag		w	599			[]
+D	63				60		10e zondag door het jaar		d	g			663	"{""va"":{""a"":null,""b"":{""hy"":""onbekend"",""ag"":""""}},""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""mi"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""av"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""ds"":{""a"":""onbekend""}}"
+D	64				130		Maandag in de 10e week door het jaar		d	g			664	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	65				130		Dinsdag in de 10e week door het jaar		d	g			665	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	66				130		Woensdag in de 10e week door het jaar		d	g			666	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	67				130		Donderdag in de 10e week door het jaar		d	g			667	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	68				130		Vrijdag in de 10e week door het jaar		d	g			668	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	69				130		Zaterdag in de 10e week door het jaar		d	g			669	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	69				120		Maria op zaterdag	Maria op zaterdag		w	599			[]
+D	70				60		11e zondag door het jaar		d	g			670	"{""va"":{""a"":null,""b"":{""hy"":""onbekend"",""ag"":""""}},""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""mi"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""av"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""ds"":{""a"":""onbekend""}}"
+D	71				130		Maandag in de 11e week door het jaar		d	g			671	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	72				130		Dinsdag in de 11e week door het jaar		d	g			672	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	73				130		Woensdag in de 11e week door het jaar		d	g			673	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	74				130		Donderdag in de 11e week door het jaar		d	g			674	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	75				130		Vrijdag in de 11e week door het jaar		d	g			675	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	76				130		Zaterdag in de 11e week door het jaar		d	g			676	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	76				120		Maria op zaterdag	Maria op zaterdag		w	599			[]
+D	77				60		12e zondag door het jaar		d	g			677	"{""va"":{""a"":null,""b"":{""hy"":""onbekend"",""ag"":""""}},""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""mi"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""av"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""ds"":{""a"":""onbekend""}}"
+D	78				130		Maandag in de 12e week door het jaar		d	g			678	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	79				130		Dinsdag in de 12e week door het jaar		d	g			679	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	80				130		Woensdag in de 12e week door het jaar		d	g			680	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	81				130		Donderdag in de 12e week door het jaar		d	g			681	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	82				130		Vrijdag in de 12e week door het jaar		d	g			682	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	83				130		Zaterdag in de 12e week door het jaar		d	g			683	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	83				120		Maria op zaterdag	Maria op zaterdag		w	599			[]
+D	84				60		13e zondag door het jaar		d	g			684	"{""va"":{""a"":""771-775"",""b"":{""hy"":""onbekend"",""ag"":""""}},""ui"":{""an"":""775""},""lz"":{""ps"":""776-779"",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":""779-784"",""ps"":""779-783"",""np"":""783-784"",""b"":{""ag"":""""}},""mi"":{""a"":""784-787"",""ps"":""784-786"",""np"":""786-787"",""b"":{""ag"":""""}},""av"":{""a"":""787-791"",""ps"":""787-790"",""np"":""791"",""b"":{""ag"":""""}},""ds"":{""a"":""onbekend""}}"
+D	85				130		Maandag in de 13e week door het jaar		d	g			685	"{""ui"":{""an"":""792""},""lz"":{""ps"":""792-794"",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":""794-798"",""ps"":""795-797"",""np"":""797-798""},""mi"":{""a"":""798-802"",""ps"":""799-801"",""np"":""801-802""},""av"":{""a"":""802-806"",""ps"":""802-805"",""np"":""805-806""},""ds"":{""a"":""onbekend""}}"
+D	86				130		Dinsdag in de 13e week door het jaar		d	g			686	"{""ui"":{""an"":""806""},""lz"":{""ps"":""806-809"",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":""809-814"",""ps"":""809-813"",""np"":""813-814""},""mi"":{""a"":""814-817"",""ps"":""814-816"",""np"":""816-817""},""av"":{""a"":""817-821"",""ps"":""817-820"",""np"":""820-821""},""ds"":{""a"":""onbekend""}}"
+D	87				130		Woensdag in de 13e week door het jaar		d	g			687	"{""ui"":{""an"":""821""},""lz"":{""ps"":""821-824"",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":""824-828"",""ps"":""824-827"",""np"":""827-828""},""mi"":{""a"":""828-831"",""ps"":""828-830"",""np"":""830-831""},""av"":{""a"":""831-835"",""ps"":""831-834"",""np"":""834-835""},""ds"":{""a"":""onbekend""}}"
+D	88				130		Donderdag in de 13e week door het jaar		d	g			688	"{""ui"":{""an"":""""},""lz"":{""ps"":"""",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":"""",""ps"":"""",""np"":""""},""mi"":{""a"":"""",""ps"":"""",""np"":""""},""av"":{""a"":"""",""ps"":"""",""np"":""""},""ds"":{""a"":""onbekend""}}"
+D	89				130		Vrijdag in de 13e week door het jaar		d	g			689	"{""ui"":{""an"":""""},""lz"":{""ps"":"""",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":"""",""ps"":"""",""np"":""""},""mi"":{""a"":"""",""ps"":"""",""np"":""""},""av"":{""a"":"""",""ps"":"""",""np"":""""},""ds"":{""a"":""onbekend""}}"
+D	90				130		Zaterdag in de 13e week door het jaar		d	g			690	"{""ui"":{""an"":""""},""lz"":{""ps"":"""",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":"""",""ps"":"""",""np"":""""},""mi"":{""a"":"""",""ps"":"""",""np"":""""},""av"":{""a"":"""",""ps"":"""",""np"":""""},""ds"":{""a"":""onbekend""}}"
+D	90				120		Maria op zaterdag	Maria op zaterdag		w	599			[]
+D	91				60		14e zondag door het jaar		d	g			691	"{""va"":{""a"":null,""b"":{""hy"":""onbekend"",""ag"":""""}},""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""mi"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""av"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""ds"":{""a"":""onbekend""}}"
+D	92				130		Maandag in de 14e week door het jaar		d	g			692	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	93				130		Dinsdag in de 14e week door het jaar		d	g			693	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	94				130		Woensdag in de 14e week door het jaar		d	g			694	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	95				130		Donderdag in de 14e week door het jaar		d	g			695	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	96				130		Vrijdag in de 14e week door het jaar		d	g			696	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	97				130		Zaterdag in de 14e week door het jaar		d	g			697	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	97				120		Maria op zaterdag	Maria op zaterdag		w	599			[]
+D	98				60		15e zondag door het jaar		d	g			698	"{""va"":{""a"":null,""b"":{""hy"":""onbekend"",""ag"":""""}},""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""mi"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""av"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""ds"":{""a"":""onbekend""}}"
+D	99				130		Maandag in de 15e week door het jaar		d	g			699	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	100				130		Dinsdag in de 15e week door het jaar		d	g			700	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	101				130		Woensdag in de 15e week door het jaar		d	g			701	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	102				130		Donderdag in de 15e week door het jaar		d	g			702	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	103				130		Vrijdag in de 15e week door het jaar		d	g			703	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	104				130		Zaterdag in de 15e week door het jaar		d	g			704	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	104				120		Maria op zaterdag	Maria op zaterdag		w	599			[]
+D	105				60		16e zondag door het jaar		d	g			705	"{""va"":{""a"":null,""b"":{""hy"":""onbekend"",""ag"":""""}},""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""mi"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""av"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""ds"":{""a"":""onbekend""}}"
+D	106				130		Maandag in de 16e week door het jaar		d	g			706	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	107				130		Dinsdag in de 16e week door het jaar		d	g			707	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	108				130		Woensdag in de 16e week door het jaar		d	g			708	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	109				130		Donderdag in de 16e week door het jaar		d	g			709	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	110				130		Vrijdag in de 16e week door het jaar		d	g			710	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	111				130		Zaterdag in de 16e week door het jaar		d	g			711	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	111				120		Maria op zaterdag	Maria op zaterdag		w	599			[]
+D	112				60		17e zondag door het jaar		d	g			712	"{""va"":{""a"":""771-775"",""b"":{""hy"":""onbekend"",""ag"":""""}},""ui"":{""an"":""775""},""lz"":{""ps"":""776-779"",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":""779-784"",""ps"":""779-783"",""np"":""783-784"",""b"":{""ag"":""""}},""mi"":{""a"":""784-787"",""ps"":""784-786"",""np"":""786-787"",""b"":{""ag"":""""}},""av"":{""a"":""787-791"",""ps"":""787-790"",""np"":""791"",""b"":{""ag"":""""}},""ds"":{""a"":""onbekend""}}"
+D	113				130		Maandag in de 17e week door het jaar		d	g			713	"{""ui"":{""an"":""792""},""lz"":{""ps"":""792-794"",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":""794-798"",""ps"":""795-797"",""np"":""797-798""},""mi"":{""a"":""798-802"",""ps"":""799-801"",""np"":""801-802""},""av"":{""a"":""802-806"",""ps"":""802-805"",""np"":""805-806""},""ds"":{""a"":""onbekend""}}"
+D	114				130		Dinsdag in de 17e week door het jaar		d	g			714	"{""ui"":{""an"":""806""},""lz"":{""ps"":""806-809"",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":""809-814"",""ps"":""809-813"",""np"":""813-814""},""mi"":{""a"":""814-817"",""ps"":""814-816"",""np"":""816-817""},""av"":{""a"":""817-821"",""ps"":""817-820"",""np"":""820-821""},""ds"":{""a"":""onbekend""}}"
+D	115				130		Woensdag in de 17e week door het jaar		d	g			715	"{""ui"":{""an"":""821""},""lz"":{""ps"":""821-824"",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":""824-828"",""ps"":""824-827"",""np"":""827-828""},""mi"":{""a"":""828-831"",""ps"":""828-830"",""np"":""830-831""},""av"":{""a"":""831-835"",""ps"":""831-834"",""np"":""834-835""},""ds"":{""a"":""onbekend""}}"
+D	116				130		Donderdag in de 17e week door het jaar		d	g			716	"{""ui"":{""an"":""""},""lz"":{""ps"":"""",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":"""",""ps"":"""",""np"":""""},""mi"":{""a"":"""",""ps"":"""",""np"":""""},""av"":{""a"":"""",""ps"":"""",""np"":""""},""ds"":{""a"":""onbekend""}}"
+D	117				130		Vrijdag in de 17e week door het jaar		d	g			717	"{""ui"":{""an"":""""},""lz"":{""ps"":"""",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":"""",""ps"":"""",""np"":""""},""mi"":{""a"":"""",""ps"":"""",""np"":""""},""av"":{""a"":"""",""ps"":"""",""np"":""""},""ds"":{""a"":""onbekend""}}"
+D	118				130		Zaterdag in de 17e week door het jaar		d	g			718	"{""ui"":{""an"":""""},""lz"":{""ps"":"""",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":"""",""ps"":"""",""np"":""""},""mi"":{""a"":"""",""ps"":"""",""np"":""""},""av"":{""a"":"""",""ps"":"""",""np"":""""},""ds"":{""a"":""onbekend""}}"
+D	118				120		Maria op zaterdag	Maria op zaterdag		w	599			[]
+D	119				60		18e zondag door het jaar		d	g			719	"{""va"":{""a"":null,""b"":{""hy"":""onbekend"",""ag"":""""}},""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""mi"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""av"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""ds"":{""a"":""onbekend""}}"
+D	120				130		Maandag in de 18e week door het jaar		d	g			720	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	121				130		Dinsdag in de 18e week door het jaar		d	g			721	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	122				130		Woensdag in de 18e week door het jaar		d	g			722	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	123				130		Donderdag in de 18e week door het jaar		d	g			723	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	124				130		Vrijdag in de 18e week door het jaar		d	g			724	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	125				130		Zaterdag in de 18e week door het jaar		d	g			725	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	125				120		Maria op zaterdag	Maria op zaterdag		w	599			[]
+D	126				60		19e zondag door het jaar		d	g			726	"{""va"":{""a"":null,""b"":{""hy"":""onbekend"",""ag"":""""}},""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""mi"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""av"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""ds"":{""a"":""onbekend""}}"
+D	127				130		Maandag in de 19e week door het jaar		d	g			727	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	128				130		Dinsdag in de 19e week door het jaar		d	g			728	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	129				130		Woensdag in de 19e week door het jaar		d	g			729	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	130				130		Donderdag in de 19e week door het jaar		d	g			730	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	131				130		Vrijdag in de 19e week door het jaar		d	g			731	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	132				130		Zaterdag in de 19e week door het jaar		d	g			732	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	132				120		Maria op zaterdag	Maria op zaterdag		w	599			[]
+D	133				60		20e zondag door het jaar		d	g			733	"{""va"":{""a"":null,""b"":{""hy"":""onbekend"",""ag"":""""}},""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""mi"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""av"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""ds"":{""a"":""onbekend""}}"
+D	134				130		Maandag in de 20e week door het jaar		d	g			734	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	135				130		Dinsdag in de 20e week door het jaar		d	g			735	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	136				130		Woensdag in de 20e week door het jaar		d	g			736	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	137				130		Donderdag in de 20e week door het jaar		d	g			737	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	138				130		Vrijdag in de 20e week door het jaar		d	g			738	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	139				130		Zaterdag in de 20e week door het jaar		d	g			739	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	139				120		Maria op zaterdag	Maria op zaterdag		w	599			[]
+D	140				60		21e zondag door het jaar		d	g			740	"{""va"":{""a"":""771-775"",""b"":{""hy"":""onbekend"",""ag"":""""}},""ui"":{""an"":""775""},""lz"":{""ps"":""776-779"",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":""779-784"",""ps"":""779-783"",""np"":""783-784"",""b"":{""ag"":""""}},""mi"":{""a"":""784-787"",""ps"":""784-786"",""np"":""786-787"",""b"":{""ag"":""""}},""av"":{""a"":""787-791"",""ps"":""787-790"",""np"":""791"",""b"":{""ag"":""""}},""ds"":{""a"":""onbekend""}}"
+D	141				130		Maandag in de 21e week door het jaar		d	g			741	"{""ui"":{""an"":""792""},""lz"":{""ps"":""792-794"",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":""794-798"",""ps"":""795-797"",""np"":""797-798""},""mi"":{""a"":""798-802"",""ps"":""799-801"",""np"":""801-802""},""av"":{""a"":""802-806"",""ps"":""802-805"",""np"":""805-806""},""ds"":{""a"":""onbekend""}}"
+D	142				130		Dinsdag in de 21e week door het jaar		d	g			742	"{""ui"":{""an"":""806""},""lz"":{""ps"":""806-809"",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":""809-814"",""ps"":""809-813"",""np"":""813-814""},""mi"":{""a"":""814-817"",""ps"":""814-816"",""np"":""816-817""},""av"":{""a"":""817-821"",""ps"":""817-820"",""np"":""820-821""},""ds"":{""a"":""onbekend""}}"
+D	143				130		Woensdag in de 21e week door het jaar		d	g			743	"{""ui"":{""an"":""821""},""lz"":{""ps"":""821-824"",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":""824-828"",""ps"":""824-827"",""np"":""827-828""},""mi"":{""a"":""828-831"",""ps"":""828-830"",""np"":""830-831""},""av"":{""a"":""831-835"",""ps"":""831-834"",""np"":""834-835""},""ds"":{""a"":""onbekend""}}"
+D	144				130		Donderdag in de 21e week door het jaar		d	g			744	"{""ui"":{""an"":""""},""lz"":{""ps"":"""",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":"""",""ps"":"""",""np"":""""},""mi"":{""a"":"""",""ps"":"""",""np"":""""},""av"":{""a"":"""",""ps"":"""",""np"":""""},""ds"":{""a"":""onbekend""}}"
+D	145				130		Vrijdag in de 21e week door het jaar		d	g			745	"{""ui"":{""an"":""""},""lz"":{""ps"":"""",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":"""",""ps"":"""",""np"":""""},""mi"":{""a"":"""",""ps"":"""",""np"":""""},""av"":{""a"":"""",""ps"":"""",""np"":""""},""ds"":{""a"":""onbekend""}}"
+D	146				130		Zaterdag in de 21e week door het jaar		d	g			746	"{""ui"":{""an"":""""},""lz"":{""ps"":"""",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":"""",""ps"":"""",""np"":""""},""mi"":{""a"":"""",""ps"":"""",""np"":""""},""av"":{""a"":"""",""ps"":"""",""np"":""""},""ds"":{""a"":""onbekend""}}"
+D	146				120		Maria op zaterdag	Maria op zaterdag		w	599			[]
+D	147				60		22e zondag door het jaar		d	g			747	"{""va"":{""a"":null,""b"":{""hy"":""onbekend"",""ag"":""""}},""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""mi"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""av"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""ds"":{""a"":""onbekend""}}"
+D	148				130		Maandag in de 22e week door het jaar		d	g			748	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	149				130		Dinsdag in de 22e week door het jaar		d	g			749	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	150				130		Woensdag in de 22e week door het jaar		d	g			750	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	151				130		Donderdag in de 22e week door het jaar		d	g			751	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	152				130		Vrijdag in de 22e week door het jaar		d	g			752	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	153				130		Zaterdag in de 22e week door het jaar		d	g			753	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	153				120		Maria op zaterdag	Maria op zaterdag		w	599			[]
+D	154				60		23e zondag door het jaar		d	g			754	"{""va"":{""a"":null,""b"":{""hy"":""onbekend"",""ag"":""""}},""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""mi"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""av"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""ds"":{""a"":""onbekend""}}"
+D	155				130		Maandag in de 23e week door het jaar		d	g			755	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	156				130		Dinsdag in de 23e week door het jaar		d	g			756	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	157				130		Woensdag in de 23e week door het jaar		d	g			757	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	158				130		Donderdag in de 23e week door het jaar		d	g			758	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	159				130		Vrijdag in de 23e week door het jaar		d	g			759	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	160				130		Zaterdag in de 23e week door het jaar		d	g			760	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	160				120		Maria op zaterdag	Maria op zaterdag		w	599			[]
+D	161				60		24e zondag door het jaar		d	g			761	"{""va"":{""a"":null,""b"":{""hy"":""onbekend"",""ag"":""""}},""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""mi"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""av"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""ds"":{""a"":""onbekend""}}"
+D	162				130		Maandag in de 24e week door het jaar		d	g			762	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	163				130		Dinsdag in de 24e week door het jaar		d	g			763	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	164				130		Woensdag in de 24e week door het jaar		d	g			764	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	165				130		Donderdag in de 24e week door het jaar		d	g			765	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	166				130		Vrijdag in de 24e week door het jaar		d	g			766	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	167				130		Zaterdag in de 24e week door het jaar		d	g			767	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	167				120		Maria op zaterdag	Maria op zaterdag		w	599			[]
+D	168				60		25e zondag door het jaar		d	g			768	"{""va"":{""a"":""771-775"",""b"":{""hy"":""onbekend"",""ag"":""""}},""ui"":{""an"":""775""},""lz"":{""ps"":""776-779"",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":""779-784"",""ps"":""779-783"",""np"":""783-784"",""b"":{""ag"":""""}},""mi"":{""a"":""784-787"",""ps"":""784-786"",""np"":""786-787"",""b"":{""ag"":""""}},""av"":{""a"":""787-791"",""ps"":""787-790"",""np"":""791"",""b"":{""ag"":""""}},""ds"":{""a"":""onbekend""}}"
+D	169				130		Maandag in de 25e week door het jaar		d	g			769	"{""ui"":{""an"":""792""},""lz"":{""ps"":""792-794"",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":""794-798"",""ps"":""795-797"",""np"":""797-798""},""mi"":{""a"":""798-802"",""ps"":""799-801"",""np"":""801-802""},""av"":{""a"":""802-806"",""ps"":""802-805"",""np"":""805-806""},""ds"":{""a"":""onbekend""}}"
+D	170				130		Dinsdag in de 25e week door het jaar		d	g			770	"{""ui"":{""an"":""806""},""lz"":{""ps"":""806-809"",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":""809-814"",""ps"":""809-813"",""np"":""813-814""},""mi"":{""a"":""814-817"",""ps"":""814-816"",""np"":""816-817""},""av"":{""a"":""817-821"",""ps"":""817-820"",""np"":""820-821""},""ds"":{""a"":""onbekend""}}"
+D	171				130		Woensdag in de 25e week door het jaar		d	g			771	"{""ui"":{""an"":""821""},""lz"":{""ps"":""821-824"",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":""824-828"",""ps"":""824-827"",""np"":""827-828""},""mi"":{""a"":""828-831"",""ps"":""828-830"",""np"":""830-831""},""av"":{""a"":""831-835"",""ps"":""831-834"",""np"":""834-835""},""ds"":{""a"":""onbekend""}}"
+D	172				130		Donderdag in de 25e week door het jaar		d	g			772	"{""ui"":{""an"":""""},""lz"":{""ps"":"""",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":"""",""ps"":"""",""np"":""""},""mi"":{""a"":"""",""ps"":"""",""np"":""""},""av"":{""a"":"""",""ps"":"""",""np"":""""},""ds"":{""a"":""onbekend""}}"
+D	173				130		Vrijdag in de 25e week door het jaar		d	g			773	"{""ui"":{""an"":""""},""lz"":{""ps"":"""",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":"""",""ps"":"""",""np"":""""},""mi"":{""a"":"""",""ps"":"""",""np"":""""},""av"":{""a"":"""",""ps"":"""",""np"":""""},""ds"":{""a"":""onbekend""}}"
+D	174				130		Zaterdag in de 25e week door het jaar		d	g			774	"{""ui"":{""an"":""""},""lz"":{""ps"":"""",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":"""",""ps"":"""",""np"":""""},""mi"":{""a"":"""",""ps"":"""",""np"":""""},""av"":{""a"":"""",""ps"":"""",""np"":""""},""ds"":{""a"":""onbekend""}}"
+D	174				120		Maria op zaterdag	Maria op zaterdag		w	599			[]
+D	175				60		26e zondag door het jaar		d	g			775	"{""va"":{""a"":null,""b"":{""hy"":""onbekend"",""ag"":""""}},""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""mi"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""av"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""ds"":{""a"":""onbekend""}}"
+D	176				130		Maandag in de 26e week door het jaar		d	g			776	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	177				130		Dinsdag in de 26e week door het jaar		d	g			777	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	178				130		Woensdag in de 26e week door het jaar		d	g			778	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	179				130		Donderdag in de 26e week door het jaar		d	g			779	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	180				130		Vrijdag in de 26e week door het jaar		d	g			780	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	181				130		Zaterdag in de 26e week door het jaar		d	g			781	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	181				120		Maria op zaterdag	Maria op zaterdag		w	599			[]
+D	182				60		27e zondag door het jaar		d	g			782	"{""va"":{""a"":null,""b"":{""hy"":""onbekend"",""ag"":""""}},""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""mi"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""av"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""ds"":{""a"":""onbekend""}}"
+D	183				130		Maandag in de 27e week door het jaar		d	g			783	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	184				130		Dinsdag in de 27e week door het jaar		d	g			784	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	185				130		Woensdag in de 27e week door het jaar		d	g			785	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	186				130		Donderdag in de 27e week door het jaar		d	g			786	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	187				130		Vrijdag in de 27e week door het jaar		d	g			787	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	188				130		Zaterdag in de 27e week door het jaar		d	g			788	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	188				120		Maria op zaterdag	Maria op zaterdag		w	599			[]
+D	189				60		28e zondag door het jaar		d	g			789	"{""va"":{""a"":null,""b"":{""hy"":""onbekend"",""ag"":""""}},""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""mi"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""av"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""ds"":{""a"":""onbekend""}}"
+D	190				130		Maandag in de 28e week door het jaar		d	g			790	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	191				130		Dinsdag in de 28e week door het jaar		d	g			791	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	192				130		Woensdag in de 28e week door het jaar		d	g			792	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	193				130		Donderdag in de 28e week door het jaar		d	g			793	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	194				130		Vrijdag in de 28e week door het jaar		d	g			794	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	195				130		Zaterdag in de 28e week door het jaar		d	g			795	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	195				120		Maria op zaterdag	Maria op zaterdag		w	599			[]
+D	196				60		29e zondag door het jaar		d	g			796	"{""va"":{""a"":""771-775"",""b"":{""hy"":""onbekend"",""ag"":""""}},""ui"":{""an"":""775""},""lz"":{""ps"":""776-779"",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":""779-784"",""ps"":""779-783"",""np"":""783-784"",""b"":{""ag"":""""}},""mi"":{""a"":""784-787"",""ps"":""784-786"",""np"":""786-787"",""b"":{""ag"":""""}},""av"":{""a"":""787-791"",""ps"":""787-790"",""np"":""791"",""b"":{""ag"":""""}},""ds"":{""a"":""onbekend""}}"
+D	197				130		Maandag in de 29e week door het jaar		d	g			797	"{""ui"":{""an"":""792""},""lz"":{""ps"":""792-794"",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":""794-798"",""ps"":""795-797"",""np"":""797-798""},""mi"":{""a"":""798-802"",""ps"":""799-801"",""np"":""801-802""},""av"":{""a"":""802-806"",""ps"":""802-805"",""np"":""805-806""},""ds"":{""a"":""onbekend""}}"
+D	198				130		Dinsdag in de 29e week door het jaar		d	g			798	"{""ui"":{""an"":""806""},""lz"":{""ps"":""806-809"",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":""809-814"",""ps"":""809-813"",""np"":""813-814""},""mi"":{""a"":""814-817"",""ps"":""814-816"",""np"":""816-817""},""av"":{""a"":""817-821"",""ps"":""817-820"",""np"":""820-821""},""ds"":{""a"":""onbekend""}}"
+D	199				130		Woensdag in de 29e week door het jaar		d	g			799	"{""ui"":{""an"":""821""},""lz"":{""ps"":""821-824"",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":""824-828"",""ps"":""824-827"",""np"":""827-828""},""mi"":{""a"":""828-831"",""ps"":""828-830"",""np"":""830-831""},""av"":{""a"":""831-835"",""ps"":""831-834"",""np"":""834-835""},""ds"":{""a"":""onbekend""}}"
+D	200				130		Donderdag in de 29e week door het jaar		d	g			800	"{""ui"":{""an"":""""},""lz"":{""ps"":"""",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":"""",""ps"":"""",""np"":""""},""mi"":{""a"":"""",""ps"":"""",""np"":""""},""av"":{""a"":"""",""ps"":"""",""np"":""""},""ds"":{""a"":""onbekend""}}"
+D	201				130		Vrijdag in de 29e week door het jaar		d	g			801	"{""ui"":{""an"":""""},""lz"":{""ps"":"""",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":"""",""ps"":"""",""np"":""""},""mi"":{""a"":"""",""ps"":"""",""np"":""""},""av"":{""a"":"""",""ps"":"""",""np"":""""},""ds"":{""a"":""onbekend""}}"
+D	202				130		Zaterdag in de 29e week door het jaar		d	g			802	"{""ui"":{""an"":""""},""lz"":{""ps"":"""",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":"""",""ps"":"""",""np"":""""},""mi"":{""a"":"""",""ps"":"""",""np"":""""},""av"":{""a"":"""",""ps"":"""",""np"":""""},""ds"":{""a"":""onbekend""}}"
+D	202				120		Maria op zaterdag	Maria op zaterdag		w	599			[]
+D	203				60		30e zondag door het jaar		d	g			803	"{""va"":{""a"":null,""b"":{""hy"":""onbekend"",""ag"":""""}},""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""mi"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""av"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""ds"":{""a"":""onbekend""}}"
+D	204				130		Maandag in de 30e week door het jaar		d	g			804	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	205				130		Dinsdag in de 30e week door het jaar		d	g			805	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	206				130		Woensdag in de 30e week door het jaar		d	g			806	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	207				130		Donderdag in de 30e week door het jaar		d	g			807	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	208				130		Vrijdag in de 30e week door het jaar		d	g			808	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	209				130		Zaterdag in de 30e week door het jaar		d	g			809	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	209				120		Maria op zaterdag	Maria op zaterdag		w	599			[]
+D	210				60		31e zondag door het jaar		d	g			810	"{""va"":{""a"":null,""b"":{""hy"":""onbekend"",""ag"":""""}},""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""mi"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""av"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""ds"":{""a"":""onbekend""}}"
+D	211				130		Maandag in de 31e week door het jaar		d	g			811	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	212				130		Dinsdag in de 31e week door het jaar		d	g			812	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	213				130		Woensdag in de 31e week door het jaar		d	g			813	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	214				130		Donderdag in de 31e week door het jaar		d	g			814	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	215				130		Vrijdag in de 31e week door het jaar		d	g			815	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	216				130		Zaterdag in de 31e week door het jaar		d	g			816	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	216				120		Maria op zaterdag	Maria op zaterdag		w	599			[]
+D	217				60		32e zondag door het jaar		d	g			817	"{""va"":{""a"":null,""b"":{""hy"":""onbekend"",""ag"":""""}},""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""mi"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""av"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""ds"":{""a"":""onbekend""}}"
+D	218				130		Maandag in de 32e week door het jaar		d	g			818	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	219				130		Dinsdag in de 32e week door het jaar		d	g			819	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	220				130		Woensdag in de 32e week door het jaar		d	g			820	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	221				130		Donderdag in de 32e week door het jaar		d	g			821	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	222				130		Vrijdag in de 32e week door het jaar		d	g			822	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	223				130		Zaterdag in de 32e week door het jaar		d	g			823	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	223				120		Maria op zaterdag	Maria op zaterdag		w	599			[]
+D	224				60		33e zondag door het jaar		d	g			824	"{""va"":{""a"":""771-775"",""b"":{""hy"":""onbekend"",""ag"":""""}},""ui"":{""an"":""775""},""lz"":{""ps"":""776-779"",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":""779-784"",""ps"":""779-783"",""np"":""783-784"",""b"":{""ag"":""""}},""mi"":{""a"":""784-787"",""ps"":""784-786"",""np"":""786-787"",""b"":{""ag"":""""}},""av"":{""a"":""787-791"",""ps"":""787-790"",""np"":""791"",""b"":{""ag"":""""}},""ds"":{""a"":""onbekend""}}"
+D	225				130		Maandag in de 33e week door het jaar		d	g			825	"{""ui"":{""an"":""792""},""lz"":{""ps"":""792-794"",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":""794-798"",""ps"":""795-797"",""np"":""797-798""},""mi"":{""a"":""798-802"",""ps"":""799-801"",""np"":""801-802""},""av"":{""a"":""802-806"",""ps"":""802-805"",""np"":""805-806""},""ds"":{""a"":""onbekend""}}"
+D	226				130		Dinsdag in de 33e week door het jaar		d	g			826	"{""ui"":{""an"":""806""},""lz"":{""ps"":""806-809"",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":""809-814"",""ps"":""809-813"",""np"":""813-814""},""mi"":{""a"":""814-817"",""ps"":""814-816"",""np"":""816-817""},""av"":{""a"":""817-821"",""ps"":""817-820"",""np"":""820-821""},""ds"":{""a"":""onbekend""}}"
+D	227				130		Woensdag in de 33e week door het jaar		d	g			827	"{""ui"":{""an"":""821""},""lz"":{""ps"":""821-824"",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":""824-828"",""ps"":""824-827"",""np"":""827-828""},""mi"":{""a"":""828-831"",""ps"":""828-830"",""np"":""830-831""},""av"":{""a"":""831-835"",""ps"":""831-834"",""np"":""834-835""},""ds"":{""a"":""onbekend""}}"
+D	228				130		Donderdag in de 33e week door het jaar		d	g			828	"{""ui"":{""an"":""""},""lz"":{""ps"":"""",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":"""",""ps"":"""",""np"":""""},""mi"":{""a"":"""",""ps"":"""",""np"":""""},""av"":{""a"":"""",""ps"":"""",""np"":""""},""ds"":{""a"":""onbekend""}}"
+D	229				130		Vrijdag in de 33e week door het jaar		d	g			829	"{""ui"":{""an"":""""},""lz"":{""ps"":"""",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":"""",""ps"":"""",""np"":""""},""mi"":{""a"":"""",""ps"":"""",""np"":""""},""av"":{""a"":"""",""ps"":"""",""np"":""""},""ds"":{""a"":""onbekend""}}"
+D	230				130		Zaterdag in de 33e week door het jaar		d	g			830	"{""ui"":{""an"":""""},""lz"":{""ps"":"""",""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":"""",""ps"":"""",""np"":""""},""mi"":{""a"":"""",""ps"":"""",""np"":""""},""av"":{""a"":"""",""ps"":"""",""np"":""""},""ds"":{""a"":""onbekend""}}"
+D	230				120		Maria op zaterdag	Maria op zaterdag		w	599			[]
+D	231				60		34e zondag door het jaar		d	g			831	"{""va"":{""a"":null,""b"":{""hy"":""onbekend"",""ag"":""""}},""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""mi"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""av"":{""a"":null,""ps"":null,""np"":null,""b"":{""ag"":""""}},""ds"":{""a"":""onbekend""}}"
+D	232				130		Maandag in de 34e week door het jaar		d	g			832	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	233				130		Dinsdag in de 34e week door het jaar		d	g			833	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	234				130		Woensdag in de 34e week door het jaar		d	g			834	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	235				130		Donderdag in de 34e week door het jaar		d	g			835	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	236				130		Vrijdag in de 34e week door het jaar		d	g			836	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	237				130		Zaterdag in de 34e week door het jaar		d	g			837	"{""ui"":{""an"":null},""lz"":{""ps"":null,""le"":""onbekend"",""l1"":""onbekend"",""l2"":""onbekend"",""ag"":""""},""mo"":{""a"":null,""ps"":null,""np"":null},""mi"":{""a"":null,""ps"":null,""np"":null},""av"":{""a"":null,""ps"":null,""np"":null},""ds"":{""a"":""onbekend""}}"
+D	237				120		Maria op zaterdag	Maria op zaterdag		w	599			[]

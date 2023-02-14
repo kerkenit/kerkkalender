@@ -1,0 +1,289 @@
+		Eigen teksten van de heiligen											
+	Basisboek en plaatselijke heiligen												
+	maand	dag	code_eigen	naam	gebed	morg. ant.	avnd. ant						
+jan.	1	2	200	HH. Basilius de Grote en Gregorius van Nazianze	1221	1221	1222						
+	1	3	546	De heilige Naam Jezus									
+	1	5	203	Roermond: H. Gerlach									
+	1	5	204	Roermond: H. Karel van Sint Andries									
+	1	7	205	H. Raimundus van Penyafort	1222								
+	1	13	207	H. Hilarius	1223								
+	1	14	208	Breda: Z. Petrus Donders									
+	1	14	208	's-Hertogenbosch: Z. Petrus Donders									
+	1	15	210	Roermond: H. Arnold Janssen									
+	1	17	211	H. Antonius	1223								
+	1	20	212	H. Fabianus	1223-1224								
+	1	20	213	H. Sebastianus	1224								
+	1	21	214	H. Agnes	xxx								
+	1	22	215	H. Vincentius	1226								
+	1	24	216	H. Franciscus van Sales	1227								
+	1	25	217	Bekering H. apostel Paulus	xxx								
+	1	26	218	HH. Timoteüs en Titus	1233	1233	1233						
+	1	27	219	H. Angela Merici	1234								
+	1	28	220	H. Thomas van Aquino	1235	1234	1235						
+	1	31	223	H. Johannes Bosco	1235								
+febr.	2	2	224	Opdracht v/d Heer in de tempel	xxx								
+	2	3	225	H. Blasius	1243								
+	2	3	226	H. Ansgarius	1243								
+	2	5	228	H. Agatha	1244	1244	1244						
+	2	6	229	HH. Paulus Miki en gezellen	1244								
+	2	6	232	Breda:  H. Amandus									
+	2	6	229	Breda: HH. Paulus Miki en gezellen									
+	2	8	235	H. Hieronymus Emiliani	1245								
+	2	8	547	H. Josephina Bakhita									
+	2	10	236	H. Scholastica	1245								
+	2	11	237	H. Maria van Lourdes	1246	1246	1246						
+	2	14	240	HH. Cyrillus en Methodius	xxx								
+	2	14	240	Europa: HH. Cyrillus en Methodius	xxx								
+	2	17	241	HH. Stichters v/d servieten	1248	1248	1248						
+	2	21	246	H. Petrus Damiani	1249								
+	2	22	247	St. Petrus' Stoel	xxx								
+	2	23	248	H. Polycarpus	1255	1255	1255						
+mrt.	3	1	251	Utrecht en Rotterdam: H. Swietbert									
+	3	3	254	Groningen: H. Frederik									
+	3	4	255	H. Casimir									
+	3	7	258	HH. Perpetua en Felicitas									
+	3	8	259	H. Johannes a Deo									
+	3	9	260	H. Francisca Romana									
+	3	17	261	H. Patricius									
+	3	17	262	Breda: H. Gertrudis									
+	3	18	263	H. Cyrillus van Jeruzalem									
+	X	10	264	H. Jozef									
+	3	23	265	H. Turibius de Mogrovejo									
+	X	11	266	Maria Boodschap									
+	3	26	267	Utrecht en Groningen: H. Ludger									
+apr.	4	2	268	H. Franciscus van Paola									
+	4	4	269	H. Isidorus									
+	4	5	270	H. Vincentius Ferrer									
+	4	7	271	H. Johannes Baptista de la Salle									
+	4	11	272	H. Stanislaus									
+	4	13	273	H. Martinus I									
+	4	21	276	H. Anselmus									
+	4	23	277	H. Joris									
+	4	23	542	H. Adalbert									
+	4	24	278	H. Fidelis van Sigmaringen									
+	4	24	279	Ned. Strijdkrachten: Verjaardag wijding bisschopskerk									
+	4	25	280	H. Marcus									
+	4	26	278	Ned. Strijdkrachten: H. Fidelis van Sigmaringen									
+	4	27	282	Nederland: H. Petrus Canisius									
+	4	28	283	H. Petrus Chanel									
+	4	28	543	H. Lodewijk Maria van Montfort									
+	4	29	285	H. Catharina van Siena									
+	4	29	539	Europa: H. Catharina van Siena									
+	4	30	286	H. Pius V									
+mei	5	1	287	H.Jozef, de arbeider									
+	5	2	288	H. Athanasius									
+	5	2	289	Haarlem: Verjaardag wijding kathedraal									
+	5	3	290	HH. Filippus en Jakobus									
+	5	4	288	Haarlem: H. Athanasius									
+	5	8	292	Rotterdam: Verjaardag wijding kathedraal									
+	5	8	293	Roermond: HH. Wiro, Plechelmus en Otger									
+	5	8	578	Roermond: Z. Clara van het arme Kind Jezus									
+	5	12	295	HH. Nereus en Achilles									
+	5	12	296	H. Pancratius									
+	5	13	297	Roermond: H. Servatius									
+	5	13	298	's-Hertogenbosch: H. Servatius									
+	5	13	548	H. Maria van Fatima									
+	5	14	301	H. Mattias									
+	5	15	302	Roermond: HH. Bisschoppen van Maastricht									
+	5	18	305	H. Johannes I									
+	5	20	306	H. Bernardinus van Siena									
+	5	20	580	Roermond: Z. Josefa Stenmanns									
+	5	21	549	H. Christophorus Magallaen en gezellen									
+	5	22	550	H. Rita van Cassia									
+	5	24	307	Groningen: H. Beda de Eerbiedwaardige									
+	5	24	308	Groningen: H. Gregorius VII									
+	5	24	309	Groningen: H. Maria Magdalena de'Pazzi									
+	5	25	307	H. Beda de Eerbiedwaardige									
+	5	25	308	H. Gregorius VII									
+	5	25	309	H. Maria Magdalena de'Pazzi									
+	5	25	432	Groningen: Verjaardag wijding kathedraal									
+	5	26	310	H. Filippus Neri									
+	5	27	311	H. Augustinus van Canterbury									
+	5	29	577	H. Paulus VI									
+	5	31	312	Maria Bezoek									
+	P	69	313	Onbevlekt Hart van Maria									
+jun.	6	1	314	H. Justinus									
+	6	2	315	HH. Marcellinus en Petrus									
+	6	3	316	HH. Carolus Lwanga en gezellen									
+	6	5	318	H. Bonifatius									
+	6	5	319	Nederland: HH. Bonifatius en gezellen									
+	6	5	320	Groningen: HH. Bonifatius en gezellen									
+	6	6	321	H. Norbertus									
+	6	9	324	H. Efrem									
+	6	11	325	H. Barnabas									
+	6	12	326	's-Hertogenbosch: H. Odulfus									
+	6	13	327	H. Antonius van Padua									
+	6	14	328	Nederland: H. Lidwina									
+	6	19	330	H. Romualdus									
+	6	21	331	H. Aloïsius Gonzaga									
+	6	22	332	H. Paulinus van Nola									
+	6	22	333	HH. John Fisher en Thomas More									
+	6	24	335	Geboorte van de H. Johannes de Doper									
+	6	25	336	Haarlem: H. Adalbert									
+	6	26	575	Haarlem en Utrecht: H. Jozefmaria Escrivá									
+	6	26	575	Opus Dei: H. Jozefmaria Escrivá									
+	6	27	337	H. Cyrillus van Alexandrië									
+	6	28	338	H. Ireneus									
+	6	29	339	HH. Petrus en Paulus									
+	6	30	340	HH. Eerste Martelaren van Rome									
+jul.	7	3	342	H. Thomas									
+	7	4	343	H. Elisabeth van Portugal									
+	7	5	345	H. Antonius Maria Zaccaria									
+	7	6	346	H. Maria Goretti									
+	7	7	349	's-Hertogenbosch: H. Maria, Zoete Moeder van Den Bosch									
+	7	7	349	's-Hertogenbosch (stad): H. Maria, Zoete Moeder van Den Bosch									
+	7	8	350	Breda: HH. Maria Adolfina en gezellinnen									
+	7	9	352	Nederland: HH. Martelaren van Gorcum									
+	7	9	551	HH. Augustinus Zhao Rong en gezellen									
+	7	11	356	H. Benedictus									
+	7	11	357	Europa: H. Benedictus									
+	7	13	358	H. Henricus									
+	7	14	359	H. Camillus de Lellis									
+	7	15	360	H. Bonaventura									
+	7	16	361	H. Maria v/d berg Karmel									
+	7	20	552	H. Apollinaris									
+	7	21	365	H. Laurentius van Brindisi									
+	7	22	366	H. Maria Magdalena									
+	7	23	367	H. Birgitta									
+	7	23	540	Europa: H. Birgitta									
+	7	24	553	H. Charbel Makhlūf									
+	7	25	369	H. Jakobus									
+	7	26	371	HH. Joachim en Anna									
+	7	27	372	Nederland: Z. Titus Brandsma									
+	7	29	374	H. Marta									
+	7	30	375	H. Petrus Chrysologus									
+	7	31	376	H. Ignatius van Loyola									
+aug.	8	1	377	H. Alfonsus Maria de'Liguori									
+	8	2	378	H. Eusebius van Vercelli									
+	8	2	544	H. Petrus Julianus Eymard									
+	8	4	379	H. Johannes Maria Vianney									
+	8	5	380	Kerkwijding basiliek van Maria de Meerdere									
+	8	6	381	Gedaanteverandering v/d Heer									
+	8	7	382	HH. Sixtus II en gezellen									
+	8	7	383	H. Cajetanus									
+	8	8	385	H. Dominicus									
+	8	9	386	H. Teresia Benedicta v/h Kruis									
+	8	9	541	Europa: H. Teresia Benedicta v/h Kruis									
+	8	10	388	H. Laurentius									
+	8	11	390	H. Clara									
+	8	12	523	H. Johanna Francisca de Chantal									
+	8	13	392	HH. Pontianus en Hippolytus									
+	8	14	393	H. Maximiliaan Maria Kolbe									
+	8	15	394	Maria Tenhemelopneming									
+	8	16	396	H. Stefanus van Hongarije									
+	8	17	398	Rotterdam: H. Jeroen									
+	8	19	399	H. Johannes Eudes									
+	8	20	401	H. Bernardus									
+	8	21	402	H. Pius X									
+	8	22	403	H. Maria, koningin									
+	8	22	404	Utrecht: Verjaardag wijding kathedraal									
+	8	23	405	H. Rosa van Lima									
+	8	24	406	H. Bartolomeüs									
+	8	25	407	H. Lodewijk									
+	8	25	408	H. Jozef de Calasanz									
+	8	25	409	's-Hertogenbosch: Verjaardag wijding kathedraal									
+	8	27	410	H. Monica									
+	8	28	411	H. Augustinus									
+	8	29	412	Marteldood H. Johannes de Doper									
+	8	30	568	's-Hertogenbosch: Z. Eustachius van Lieshout									
+sept.	9	3	415	H. Gregorius de Grote									
+	9	3	416	Roermond: Verjaardag wijding kathedraal									
+	9	4	415	Roermond: H. Gregorius de Grote									
+	9	8	420	Maria Geboorte									
+	9	9	545	H. Petrus Claver									
+	9	12	554	De heilige naam van Maria									
+	9	13	424	H. Johannes Chrysostomus									
+	9	14	425	Kruisverheffing									
+	9	15	426	H. Maria, Moeder van Smarten									
+	9	16	427	HH. Cornelius en Cyprianus									
+	9	17	428	H. Robertus Bellarmino									
+	9	17	429	Breda, 's-Hertogenbosch en Roermond: H. Lambertus									
+	9	19	431	H. Januarius									
+	9	20	433	HH. Andreas Kim Taegŏn, Paulus Chŏng en gezellen									
+	9	21	434	H. Matteüs									
+	9	23	555	H. Pius van Pietrelcina									
+	9	26	437	HH. Cosmas en Damianus									
+	9	27	438	H. Vincentius de Paul									
+	9	28	439	H. Wenceslaus									
+	9	28	440	HH. Laurentius Ruiz en gezellen									
+	9	29	441	HH. Michaël, Gabriël en Rafaël									
+	9	30	442	H. Hieronymus									
+okt.	10	1	443	H. Teresia v/h Kind Jezus									
+	10	2	447	HH. Engelbewaarders									
+	10	3	445	Haarlem: H. Bavo									
+	10	4	449	H. Franciscus van Assisi									
+	10	5	579	H. Faustina Kowalska									
+	10	6	451	H. Bruno									
+	10	7	453	H. Maria v/d Rozenkrans									
+	10	9	454	HH. Dionysius en gezellen									
+	10	9	455	H. Johannes Leonardi									
+	10	10	563	Roermond: H. Maria, Sterre der Zee									
+	10	10	564	Maastricht: H. Maria, Sterre der Zee									
+	10	11	574	H. Johannes XXIII									
+	10	14	458	H. Callistus I									
+	10	15	460	H. Teresia van Jezus									
+	10	16	461	H. Hedwig									
+	10	16	462	H. Margareta-Maria Alacoque									
+	10	17	463	H. Ignatius van Antiochië									
+	10	18	464	H. Lucas									
+	10	18	561	Haastrecht: Maria ter Weghe									
+	10	19	465	HH. Johannes de Brébeuf, Isaac Jogues en gezellen									
+	10	19	466	H. Paulus v/h Kruis									
+	10	20	560	Rotterdam: Maria ter Weghe									
+	10	20	464	Haastrecht: H. Lucas									
+	10	22	569	H. Johannes Paulus II									
+	10	23	468	H. Johannes van Capestrano									
+	10	24	472	H. Antonius Maria Claret									
+	10	25	473	Nederland: Verjaardag kerken met onbekende wijdingsdatum									
+	10	28	474	HH. Simon en Judas									
+	10	30	565	Roermond: Z. Maria Teresa van de H. Jozef									
+nov.	11	1	476	Allerheiligen									
+	11	2	477	Allerzielen									
+	11	3	478	H. Martinus de Porres									
+	11	3	479	Breda, 's-Hertogenbosch en Roermond: H. Hubertus									
+	11	4	481	H. Carolus Borromeo									
+	11	6	483	Nederland: HH. geloofsverkondigers in onze streken									
+	11	7	484	Nederland: H. Willibrord									
+	11	8	487	Utrecht: HH. Bisschoppen van Utrecht									
+	11	8	488	Groningen: H. Willehad									
+	11	9	489	Kerkwijding basiliek van Lateranen									
+	11	10	490	H. Leo de Grote									
+	11	11	491	H. Martinus van Tours									
+	11	11	492	Ned. Strijdkrachten: H. Martinus van Tours									
+	11	12	493	H. Josafat									
+	11	15	496	H. Albertus de Grote									
+	11	16	497	H. Margarita van Schotland									
+	11	16	498	H. Gertrudis									
+	11	17	499	H. Elisabeth van Hongarije									
+	11	18	500	Kerkwijding basilieken v/d HH. Petrus en Paulus									
+	11	21	501	Opdracht v/d H. Maria									
+	11	22	502	H. Cecilia									
+	11	23	503	H. Clemens I									
+	11	23	504	H. Columbanus									
+	11	24	506	HH. Andreas Dung-Lac en gezellen									
+	11	25	556	H. Catharina van Alexandrië									
+	11	27	570	's-Hertogenbosch: H. Oda									
+	11	28	559	Roermond: Z. Maria Helena Stollenwerk									
+	11	30	512	H. Andreas									
+dec.	12	1	514	Breda: H. Eligius									
+	12	3	516	H. Franciscus Xaverius									
+	12	4	517	H. Johannes van Damascus									
+	12	6	518	H. Nicolaas									
+	12	7	519	H. Ambrosius									
+	12	8	520	Onbevlekte Ontvangenis v/d H. Maria									
+	12	9	557	H. Juan Diego Cuauhtlatoatzin									
+	12	10	581	H. Maria van Loreto									
+	12	11	522	H. Damasus I									
+	12	12	558	H. Maria van Guadalupe									
+	12	12	528	Breda: Verjaardag wijding bisschopskerk									
+	12	13	524	H. Lucia									
+	12	14	525	H. Johannes van het Kruis									
+	12	21	529	Buiten Nederland: H. Petrus Canisius									
+	12	23	530	H. Johannes van Kenty									
+	12	29	534	H. Thomas Becket									
+	12	31	535	H. Silvester I									
+xx	X	12	536	Haarlem: Mirakel v/h H. Sacrament te Amsterdam									
+xx	X	14	538	Haarlem: O.L. Vrouw ter Nood									
+													
+													
+													

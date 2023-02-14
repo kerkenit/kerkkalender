@@ -1,0 +1,9 @@
+		Vooravond				Uitno-	diging		Lezingendienst			Morgengebed				Middaggebed				Avondgebed					
+		begin-eind	psalmodie	na psalmodie		begin-eind	antifoon		begin-eind	psalmodie & vers		begin-eind	psalmodie	na psalmodie		begin-eind	psalmodie	na psalmodie		begin-eind	psalmodie	na psalmodie			
+Tweede week	zondag	878-882	878-881	881-882		882	882			883-886		886-891	886-890	890-891		891-894	891-893	893-894		894-899	894-898	898-899			
+	maandag					899	899			900-902		902-906	902-905	905-906		906-910	906-908	909-910		910-914	910-913	913-914			
+	dinsdag					914	914			914-917		918-922	918-921	921-922		922-925	922-924	924-925		925-929	925-928	928-929			
+	woensdag					929	929			930-932		932-938	932-937	937-938		938-941	938-940	940-941		942-946	942-945	945-946			
+	donderdag					946-947	946			947-949		949-954	949-953	953-954		954-958	954-957	957-958		958-962	958-961	961-962			
+	vrijdag					962	962			962-964		964-969	964-968	968-969		969-973	969-971	972-973		973-976	973-975	975-976			
+	zaterdag					977	977			980-983		983-987	983-986	986-987		987-991	988-989	990-991							

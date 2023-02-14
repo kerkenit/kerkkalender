@@ -1,0 +1,9 @@
+dag	weken	vooravond	Lezingendienst	morgengebed	Middaggebed	Avondgebed	Dagsluiting
+zondag	1,3	691 (week I en III) of 692 (week I-IV)	692-693 (nacht) of 694 (overdag)	696 (week I en III) of 697 (week I-IV)	757-758 (voor) of 758-759 (op) of 760 (na)	698 (week I en III) of 699 (week I-IV)	766-767
+zondag	2,4	691-692 (week II en IV) of 692 (week I-IV)	693-694 (nacht) of 695 (overdag)	697 (week II en IV) of 697 (week I-IV)	757-758 (voor) of 758-759 (op) of 760 (na)	699 (week II en IV) of 699 (week I-IV)	766-767
+maandag	1,2,3,4		700 (nacht) of 700-701 (overdag)	701-702	757-758 (voor) of 758-759 (op) of 760 (na)	703-704	766-767
+dinsdag	1,2,3,4		704 (nacht) of 704-705 (overdag)	705-706	757-758 (voor) of 758-759 (op) of 760 (na)	706-707	766-767
+woensdag	1,2,3,4,		708 (nacht) of 708-709 (overdag)	709-710	757-758 (voor) of 758-759 (op) of 760 (na)	710-711	766-767
+donderdag	1,2,3,4		711-712 (nacht) of 712-713 (overdag)	713-714	757-758 (voor) of 758-759 (op) of 760 (na)	714-716	766-767
+vrijdag	1,2,3,4		716 (nacht) of 717 (overdag)	717-718	757-758 (voor) of 758-759 (op) of 760 (na)	718-720	766-767
+zaterdag	1,2,3,4		720 (nacht) of 720-721 (overdag)	721-722	757-758 (voor) of 758-759 (op) of 760 (na)		766-767
