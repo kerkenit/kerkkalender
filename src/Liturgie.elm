@@ -1198,14 +1198,7 @@ viewEucharistie date season item =
 viewGetijdengebed : Item -> Html msg
 viewGetijdengebed item =
   let
-    psalmboekInt = getPsalmboek item
-    psalmboek = 
-      if psalmboekInt == -1 then
-        [ div [ class "psalmboek" ] [ text "Ongeldige waardes" ] ]
-      else if psalmboekInt == 0 then
-        []
-      else
-        [ div [ class "psalmboek" ] [ text ( "Psalmboek week " ++ ( String.fromInt psalmboekInt ) ) ] ]
+    psalmboek = [ div [ class "psalmboek" ] [ text ( getPsalmboek item ) ] ]
 
     inhoud = List.concat [ psalmboek ]
 
@@ -1346,11 +1339,12 @@ getTypeLong codeProper priority typeShort =
     _ -> "fout"
 
 
-getPsalmboek : Item -> Int
+getPsalmboek : Item -> String
 getPsalmboek item =
   -- deze functie is nog niet af!
   let
     codeDayInt = String.toInt item.codeDay
+    intro = "Psalmboek week "
   in
     case codeDayInt of
 
@@ -1359,28 +1353,38 @@ getPsalmboek item =
         --ADVENT EN KERSTTIJD
         --a. eerste deel: code dag 001 t/m 020
         if day >= 1 && day <= 20 then
-          ( modBy 4 ( ( ( day - 1 ) // 7 ) ) ) + 1
+          intro
+          ++ String.fromInt ( ( modBy 4 ( ( ( day - 1 ) // 7 ) ) ) + 1 )
   
         --b. vierde zondag van de advent: code dag 021
         else if day == 21 then
-          4
+          intro
+          ++ String.fromInt ( 4 )
     
         --c. tweede deel: code dag 159 t/m 187
         else if day >= 159 && day <= 187 then
-          ( modBy 4 ( ( ( ( day - 160 ) // 7 ) ) + 3 ) ) + 1
+          intro
+          ++ String.fromInt ( ( modBy 4 ( ( ( ( day - 160 ) // 7 ) ) + 3 ) ) + 1 )
   
-        --VEERTIGDAGENTIJD: donderdag na aswoensdag t/m zaterdag voor palmzondag
+        --VEERTIGDAGENTIJD: 
+        --a. Aswoensdag
+        else if day == 645 then
+          intro ++ "4 (in het morgengebed kan men de psalmen en antifonen van vrijdag van de derde week nemen)"
+
+        --donderdag na aswoensdag t/m zaterdag voor palmzondag
         --code dag 054 t/m 091
         else if day >= 54 && day <= 91 then
           -- de extra + 4 is om -1 in de berekening te voorkomen
-          ( modBy 4 ( ( ( ( day - 57 ) // 7 ) ) + 4 ) ) + 1
+          intro
+          ++ String.fromInt ( ( modBy 4 ( ( ( ( day - 57 ) // 7 ) ) + 4 ) ) + 1 )
     
         --TIJD DOOR HET JAAR: code dag 600 t/m 837
         else if day >= 600 && day <= 837 then
-          ( modBy 4 ( ( ( day - 600 ) // 7 ) ) ) + 1
+          intro
+          ++ String.fromInt ( ( modBy 4 ( ( ( day - 600 ) // 7 ) ) ) + 1 )
 
         else
-          0
+          "Psalmboek week onbekend"
 
       _ -> 
-        -1
+        "Psalmboek week onbekend"

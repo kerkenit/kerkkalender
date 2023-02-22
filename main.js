@@ -10049,29 +10049,31 @@ var $author$project$Liturgie$viewEucharistie = F3(
 					[kopje, inhoud])));
 	});
 var $author$project$Liturgie$getPsalmboek = function (item) {
+	var intro = 'Psalmboek week ';
 	var codeDayInt = $elm$core$String$toInt(item._);
 	if (!codeDayInt.$) {
 		var day = codeDayInt.a;
-		return ((day >= 1) && (day <= 20)) ? (A2($elm$core$Basics$modBy, 4, ((day - 1) / 7) | 0) + 1) : ((day === 21) ? 4 : (((day >= 159) && (day <= 187)) ? (A2($elm$core$Basics$modBy, 4, (((day - 160) / 7) | 0) + 3) + 1) : (((day >= 54) && (day <= 91)) ? (A2($elm$core$Basics$modBy, 4, (((day - 57) / 7) | 0) + 4) + 1) : (((day >= 600) && (day <= 837)) ? (A2($elm$core$Basics$modBy, 4, ((day - 600) / 7) | 0) + 1) : 0))));
+		return ((day >= 1) && (day <= 20)) ? _Utils_ap(
+			intro,
+			$elm$core$String$fromInt(
+				A2($elm$core$Basics$modBy, 4, ((day - 1) / 7) | 0) + 1)) : ((day === 21) ? _Utils_ap(
+			intro,
+			$elm$core$String$fromInt(4)) : (((day >= 159) && (day <= 187)) ? _Utils_ap(
+			intro,
+			$elm$core$String$fromInt(
+				A2($elm$core$Basics$modBy, 4, (((day - 160) / 7) | 0) + 3) + 1)) : ((day === 645) ? (intro + '4 (in het morgengebed kan men de psalmen en antifonen van vrijdag van de derde week nemen)') : (((day >= 54) && (day <= 91)) ? _Utils_ap(
+			intro,
+			$elm$core$String$fromInt(
+				A2($elm$core$Basics$modBy, 4, (((day - 57) / 7) | 0) + 4) + 1)) : (((day >= 600) && (day <= 837)) ? _Utils_ap(
+			intro,
+			$elm$core$String$fromInt(
+				A2($elm$core$Basics$modBy, 4, ((day - 600) / 7) | 0) + 1)) : 'Psalmboek week onbekend')))));
 	} else {
-		return -1;
+		return 'Psalmboek week onbekend';
 	}
 };
 var $author$project$Liturgie$viewGetijdengebed = function (item) {
-	var psalmboekInt = $author$project$Liturgie$getPsalmboek(item);
-	var psalmboek = _Utils_eq(psalmboekInt, -1) ? _List_fromArray(
-		[
-			A2(
-			$elm$html$Html$div,
-			_List_fromArray(
-				[
-					$elm$html$Html$Attributes$class('psalmboek')
-				]),
-			_List_fromArray(
-				[
-					$elm$html$Html$text('Ongeldige waardes')
-				]))
-		]) : ((!psalmboekInt) ? _List_Nil : _List_fromArray(
+	var psalmboek = _List_fromArray(
 		[
 			A2(
 			$elm$html$Html$div,
@@ -10082,9 +10084,9 @@ var $author$project$Liturgie$viewGetijdengebed = function (item) {
 			_List_fromArray(
 				[
 					$elm$html$Html$text(
-					'Psalmboek week ' + $elm$core$String$fromInt(psalmboekInt))
+					$author$project$Liturgie$getPsalmboek(item))
 				]))
-		]));
+		]);
 	var inhoud = $elm$core$List$concat(
 		_List_fromArray(
 			[psalmboek]));
