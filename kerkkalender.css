@@ -2,13 +2,18 @@
 
 body { margin: 0; }
 
-div#kalender {
+div#kalender, div#doneren {
 	margin: auto;
 	border: 0px solid #CCCCCC; 
 	width: 100%;
 	min-width: 10em;
 	max-width: 55em;
 	box-shadow: 0 0 0.1em 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}	
+
+div#doneren .tekst {
+	width: 70%;
+	margin: auto;
 }
 
 @media screen and (max-width: 55em) {
