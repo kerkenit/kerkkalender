@@ -1343,48 +1343,67 @@ getPsalmboek : Item -> String
 getPsalmboek item =
   -- deze functie is nog niet af!
   let
-    codeDayInt = String.toInt item.codeDay
+    codeDay = 
+      case item.codeDay of
+        "" -> -1
+        _ -> Maybe.withDefault -1 ( String.toInt item.codeDay )
+
+    codeProper = 
+      case item.codeProper of
+        "" -> -1
+        _ -> Maybe.withDefault -1 ( String.toInt item.codeProper )
+
     intro = "Psalmboek week "
+
   in
-    case codeDayInt of
+    --ADVENT EN KERSTTIJD
+    --a. eerste deel: code dag 001 t/m 020
+    if codeDay >= 1 && codeDay <= 20 then
+      intro
+      ++ String.fromInt ( ( modBy 4 ( ( ( codeDay - 1 ) // 7 ) ) ) + 1 )
 
-      Just day ->
+    --b. vierde zondag van de advent: code dag 021
+    else if codeDay == 21 then
+      intro
+      ++ String.fromInt ( 4 )
 
-        --ADVENT EN KERSTTIJD
-        --a. eerste deel: code dag 001 t/m 020
-        if day >= 1 && day <= 20 then
-          intro
-          ++ String.fromInt ( ( modBy 4 ( ( ( day - 1 ) // 7 ) ) ) + 1 )
-  
-        --b. vierde zondag van de advent: code dag 021
-        else if day == 21 then
-          intro
-          ++ String.fromInt ( 4 )
-    
-        --c. tweede deel: code dag 159 t/m 187
-        else if day >= 159 && day <= 187 then
-          intro
-          ++ String.fromInt ( ( modBy 4 ( ( ( ( day - 160 ) // 7 ) ) + 3 ) ) + 1 )
-  
-        --VEERTIGDAGENTIJD: 
-        --a. Aswoensdag
-        else if day == 645 then
-          intro ++ "4 (in het morgengebed kan men de psalmen en antifonen van vrijdag van de derde week nemen)"
+    --c. tweede deel: code dag 159 t/m 187
+    else if codeDay >= 159 && codeDay <= 187 then
+      intro
+      ++ String.fromInt ( ( modBy 4 ( ( ( ( codeDay - 160 ) // 7 ) ) + 3 ) ) + 1 )
 
-        --donderdag na aswoensdag t/m zaterdag voor palmzondag
-        --code dag 054 t/m 091
-        else if day >= 54 && day <= 91 then
-          -- de extra + 4 is om -1 in de berekening te voorkomen
-          intro
-          ++ String.fromInt ( ( modBy 4 ( ( ( ( day - 57 ) // 7 ) ) + 4 ) ) + 1 )
-    
-        --TIJD DOOR HET JAAR: code dag 600 t/m 837
-        else if day >= 600 && day <= 837 then
-          intro
-          ++ String.fromInt ( ( modBy 4 ( ( ( day - 600 ) // 7 ) ) ) + 1 )
+    --VEERTIGDAGENTIJD: 
+    --a. Aswoensdag: code eigen 53
+    else if codeProper == 53 then
+      intro ++ "4 (in het morgengebed kan men de psalmen en antifonen nemen van vrijdag van de derde week)"
 
-        else
-          "Psalmboek week onbekend"
+    --b. Donderdag na aswoensdag t/m zaterdag voor palmzondag
+    --code dag 054 t/m 091
+    else if codeDay >= 54 && codeDay <= 91 then
+      intro
+      ++ String.fromInt ( ( modBy 4 ( ( codeDay - 1 ) // 7 ) ) + 1 )
 
-      _ -> 
-        "Psalmboek week onbekend"
+    --c. Vanaf palmzondag t/m woensdag in de Goede Week
+    -- code eigen 92 t/m 95
+    else if List.member codeProper [ 92, 93, 94, 95 ] then
+      intro ++ String.fromInt ( 2 )
+
+    --d. Donderdag in de Goede Week
+    -- code eigen 96
+    else if codeProper == 96 then
+      intro ++ "2 (in de lezingendienst kan men de psalmen en antifonen nemen van vrijdag van de derde week; in het avondgebed neemt men de psalmen en lofzang van donderdag van de tweede week)"
+
+    --e. Goede Vrijdag en Stille Zaterdag
+    --code eigen 97 en 98
+    else if  codeProper == 97 || codeProper == 98 then
+      "Psalmen zoals aangegeven in het eigen van de dag."
+
+    --PAASTIJD
+
+    --TIJD DOOR HET JAAR: code dag 600 t/m 837
+    else if codeDay >= 600 && codeDay <= 837 then
+      intro
+      ++ String.fromInt ( ( modBy 4 ( ( ( codeDay - 600 ) // 7 ) ) ) + 1 )
+
+    else
+      "Psalmboek week onbekend"

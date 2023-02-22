@@ -784,11 +784,11 @@ function _Debug_crash_UNUSED(identifier, fact1, fact2, fact3, fact4)
 
 function _Debug_regionToString(region)
 {
-	if (region.an.Q === region.aD.Q)
+	if (region.an.R === region.aD.R)
 	{
-		return 'on line ' + region.an.Q;
+		return 'on line ' + region.an.R;
 	}
-	return 'on lines ' + region.an.Q + ' through ' + region.aD.Q;
+	return 'on lines ' + region.an.R + ' through ' + region.aD.R;
 }
 
 
@@ -5979,7 +5979,7 @@ var $justinmimbs$date$Date$formatField = F4(
 							$elm$core$String$fromInt(
 								$justinmimbs$date$Date$monthNumber(date)));
 					case 3:
-						return language.X(
+						return language.Y(
 							$justinmimbs$date$Date$month(date));
 					case 4:
 						return language.ae(
@@ -5988,7 +5988,7 @@ var $justinmimbs$date$Date$formatField = F4(
 						return A2(
 							$elm$core$String$left,
 							1,
-							language.X(
+							language.Y(
 								$justinmimbs$date$Date$month(date)));
 					default:
 						return '';
@@ -6736,7 +6736,7 @@ var $justinmimbs$date$Date$weekdayToName = function (wd) {
 var $justinmimbs$date$Date$language_en = {
 	ab: $justinmimbs$date$Date$withOrdinalSuffix,
 	ae: $justinmimbs$date$Date$monthToName,
-	X: A2(
+	Y: A2(
 		$elm$core$Basics$composeR,
 		$justinmimbs$date$Date$monthToName,
 		$elm$core$String$left(3)),
@@ -7003,7 +7003,7 @@ var $author$project$Liturgie$buildParameters = F3(
 			'-',
 			'',
 			$author$project$Liturgie$dateToIsoString(startDate));
-		var filterString = (!filter.V) ? '&filter=1' : '';
+		var filterString = (!filter.W) ? '&filter=1' : '';
 		var endDate = function () {
 			switch (mode) {
 				case 3:
@@ -7048,7 +7048,7 @@ var $author$project$Liturgie$buildParameters = F3(
 	});
 var $author$project$Liturgie$DayInfo = F9(
 	function (weekTitle, weekISO, weekISOCorrected, weekDay, weekDayCorrected, yearABC, year12, season, items) {
-		return {aP: items, al: season, be: weekDay, ar: weekDayCorrected, bf: weekISO, as: weekISOCorrected, Z: weekTitle, av: year12, aw: yearABC};
+		return {aP: items, al: season, be: weekDay, ar: weekDayCorrected, bf: weekISO, as: weekISOCorrected, _: weekTitle, av: year12, aw: yearABC};
 	});
 var $author$project$Liturgie$andMap = $elm$json$Json$Decode$map2($elm$core$Basics$apR);
 var $elm$json$Json$Decode$andThen = _Json_andThen;
@@ -7064,7 +7064,7 @@ var $author$project$Liturgie$Item = function (priority) {
 							return function (codeCommon) {
 								return function (codeDay) {
 									return function (codeExtra) {
-										return {aA: codeCommon, _: codeDay, aB: codeExtra, W: codeProper, aa: color, aj: priority, ba: titleCode, ap: titleLong, aq: titleShort, J: typeShort};
+										return {aA: codeCommon, X: codeDay, aB: codeExtra, M: codeProper, aa: color, aj: priority, ba: titleCode, ap: titleLong, aq: titleShort, J: typeShort};
 									};
 								};
 							};
@@ -8039,7 +8039,7 @@ var $author$project$Liturgie$getCommand = function (_v0) {
 };
 var $author$project$Liturgie$Filter = F3(
 	function (romeinseKalender, nederlandseKalender, vlaamseKalender) {
-		return {bF: nederlandseKalender, bL: romeinseKalender, V: vlaamseKalender};
+		return {bF: nederlandseKalender, bL: romeinseKalender, W: vlaamseKalender};
 	});
 var $author$project$Liturgie$Loading = function (a) {
 	return {$: 1, a: a};
@@ -8160,7 +8160,7 @@ var $author$project$Liturgie$setLoadingCalenderData = F2(
 var $author$project$Liturgie$toggleVlaamseKalender = function (filter) {
 	return _Utils_update(
 		filter,
-		{V: !filter.V});
+		{W: !filter.W});
 };
 var $author$project$Liturgie$update = F3(
 	function (toParentMsg, msg, model) {
@@ -8988,7 +8988,7 @@ var $author$project$Main$init = F3(
 								$author$project$Main$buildLogString(newLiturgischeKalender)
 							]))
 					]),
-				Y: navKey,
+				Z: navKey,
 				af: $elm$core$Maybe$Nothing,
 				ak: A2($elm$url$Url$Parser$parse, $author$project$Main$kruimelParser, url)
 			},
@@ -9419,7 +9419,7 @@ var $author$project$Main$update = F2(
 							}),
 						A2(
 							$elm$browser$Browser$Navigation$pushUrl,
-							model.Y,
+							model.Z,
 							$elm$url$Url$toString(url)));
 				} else {
 					var url = urlRequest.a;
@@ -9482,7 +9482,7 @@ var $author$project$Main$update = F2(
 				}();
 				var pushUrlCommand = ((!_Utils_eq(model.n.j, newLiturgischeKalender.j)) || (!_Utils_eq(model.n.g, newLiturgischeKalender.g))) ? A2(
 					$elm$browser$Browser$Navigation$pushUrl,
-					model.Y,
+					model.Z,
 					A2($author$project$Main$buildNavUrl, newLiturgischeKalender.j, newLiturgischeKalender.g)) : $elm$core$Platform$Cmd$none;
 				return _Utils_Tuple2(
 					_Utils_update(
@@ -10008,7 +10008,7 @@ var $author$project$Liturgie$viewEucharistie = F3(
 						} else {
 							if (A2(
 								$elm$core$List$member,
-								item.W,
+								item.M,
 								_List_fromArray(
 									['100', '101', '102', '103', '104', '105']))) {
 								return _Utils_Tuple2(welGloria, welCredo);
@@ -10050,27 +10050,49 @@ var $author$project$Liturgie$viewEucharistie = F3(
 	});
 var $author$project$Liturgie$getPsalmboek = function (item) {
 	var intro = 'Psalmboek week ';
-	var codeDayInt = $elm$core$String$toInt(item._);
-	if (!codeDayInt.$) {
-		var day = codeDayInt.a;
-		return ((day >= 1) && (day <= 20)) ? _Utils_ap(
-			intro,
-			$elm$core$String$fromInt(
-				A2($elm$core$Basics$modBy, 4, ((day - 1) / 7) | 0) + 1)) : ((day === 21) ? _Utils_ap(
-			intro,
-			$elm$core$String$fromInt(4)) : (((day >= 159) && (day <= 187)) ? _Utils_ap(
-			intro,
-			$elm$core$String$fromInt(
-				A2($elm$core$Basics$modBy, 4, (((day - 160) / 7) | 0) + 3) + 1)) : ((day === 645) ? (intro + '4 (in het morgengebed kan men de psalmen en antifonen van vrijdag van de derde week nemen)') : (((day >= 54) && (day <= 91)) ? _Utils_ap(
-			intro,
-			$elm$core$String$fromInt(
-				A2($elm$core$Basics$modBy, 4, (((day - 57) / 7) | 0) + 4) + 1)) : (((day >= 600) && (day <= 837)) ? _Utils_ap(
-			intro,
-			$elm$core$String$fromInt(
-				A2($elm$core$Basics$modBy, 4, ((day - 600) / 7) | 0) + 1)) : 'Psalmboek week onbekend')))));
-	} else {
-		return 'Psalmboek week onbekend';
-	}
+	var codeProper = function () {
+		var _v1 = item.M;
+		if (_v1 === '') {
+			return -1;
+		} else {
+			return A2(
+				$elm$core$Maybe$withDefault,
+				-1,
+				$elm$core$String$toInt(item.M));
+		}
+	}();
+	var codeDay = function () {
+		var _v0 = item.X;
+		if (_v0 === '') {
+			return -1;
+		} else {
+			return A2(
+				$elm$core$Maybe$withDefault,
+				-1,
+				$elm$core$String$toInt(item.X));
+		}
+	}();
+	return ((codeDay >= 1) && (codeDay <= 20)) ? _Utils_ap(
+		intro,
+		$elm$core$String$fromInt(
+			A2($elm$core$Basics$modBy, 4, ((codeDay - 1) / 7) | 0) + 1)) : ((codeDay === 21) ? _Utils_ap(
+		intro,
+		$elm$core$String$fromInt(4)) : (((codeDay >= 159) && (codeDay <= 187)) ? _Utils_ap(
+		intro,
+		$elm$core$String$fromInt(
+			A2($elm$core$Basics$modBy, 4, (((codeDay - 160) / 7) | 0) + 3) + 1)) : ((codeProper === 53) ? (intro + '4 (in het morgengebed kan men de psalmen en antifonen nemen van vrijdag van de derde week)') : (((codeDay >= 54) && (codeDay <= 91)) ? _Utils_ap(
+		intro,
+		$elm$core$String$fromInt(
+			A2($elm$core$Basics$modBy, 4, ((codeDay - 1) / 7) | 0) + 1)) : (A2(
+		$elm$core$List$member,
+		codeProper,
+		_List_fromArray(
+			[92, 93, 94, 95])) ? _Utils_ap(
+		intro,
+		$elm$core$String$fromInt(2)) : ((codeProper === 96) ? (intro + '2 (in de lezingendienst kan men de psalmen en antifonen nemen van vrijdag van de derde week; in het avondgebed neemt men de psalmen en lofzang van donderdag van de tweede week)') : (((codeProper === 97) || (codeProper === 98)) ? 'Psalmen zoals aangegeven in het eigen van de dag.' : (((codeDay >= 600) && (codeDay <= 837)) ? _Utils_ap(
+		intro,
+		$elm$core$String$fromInt(
+			A2($elm$core$Basics$modBy, 4, ((codeDay - 600) / 7) | 0) + 1)) : 'Psalmboek week onbekend'))))))));
 };
 var $author$project$Liturgie$viewGetijdengebed = function (item) {
 	var psalmboek = _List_fromArray(
@@ -10162,7 +10184,7 @@ var $author$project$Liturgie$viewItem = F5(
 					$author$project$Liturgie$viewLabelTextDiv,
 					'typeLong',
 					'Lange weergave type:',
-					A3($author$project$Liturgie$getTypeLong, item.W, item.aj, item.J)),
+					A3($author$project$Liturgie$getTypeLong, item.M, item.aj, item.J)),
 					A3($author$project$Liturgie$viewLabelTextDiv, 'titleLong', 'Lange titel:', item.ap),
 					A3($author$project$Liturgie$viewLabelTextDiv, 'titleShort', 'Korte titel:', titleShort),
 					A3($author$project$Liturgie$viewLabelTextDiv, 'titleCode', 'Titelcode:', item.ba),
@@ -10171,9 +10193,9 @@ var $author$project$Liturgie$viewItem = F5(
 					'color',
 					'Liturgische kleur:',
 					$author$project$Liturgie$colorToString(item.aa)),
-					A3($author$project$Liturgie$viewLabelTextDiv, 'codeProper', 'Code eigen:', item.W),
+					A3($author$project$Liturgie$viewLabelTextDiv, 'codeProper', 'Code eigen:', item.M),
 					A3($author$project$Liturgie$viewLabelTextDiv, 'codeCommon', 'Code gemeenschappelijk:', item.aA),
-					A3($author$project$Liturgie$viewLabelTextDiv, 'codeDay', 'Code van de dag:', item._),
+					A3($author$project$Liturgie$viewLabelTextDiv, 'codeDay', 'Code van de dag:', item.X),
 					A3($author$project$Liturgie$viewLabelTextDiv, 'codeExtra', 'Code aanvullende psalmodie:', item.aB),
 					A3($author$project$Liturgie$viewEucharistie, date, season, item),
 					$author$project$Liturgie$viewGetijdengebed(item)
@@ -10258,7 +10280,7 @@ var $author$project$Liturgie$viewDay = F6(
 							'Dagnummer:',
 							$elm$core$String$fromInt(
 								$justinmimbs$date$Date$day(date))),
-							A3($author$project$Liturgie$viewLabelTextDiv, 'weekTitle', 'Week titel:', dayInfo.Z),
+							A3($author$project$Liturgie$viewLabelTextDiv, 'weekTitle', 'Week titel:', dayInfo._),
 							A3(
 							$author$project$Liturgie$viewLabelTextDiv,
 							'weekISO',
@@ -10315,7 +10337,7 @@ var $author$project$Liturgie$viewDay = F6(
 						]),
 						A2(
 						$elm$core$List$map,
-						A4($author$project$Liturgie$viewItem, date, dayInfo.al, dayInfo.Z, dayInfo.ar),
+						A4($author$project$Liturgie$viewItem, date, dayInfo.al, dayInfo._, dayInfo.ar),
 						dayInfo.aP)
 					])));
 	});
@@ -10531,7 +10553,7 @@ var $author$project$Liturgie$viewWeekInfo = function (dayInfoList) {
 			A2(
 				$elm$core$List$map,
 				function ($) {
-					return $.Z;
+					return $._;
 				},
 				dayInfoList)));
 	var weeknummer = A2(
@@ -10986,7 +11008,7 @@ var $author$project$Liturgie$viewSettings = F4(
 						[
 							A4(
 							$author$project$Liturgie$viewCheckbox,
-							filter.V,
+							filter.W,
 							false,
 							toParentMsg($author$project$Liturgie$ToggleVlaamseKalender),
 							'Inclusief Vlaamse kalender')
