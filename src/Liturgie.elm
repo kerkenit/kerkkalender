@@ -1129,10 +1129,12 @@ viewEucharistie date season item =
   -- TODO: Chrismamis / Witte Donderdag en andere afwijkende dagen
   let
     beginGloria = "Het Eer aan God (Gloria) "
-    welGloria = [ div [ class className ] [ text ( beginGloria ++ "wordt gezongen / gebeden." ) ] ]
+    welGloria = [ div [ class className ] [ text ( beginGloria ++ "wordt gebeden." ) ] ]
     nietGloria = [ div [ class className ] [ text ( beginGloria ++ "blijft achterwege." ) ] ]
 
-    welCredo = [ div [ class className ] [ text ( "De Geloofsbelijdenis (Credo) wordt gezongen / gebeden." ) ] ]
+    beginCredo = "De Geloofsbelijdenis (Credo) "
+    welCredo = [ div [ class className ] [ text ( beginCredo ++ "wordt gebeden." ) ] ]
+    nietCredo = [ div [ class className ] [ text ( beginCredo ++ "blijft achterwege." ) ] ]
 
     className = "gloria"
 
@@ -1158,8 +1160,10 @@ viewEucharistie date season item =
           Paastijd -> ( welGloria, welCredo )
 
       -- feesten en hoogfeesten
-      else if List.member item.typeShort [ "f", "h" ] then
-        ( welGloria, welCredo )
+      else if List.member item.typeShort [ "f" ] then
+        ( welGloria, [] )
+      else if List.member item.typeShort [ "h" ] then
+        ( welGloria, welCredo)
 
       -- Kerstoctaaf
       else if 

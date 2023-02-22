@@ -6051,13 +6051,13 @@ var $justinmimbs$date$Date$formatField = F4(
 			case 'E':
 				switch (length) {
 					case 1:
-						return language.K(
+						return language.L(
 							$justinmimbs$date$Date$weekday(date));
 					case 2:
-						return language.K(
+						return language.L(
 							$justinmimbs$date$Date$weekday(date));
 					case 3:
-						return language.K(
+						return language.L(
 							$justinmimbs$date$Date$weekday(date));
 					case 4:
 						return language.at(
@@ -6066,13 +6066,13 @@ var $justinmimbs$date$Date$formatField = F4(
 						return A2(
 							$elm$core$String$left,
 							1,
-							language.K(
+							language.L(
 								$justinmimbs$date$Date$weekday(date)));
 					case 6:
 						return A2(
 							$elm$core$String$left,
 							2,
-							language.K(
+							language.L(
 								$justinmimbs$date$Date$weekday(date)));
 					default:
 						return '';
@@ -6741,7 +6741,7 @@ var $justinmimbs$date$Date$language_en = {
 		$justinmimbs$date$Date$monthToName,
 		$elm$core$String$left(3)),
 	at: $justinmimbs$date$Date$weekdayToName,
-	K: A2(
+	L: A2(
 		$elm$core$Basics$composeR,
 		$justinmimbs$date$Date$weekdayToName,
 		$elm$core$String$left(3))
@@ -7064,7 +7064,7 @@ var $author$project$Liturgie$Item = function (priority) {
 							return function (codeCommon) {
 								return function (codeDay) {
 									return function (codeExtra) {
-										return {aA: codeCommon, _: codeDay, aB: codeExtra, W: codeProper, aa: color, aj: priority, ba: titleCode, ap: titleLong, aq: titleShort, N: typeShort};
+										return {aA: codeCommon, _: codeDay, aB: codeExtra, W: codeProper, aa: color, aj: priority, ba: titleCode, ap: titleLong, aq: titleShort, J: typeShort};
 									};
 								};
 							};
@@ -8320,11 +8320,11 @@ var $author$project$Main$initUrl = F2(
 var $elm$url$Url$Parser$Parser = $elm$core$Basics$identity;
 var $elm$url$Url$Parser$State = F5(
 	function (visited, unvisited, params, frag, value) {
-		return {G: frag, H: params, F: unvisited, A: value, J: visited};
+		return {G: frag, H: params, F: unvisited, A: value, K: visited};
 	});
 var $elm$url$Url$Parser$mapState = F2(
 	function (func, _v0) {
-		var visited = _v0.J;
+		var visited = _v0.K;
 		var unvisited = _v0.F;
 		var params = _v0.H;
 		var frag = _v0.G;
@@ -8341,7 +8341,7 @@ var $elm$url$Url$Parser$map = F2(
 	function (subValue, _v0) {
 		var parseArg = _v0;
 		return function (_v1) {
-			var visited = _v1.J;
+			var visited = _v1.K;
 			var unvisited = _v1.F;
 			var params = _v1.H;
 			var frag = _v1.G;
@@ -8359,7 +8359,7 @@ var $elm$core$Tuple$pair = F2(
 	});
 var $elm$url$Url$Parser$s = function (str) {
 	return function (_v0) {
-		var visited = _v0.J;
+		var visited = _v0.K;
 		var unvisited = _v0.F;
 		var params = _v0.H;
 		var frag = _v0.G;
@@ -8412,7 +8412,7 @@ var $elm$url$Url$Parser$slash = F2(
 var $elm$url$Url$Parser$custom = F2(
 	function (tipe, stringToSomething) {
 		return function (_v0) {
-			var visited = _v0.J;
+			var visited = _v0.K;
 			var unvisited = _v0.F;
 			var params = _v0.H;
 			var frag = _v0.G;
@@ -9904,19 +9904,6 @@ var $justinmimbs$date$Date$isBetween = F3(
 var $author$project$Liturgie$viewEucharistie = F3(
 	function (date, season, item) {
 		var className = 'gloria';
-		var welCredo = _List_fromArray(
-			[
-				A2(
-				$elm$html$Html$div,
-				_List_fromArray(
-					[
-						$elm$html$Html$Attributes$class(className)
-					]),
-				_List_fromArray(
-					[
-						$elm$html$Html$text('De Geloofsbelijdenis (Credo) wordt gezongen / gebeden.')
-					]))
-			]);
 		var beginGloria = 'Het Eer aan God (Gloria) ';
 		var nietGloria = _List_fromArray(
 			[
@@ -9941,7 +9928,34 @@ var $author$project$Liturgie$viewEucharistie = F3(
 					]),
 				_List_fromArray(
 					[
-						$elm$html$Html$text(beginGloria + 'wordt gezongen / gebeden.')
+						$elm$html$Html$text(beginGloria + 'wordt gebeden.')
+					]))
+			]);
+		var beginCredo = 'De Geloofsbelijdenis (Credo) ';
+		var nietCredo = _List_fromArray(
+			[
+				A2(
+				$elm$html$Html$div,
+				_List_fromArray(
+					[
+						$elm$html$Html$Attributes$class(className)
+					]),
+				_List_fromArray(
+					[
+						$elm$html$Html$text(beginCredo + 'blijft achterwege.')
+					]))
+			]);
+		var welCredo = _List_fromArray(
+			[
+				A2(
+				$elm$html$Html$div,
+				_List_fromArray(
+					[
+						$elm$html$Html$Attributes$class(className)
+					]),
+				_List_fromArray(
+					[
+						$elm$html$Html$text(beginCredo + 'wordt gebeden.')
 					]))
 			]);
 		var _v0 = function () {
@@ -9965,34 +9979,42 @@ var $author$project$Liturgie$viewEucharistie = F3(
 			} else {
 				if (A2(
 					$elm$core$List$member,
-					item.N,
+					item.J,
 					_List_fromArray(
-						['f', 'h']))) {
-					return _Utils_Tuple2(welGloria, welCredo);
+						['f']))) {
+					return _Utils_Tuple2(welGloria, _List_Nil);
 				} else {
-					if (A3(
-						$justinmimbs$date$Date$isBetween,
-						A3(
-							$justinmimbs$date$Date$fromCalendarDate,
-							$justinmimbs$date$Date$year(date),
-							11,
-							26),
-						A3(
-							$justinmimbs$date$Date$fromCalendarDate,
-							$justinmimbs$date$Date$year(date),
-							11,
-							31),
-						date)) {
+					if (A2(
+						$elm$core$List$member,
+						item.J,
+						_List_fromArray(
+							['h']))) {
 						return _Utils_Tuple2(welGloria, welCredo);
 					} else {
-						if (A2(
-							$elm$core$List$member,
-							item.W,
-							_List_fromArray(
-								['100', '101', '102', '103', '104', '105']))) {
+						if (A3(
+							$justinmimbs$date$Date$isBetween,
+							A3(
+								$justinmimbs$date$Date$fromCalendarDate,
+								$justinmimbs$date$Date$year(date),
+								11,
+								26),
+							A3(
+								$justinmimbs$date$Date$fromCalendarDate,
+								$justinmimbs$date$Date$year(date),
+								11,
+								31),
+							date)) {
 							return _Utils_Tuple2(welGloria, welCredo);
 						} else {
-							return _Utils_Tuple2(_List_Nil, _List_Nil);
+							if (A2(
+								$elm$core$List$member,
+								item.W,
+								_List_fromArray(
+									['100', '101', '102', '103', '104', '105']))) {
+								return _Utils_Tuple2(welGloria, welCredo);
+							} else {
+								return _Utils_Tuple2(_List_Nil, _List_Nil);
+							}
 						}
 					}
 				}
@@ -10112,8 +10134,8 @@ var $author$project$Liturgie$viewItem = F5(
 				_Utils_Tuple2(
 				'item ' + $author$project$Liturgie$colorToString(item.aa),
 				true),
-				_Utils_Tuple2('feest', item.N === 'f'),
-				_Utils_Tuple2('hoogfeest', item.N === 'h')
+				_Utils_Tuple2('feest', item.J === 'f'),
+				_Utils_Tuple2('hoogfeest', item.J === 'h')
 			]);
 		return A2(
 			$elm$html$Html$div,
@@ -10133,12 +10155,12 @@ var $author$project$Liturgie$viewItem = F5(
 					$author$project$Liturgie$viewLabelTextDiv,
 					'typeShort',
 					'Korte weergave type:',
-					$author$project$Liturgie$getTypeShort(item.N)),
+					$author$project$Liturgie$getTypeShort(item.J)),
 					A3(
 					$author$project$Liturgie$viewLabelTextDiv,
 					'typeLong',
 					'Lange weergave type:',
-					A3($author$project$Liturgie$getTypeLong, item.W, item.aj, item.N)),
+					A3($author$project$Liturgie$getTypeLong, item.W, item.aj, item.J)),
 					A3($author$project$Liturgie$viewLabelTextDiv, 'titleLong', 'Lange titel:', item.ap),
 					A3($author$project$Liturgie$viewLabelTextDiv, 'titleShort', 'Korte titel:', titleShort),
 					A3($author$project$Liturgie$viewLabelTextDiv, 'titleCode', 'Titelcode:', item.ba),
