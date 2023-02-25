@@ -10,6 +10,7 @@ function kalender_data($y, $filter)
     
 	$data=array();
     $con = new SQLite3($kerkkalender_db, SQLITE3_OPEN_READONLY);
+    $con->busyTimeout(5000);
     $statement = $con->prepare(
         'SELECT
             maand,dag,prioriteit,soort_feest,naam_lang,naam_kort,liturgische_tijd,liturgische_kleur,code_eigen,code_gem,code_dag,naam_code
@@ -23,6 +24,7 @@ function kalender_data($y, $filter)
         $row []= "950";
         $data []= $row;
     }
+    $con->close();
  	return $data;
 }
 
