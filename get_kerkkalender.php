@@ -29,7 +29,10 @@ if ($_SERVER['REQUEST_METHOD'] == "OPTIONS") {
     $filter = 2;
     if (isset($_GET['filter']))
         $filter = intval($_GET['filter']);
-    $cal = kerkkalender($start, $end, $filter);
+    $bisdom = 65535;
+    if (isset($_GET['bisdom']))
+        $bisdom = intval($_GET['bisdom']);
+    $cal = kerkkalender($start, $end, $filter, $bisdom);
 
     print $cal;
 }
