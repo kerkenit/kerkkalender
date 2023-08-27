@@ -206,6 +206,7 @@ buildNavUrl mode date =
         Liturgie.MonthMode -> "maand"
         Liturgie.WeekMode -> "week"
         Liturgie.DayMode -> "dag"
+        Liturgie.CustomMode eindDatum -> "lijst"
     
     datum = 
       case date of
@@ -326,6 +327,13 @@ liturgieModelToHistoryString liturgischeKalender =
             , Liturgie.dateToString date
             ]
 
+        Liturgie.CustomMode eindDatum -> 
+          String.concat
+            [ ": "
+            , Liturgie.dateToYearInt date |> String.fromInt
+            , " (lijst)"
+            ]
+
 
 modeToString : Liturgie.Mode -> String
 modeToString mode = 
@@ -335,6 +343,7 @@ modeToString mode =
     Liturgie.MonthMode -> "maandweergave"
     Liturgie.WeekMode -> "weekweergave"
     Liturgie.DayMode -> "dagweergave"
+    Liturgie.CustomMode eindDatum -> "customweergave"
 
 
 stringToMode : String -> Liturgie.Mode

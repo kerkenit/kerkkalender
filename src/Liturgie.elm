@@ -7,9 +7,11 @@ module Liturgie exposing
   , initDagkalender
   , initMaandkalenderNL
   , initDagkalenderNL
+  , initCustomkalenderNL
   , update
   , getCommand
   , view
+  , viewCustomPrLijstDag
   , createDate
   , dateToString -- d-m-yyyy
   , dateToIsoString -- yyyy-mm-dd
@@ -25,7 +27,7 @@ import Browser
 import Date
 import Dict exposing (Dict)
 import Html exposing (Html, div, text, span, button, label, input, a)
-import Html.Attributes exposing (id, class, title, disabled, checked, type_, target, href, classList)
+import Html.Attributes exposing (id, class, title, disabled, checked, type_, target, href)
 import Html.Events exposing (onClick)
 import Http
 import List.Extra as Listx
@@ -55,6 +57,7 @@ type Mode
   | WeekMode
   | DayMode
   | ListMode
+  | CustomMode ( Maybe Date.Date )
 
 
 type Calender
@@ -184,6 +187,19 @@ initDagkalenderNL =
   }
 
 
+initCustomkalenderNL : Model
+initCustomkalenderNL =
+  { today = Nothing
+  , date = Nothing
+  , selected = Nothing
+  , mode = CustomMode Nothing
+  , calenderData = Loading Dict.empty
+  , showKalender = True
+  , filter = Filter True True False
+  , showSundaysOnly = False
+  }
+
+
 -- HTTP & DECODING
 
 
@@ -225,6 +241,7 @@ buildParameters mode filter date =
         MonthMode -> Date.floor Date.Month date
         YearMode -> Date.floor Date.Year date
         ListMode -> Date.floor Date.Year date
+        CustomMode mssEindDatum -> date
 
     start = 
       dateToIsoString startDate
@@ -246,16 +263,28 @@ buildParameters mode filter date =
           Date.add Date.Days 1 date
           |> Date.ceiling Date.Year
           |> Date.add Date.Days -1
+        CustomMode mssEindDatum ->
+          case mssEindDatum of
+            Nothing -> date
+            Just eindDatum -> eindDatum
     
     end = 
       dateToIsoString endDate
       |> String.replace "-" ""
 
     filterString = 
+      case ( filter.nederlandseKalender, filter.vlaamseKalender ) of -- romeinse kalender kan niet weggelaten worden
+        ( False, False ) -> "&filter=8" ++ "&bisdom=32768" -- alleen de romeinse kalender
+        ( False, True ) -> "&filter=8" ++ "&bisdom=8192" -- romeinse en vlaamse kalender
+        ( True, False ) -> "&filter=8" ++ "&bisdom=128" -- romeinse en nederlandse kalender
+        ( True, True ) -> "&filter=8" -- romeinse, nederlandse en vlaamse kalender
+
+    {-}
       if ( filter.vlaamseKalender == False ) then
-        "&filter=1"
+        "&filter=8&bisdom=128"
       else
-        ""
+        "&filter=8"
+    -}
   in
     "?start=" ++ start ++ "&end=" ++ end ++ filterString
 
@@ -432,13 +461,14 @@ type LiturgieMsg
   | ChangeMode Mode
   | Next
   | Previous
-  | ToToday
+  | ToToday --deprecated
   | ToggleShowKalender
   | SetSelected ( Maybe Date.Date )
   | SetModelDate Date.Date
   | ClickDate Date.Date
   | ClickMonth ( Date.Month, Int )
   | ToggleVlaamseKalender
+  | ToggleNederlandseKalender
   | ToggleSundaysOnly
   | SoftReset
 
@@ -508,6 +538,9 @@ update toParentMsg msg model =
     ToggleVlaamseKalender ->
       { model | filter = toggleVlaamseKalender model.filter, calenderData = Loading ( getCalenderLijst model.calenderData ) }
 
+    ToggleNederlandseKalender ->
+      { model | filter = toggleNederlandseKalender model.filter, calenderData = Loading ( getCalenderLijst model.calenderData ) }
+
     ToggleSundaysOnly ->
       { model | showSundaysOnly = not model.showSundaysOnly }
 
@@ -523,6 +556,11 @@ update toParentMsg msg model =
 toggleVlaamseKalender : Filter -> Filter
 toggleVlaamseKalender filter = 
   { filter | vlaamseKalender = ( not filter.vlaamseKalender ) }
+
+
+toggleNederlandseKalender : Filter -> Filter
+toggleNederlandseKalender filter = 
+  { filter | nederlandseKalender = ( not filter.nederlandseKalender ) }
 
 
 setLoadingCalenderData : Calender -> Date.Date -> Calender
@@ -648,6 +686,9 @@ liturgieMsgToString msg =
     ToggleVlaamseKalender ->
       "ToggleVlaamseKalender"
 
+    ToggleNederlandseKalender -> 
+      "ToggleNederlandseKalender"
+
     ToggleSundaysOnly -> 
       "ToggleSundaysOnly"
 
@@ -668,6 +709,7 @@ changeDate model direction =
         WeekMode -> Date.Weeks
         DayMode -> Date.Days
         ListMode -> Date.Years
+        CustomMode eindDatum -> Date.Days -- dit is niet doordacht
 
   in
     case model.date of
@@ -829,6 +871,7 @@ viewSettings toParentMsg filter mode showSundaysOnly =
       [ class "settings" ]
       ( List.concat
         [ [ viewCheckbox filter.vlaamseKalender False ( toParentMsg ToggleVlaamseKalender ) "Inclusief Vlaamse kalender"
+          , viewCheckbox filter.nederlandseKalender False ( toParentMsg ToggleNederlandseKalender ) "Inclusief Nederlandse kalender"
           ]
         , viewShowSundaysCheckbox
         ]
@@ -890,11 +933,7 @@ viewCalenderData toParentMsg model cal =
       WeekMode -> 
         div 
         [ class "weekMode" ] 
-        ( List.concat
-          [ List.map ( viewDays toParentMsg model.today model.date model.selected cal ) aanwezigeDatums
-          , viewWeekInfo ( Dict.values cal )
-          ]
-        )
+        ( List.map ( viewDays toParentMsg model.today model.date model.selected cal ) aanwezigeDatums )
 
       DayMode -> 
         div 
@@ -910,6 +949,9 @@ viewCalenderData toParentMsg model cal =
         [ class "listMode" ]
         ( viewMonths toParentMsg model.today model.date model.selected model.mode model.showSundaysOnly cal )
         --( List.map ( viewDays toParentMsg model.today model.date model.selected cal ) aanwezigeDatums )
+
+      CustomMode eindDatum ->
+        div [ class "customMode" ] []
 
 
 viewDateheader : Date.Date -> Html msg
@@ -961,42 +1003,6 @@ viewWeeknumbers : Int -> Int -> Html msg
 viewWeeknumbers index weeknumber =
   div [ class ( "weeknummer nr" ++ ( String.fromInt ( index + 1 ) ) ) ] [ text ( String.fromInt weeknumber ) ]
 
-
-viewWeekInfo : List DayInfo -> List ( Html msg )
-viewWeekInfo dayInfoList =
-  let
-    weektitel = 
-      List.map .weekTitle dayInfoList
-      |> Listx.unique
-      |> String.join " & "
-    
-    weeknummer =
-      List.map .weekISOCorrected dayInfoList
-      |> Listx.unique
-      |> List.map String.fromInt
-      |> String.join "-"
-
-    jaarABC = 
-      List.map .yearABC dayInfoList
-      |> Listx.unique
-      |> List.map String.toUpper
-      |> String.join "-"
-
-    jaar12 = 
-      List.map .year12 dayInfoList
-      |> Listx.unique
-      |> List.map String.fromInt
-      |> String.join "-"
-
-  in
-    [ div
-      [ class "weekinfo" ]
-      [ div [] [ span [] [ text weektitel ] ]
-      , viewLabelTextDiv "" "Weeknummer:" ( "week " ++ weeknummer )
-      , viewLabelTextDiv "" "Driejarige cyclus:" ( "jaar " ++ jaarABC )
-      , viewLabelTextDiv "" "Tweejarige cyclus:" ( "jaar " ++ jaar12 )
-      ]
-    ]
 
 
 viewDays : ( LiturgieMsg -> msg ) -> Maybe Date.Date -> Maybe Date.Date -> Maybe Date.Date -> Days -> Date.Date -> Html msg
@@ -1059,50 +1065,28 @@ viewDay toParentMsg today modelDate selectedDate date dayInfo =
           , viewLabelTextDiv "weekDay" "Weekdag (1-7):" ( String.fromInt dayInfo.weekDay )
           , viewLabelTextDiv "weekDayCorrected" "Weekdag (1-7) (gecorrigeerd):" ( String.fromInt dayInfo.weekDayCorrected )
           , viewLabelTextDiv "weekDayName" "Dag in de week:" ( dateToWeekdayString date )
-          , viewLabelTextDiv "yearABC" "Driejarige cyclus:" ( "jaar " ++ ( String.toUpper dayInfo.yearABC ) )
-          , viewLabelTextDiv "year12" "Tweejarige cyclus:" ( "jaar " ++ ( String.fromInt dayInfo.year12 ) )
+          , viewLabelTextDiv "yearABC" "Driejarige cyclus:" dayInfo.yearABC
+          , viewLabelTextDiv "year12" "Tweejarige cyclus:" ( String.fromInt dayInfo.year12 )
           , viewLabelTextDiv "season" "Liturgische tijd:" ( seasonToString dayInfo.season )
           , a [ href ( buildMissaalUrl date ), target "_blank", class "missaalUrl" ] [ text "Teksten Eucharistie" ]
           ]
-        , List.map ( viewItem date dayInfo.season dayInfo.weekTitle dayInfo.weekDayCorrected ) dayInfo.items
+        , List.map ( viewItem date dayInfo.season ) dayInfo.items
         ]
       )
 
 
-viewItem : Date.Date -> Season -> String -> Int -> Item -> Html msg
-viewItem date season weekTitle weekDayCorrected item = 
+viewItem : Date.Date -> Season -> Item -> Html msg
+viewItem date season item = 
   let
-    classNames = 
-      [ ( "item " ++ ( colorToString item.color ), True )
-      , ( "feest", ( item.typeShort == "f" ) )
-      , ( "hoogfeest", ( item.typeShort == "h" ) )
-      ]
-    titleShort = 
-      case item.titleShort of
-        "" -> 
-          --"Van de dag"
-          --item.titleLong
-          let
-            weekTitles = String.split " / " weekTitle
-            title = 
-              if weekDayCorrected < 4 then
-                List.head weekTitles
-              else
-                List.reverse weekTitles |> List.head
-          in
-            case title of
-              Nothing -> "Van de dag"
-              Just t -> t
-
-        _ -> item.titleShort
+    className = "item " ++ ( colorToString item.color )
   in
     div
-      [ classList classNames, title item.titleLong ]
+      [ class className, title item.titleLong ]
       [ viewLabelTextDiv "priority" "Prioriteit:" ( String.fromInt item.priority )
       , viewLabelTextDiv "typeShort" "Korte weergave type:" ( getTypeShort item.typeShort )
       , viewLabelTextDiv "typeLong" "Lange weergave type:" ( getTypeLong item.codeProper item.priority item.typeShort )
       , viewLabelTextDiv "titleLong" "Lange titel:" item.titleLong
-      , viewLabelTextDiv "titleShort" "Korte titel:" titleShort
+      , viewLabelTextDiv "titleShort" "Korte titel:" item.titleShort
       , viewLabelTextDiv "titleCode" "Titelcode:" item.titleCode
       , viewLabelTextDiv "color" "Liturgische kleur:" ( colorToString item.color )
       , viewLabelTextDiv "codeProper" "Code eigen:" item.codeProper
@@ -1110,7 +1094,6 @@ viewItem date season weekTitle weekDayCorrected item =
       , viewLabelTextDiv "codeDay" "Code van de dag:" item.codeDay
       , viewLabelTextDiv "codeExtra" "Code aanvullende psalmodie:" item.codeExtra
       , viewEucharistie date season item
-      , viewGetijdengebed item
       --, a [ href ( buildMissaalUrl date ), target "_blank", class "missaalUrl" ] [ text "Teksten Eucharistie" ]
       ]
 
@@ -1129,12 +1112,10 @@ viewEucharistie date season item =
   -- TODO: Chrismamis / Witte Donderdag en andere afwijkende dagen
   let
     beginGloria = "Het Eer aan God (Gloria) "
-    welGloria = [ div [ class className ] [ text ( beginGloria ++ "wordt gebeden." ) ] ]
+    welGloria = [ div [ class className ] [ text ( beginGloria ++ "wordt gezongen / gebeden." ) ] ]
     nietGloria = [ div [ class className ] [ text ( beginGloria ++ "blijft achterwege." ) ] ]
 
-    beginCredo = "De Geloofsbelijdenis (Credo) "
-    welCredo = [ div [ class className ] [ text ( beginCredo ++ "wordt gebeden." ) ] ]
-    nietCredo = [ div [ class className ] [ text ( beginCredo ++ "blijft achterwege." ) ] ]
+    welCredo = [ div [ class className ] [ text ( "De Geloofsbelijdenis (Credo) wordt gezongen / gebeden." ) ] ]
 
     className = "gloria"
 
@@ -1160,10 +1141,8 @@ viewEucharistie date season item =
           Paastijd -> ( welGloria, welCredo )
 
       -- feesten en hoogfeesten
-      else if List.member item.typeShort [ "f" ] then
-        ( welGloria, [] )
-      else if List.member item.typeShort [ "h" ] then
-        ( welGloria, welCredo)
+      else if List.member item.typeShort [ "f", "h" ] then
+        ( welGloria, welCredo )
 
       -- Kerstoctaaf
       else if 
@@ -1192,24 +1171,6 @@ viewEucharistie date season item =
   in
     div
       [ class "eucharistie" ]
-      ( List.concat [ kopje, inhoud ] )
-
-
-viewGetijdengebed : Item -> Html msg
-viewGetijdengebed item =
-  let
-    psalmboek = [ div [ class "psalmboek" ] [ text ( getPsalmboek item ) ] ]
-
-    inhoud = List.concat [ psalmboek ]
-
-    kopje = 
-      if inhoud == [] then
-        []
-      else
-        [ div [ class "kopje" ] [ text "Getijdengebed" ] ]
-  in
-    div
-      [ class "getijdengebed" ]
       ( List.concat [ kopje, inhoud ] )
 
 
@@ -1339,71 +1300,19 @@ getTypeLong codeProper priority typeShort =
     _ -> "fout"
 
 
-getPsalmboek : Item -> String
-getPsalmboek item =
-  -- deze functie is nog niet af!
+viewCustomPrLijstDag : ( LiturgieMsg -> msg ) -> Model -> Date.Date -> List ( Html msg )
+viewCustomPrLijstDag toParentMsg model date = 
   let
-    codeDay = 
-      case item.codeDay of
-        "" -> -1
-        _ -> Maybe.withDefault -1 ( String.toInt item.codeDay )
-
-    codeProper = 
-      case item.codeProper of
-        "" -> -1
-        _ -> Maybe.withDefault -1 ( String.toInt item.codeProper )
-
-    intro = "Psalmboek week "
-
+    mssCal = 
+      case model.calenderData of
+        Failure string -> Nothing
+        Loading cal -> Just cal
+        Success cal -> Just cal
   in
-    --ADVENT EN KERSTTIJD
-    --a. eerste deel: code dag 001 t/m 020
-    if codeDay >= 1 && codeDay <= 20 then
-      intro
-      ++ String.fromInt ( ( modBy 4 ( ( ( codeDay - 1 ) // 7 ) ) ) + 1 )
-
-    --b. vierde zondag van de advent: code dag 021
-    else if codeDay == 21 then
-      intro
-      ++ String.fromInt ( 4 )
-
-    --c. tweede deel: code dag 159 t/m 187
-    else if codeDay >= 159 && codeDay <= 187 then
-      intro
-      ++ String.fromInt ( ( modBy 4 ( ( ( ( codeDay - 160 ) // 7 ) ) + 3 ) ) + 1 )
-
-    --VEERTIGDAGENTIJD: 
-    --a. Aswoensdag: code eigen 53
-    else if codeProper == 53 then
-      intro ++ "4 (in het morgengebed kan men de psalmen en antifonen nemen van vrijdag van de derde week)"
-
-    --b. Donderdag na aswoensdag t/m zaterdag voor palmzondag
-    --code dag 054 t/m 091
-    else if codeDay >= 54 && codeDay <= 91 then
-      intro
-      ++ String.fromInt ( ( modBy 4 ( ( codeDay - 1 ) // 7 ) ) + 1 )
-
-    --c. Vanaf palmzondag t/m woensdag in de Goede Week
-    -- code eigen 92 t/m 95
-    else if List.member codeProper [ 92, 93, 94, 95 ] then
-      intro ++ String.fromInt ( 2 )
-
-    --d. Donderdag in de Goede Week
-    -- code eigen 96
-    else if codeProper == 96 then
-      intro ++ "2 (in de lezingendienst kan men de psalmen en antifonen nemen van vrijdag van de derde week; in het avondgebed neemt men de psalmen en lofzang van donderdag van de tweede week)"
-
-    --e. Goede Vrijdag en Stille Zaterdag
-    --code eigen 97 en 98
-    else if  codeProper == 97 || codeProper == 98 then
-      "Psalmen zoals aangegeven in het eigen van de dag."
-
-    --PAASTIJD
-
-    --TIJD DOOR HET JAAR: code dag 600 t/m 837
-    else if codeDay >= 600 && codeDay <= 837 then
-      intro
-      ++ String.fromInt ( ( modBy 4 ( ( ( codeDay - 600 ) // 7 ) ) ) + 1 )
-
-    else
-      "Psalmboek week onbekend"
+    case mssCal of
+      Nothing -> []
+      Just cal ->
+        case Dict.get ( dateToIsoString date ) cal of
+          Nothing -> []
+          Just dayInfo ->
+            [ div [ class "liturgischeInfo" ] [ viewDay toParentMsg model.today model.date model.selected date dayInfo ] ]

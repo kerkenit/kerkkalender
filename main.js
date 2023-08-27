@@ -784,11 +784,11 @@ function _Debug_crash_UNUSED(identifier, fact1, fact2, fact3, fact4)
 
 function _Debug_regionToString(region)
 {
-	if (region.an.R === region.aD.R)
+	if (region.am.P === region.ay.P)
 	{
-		return 'on line ' + region.an.R;
+		return 'on line ' + region.am.P;
 	}
-	return 'on lines ' + region.an.R + ' through ' + region.aD.R;
+	return 'on lines ' + region.am.P + ' through ' + region.ay.P;
 }
 
 
@@ -1857,7 +1857,7 @@ var _Platform_worker = F4(function(impl, flagDecoder, debugMetadata, args)
 	return _Platform_initialize(
 		flagDecoder,
 		args,
-		impl.by,
+		impl.bz,
 		impl.bT,
 		impl.bQ,
 		function() { return function() {} }
@@ -2719,9 +2719,9 @@ var _VirtualDom_mapEventTuple = F2(function(func, tuple)
 var _VirtualDom_mapEventRecord = F2(function(func, record)
 {
 	return {
-		C: func(record.C),
-		ao: record.ao,
-		ai: record.ai
+		D: func(record.D),
+		an: record.an,
+		ah: record.ah
 	}
 });
 
@@ -2989,11 +2989,11 @@ function _VirtualDom_makeCallback(eventNode, initialHandler)
 		// 3 = Custom
 
 		var value = result.a;
-		var message = !tag ? value : tag < 3 ? value.a : value.C;
-		var stopPropagation = tag == 1 ? value.b : tag == 3 && value.ao;
+		var message = !tag ? value : tag < 3 ? value.a : value.D;
+		var stopPropagation = tag == 1 ? value.b : tag == 3 && value.an;
 		var currentEventNode = (
 			stopPropagation && event.stopPropagation(),
-			(tag == 2 ? value.b : tag == 3 && value.ai) && event.preventDefault(),
+			(tag == 2 ? value.b : tag == 3 && value.ah) && event.preventDefault(),
 			eventNode
 		);
 		var tagger;
@@ -3943,7 +3943,7 @@ var _Browser_element = _Debugger_element || F4(function(impl, flagDecoder, debug
 	return _Platform_initialize(
 		flagDecoder,
 		args,
-		impl.by,
+		impl.bz,
 		impl.bT,
 		impl.bQ,
 		function(sendToApp, initialModel) {
@@ -3979,11 +3979,11 @@ var _Browser_document = _Debugger_document || F4(function(impl, flagDecoder, deb
 	return _Platform_initialize(
 		flagDecoder,
 		args,
-		impl.by,
+		impl.bz,
 		impl.bT,
 		impl.bQ,
 		function(sendToApp, initialModel) {
-			var divertHrefToApp = impl.am && impl.am(sendToApp)
+			var divertHrefToApp = impl.al && impl.al(sendToApp)
 			var view = impl.bV;
 			var title = _VirtualDom_doc.title;
 			var bodyNode = _VirtualDom_doc.body;
@@ -3992,7 +3992,7 @@ var _Browser_document = _Debugger_document || F4(function(impl, flagDecoder, deb
 			{
 				_VirtualDom_divertHrefToApp = divertHrefToApp;
 				var doc = view(model);
-				var nextNode = _VirtualDom_node('body')(_List_Nil)(doc.bn);
+				var nextNode = _VirtualDom_node('body')(_List_Nil)(doc.bo);
 				var patches = _VirtualDom_diff(currNode, nextNode);
 				bodyNode = _VirtualDom_applyPatches(bodyNode, currNode, patches, sendToApp);
 				currNode = nextNode;
@@ -4058,7 +4058,7 @@ function _Browser_application(impl)
 	var key = function() { key.a(onUrlChange(_Browser_getUrl())); };
 
 	return _Browser_document({
-		am: function(sendToApp)
+		al: function(sendToApp)
 		{
 			key.a = sendToApp;
 			_Browser_window.addEventListener('popstate', key);
@@ -4074,9 +4074,9 @@ function _Browser_application(impl)
 					var next = $elm$url$Url$fromString(href).a;
 					sendToApp(onUrlRequest(
 						(next
-							&& curr.aY === next.aY
-							&& curr.aL === next.aL
-							&& curr.aU.a === next.aU.a
+							&& curr.aT === next.aT
+							&& curr.aG === next.aG
+							&& curr.aP.a === next.aP.a
 						)
 							? $elm$browser$Browser$Internal(next)
 							: $elm$browser$Browser$External(href)
@@ -4084,9 +4084,9 @@ function _Browser_application(impl)
 				}
 			});
 		},
-		by: function(flags)
+		bz: function(flags)
 		{
-			return A3(impl.by, flags, _Browser_getUrl(), key);
+			return A3(impl.bz, flags, _Browser_getUrl(), key);
 		},
 		bV: impl.bV,
 		bT: impl.bT,
@@ -4156,17 +4156,17 @@ var _Browser_decodeEvent = F2(function(decoder, event)
 function _Browser_visibilityInfo()
 {
 	return (typeof _VirtualDom_doc.hidden !== 'undefined')
-		? { bv: 'hidden', bo: 'visibilitychange' }
+		? { bw: 'hidden', bp: 'visibilitychange' }
 		:
 	(typeof _VirtualDom_doc.mozHidden !== 'undefined')
-		? { bv: 'mozHidden', bo: 'mozvisibilitychange' }
+		? { bw: 'mozHidden', bp: 'mozvisibilitychange' }
 		:
 	(typeof _VirtualDom_doc.msHidden !== 'undefined')
-		? { bv: 'msHidden', bo: 'msvisibilitychange' }
+		? { bw: 'msHidden', bp: 'msvisibilitychange' }
 		:
 	(typeof _VirtualDom_doc.webkitHidden !== 'undefined')
-		? { bv: 'webkitHidden', bo: 'webkitvisibilitychange' }
-		: { bv: 'hidden', bo: 'visibilitychange' };
+		? { bw: 'webkitHidden', bp: 'webkitvisibilitychange' }
+		: { bw: 'hidden', bp: 'visibilitychange' };
 }
 
 
@@ -4247,12 +4247,12 @@ var _Browser_call = F2(function(functionName, id)
 function _Browser_getViewport()
 {
 	return {
-		a4: _Browser_getScene(),
-		bd: {
-			bj: _Browser_window.pageXOffset,
-			bk: _Browser_window.pageYOffset,
-			bi: _Browser_doc.documentElement.clientWidth,
-			aJ: _Browser_doc.documentElement.clientHeight
+		a$: _Browser_getScene(),
+		a9: {
+			bi: _Browser_window.pageXOffset,
+			bj: _Browser_window.pageYOffset,
+			bh: _Browser_doc.documentElement.clientWidth,
+			aE: _Browser_doc.documentElement.clientHeight
 		}
 	};
 }
@@ -4262,8 +4262,8 @@ function _Browser_getScene()
 	var body = _Browser_doc.body;
 	var elem = _Browser_doc.documentElement;
 	return {
-		bi: Math.max(body.scrollWidth, body.offsetWidth, elem.scrollWidth, elem.offsetWidth, elem.clientWidth),
-		aJ: Math.max(body.scrollHeight, body.offsetHeight, elem.scrollHeight, elem.offsetHeight, elem.clientHeight)
+		bh: Math.max(body.scrollWidth, body.offsetWidth, elem.scrollWidth, elem.offsetWidth, elem.clientWidth),
+		aE: Math.max(body.scrollHeight, body.offsetHeight, elem.scrollHeight, elem.offsetHeight, elem.clientHeight)
 	};
 }
 
@@ -4286,15 +4286,15 @@ function _Browser_getViewportOf(id)
 	return _Browser_withNode(id, function(node)
 	{
 		return {
-			a4: {
-				bi: node.scrollWidth,
-				aJ: node.scrollHeight
+			a$: {
+				bh: node.scrollWidth,
+				aE: node.scrollHeight
 			},
-			bd: {
-				bj: node.scrollLeft,
-				bk: node.scrollTop,
-				bi: node.clientWidth,
-				aJ: node.clientHeight
+			a9: {
+				bi: node.scrollLeft,
+				bj: node.scrollTop,
+				bh: node.clientWidth,
+				aE: node.clientHeight
 			}
 		};
 	});
@@ -4324,18 +4324,18 @@ function _Browser_getElement(id)
 		var x = _Browser_window.pageXOffset;
 		var y = _Browser_window.pageYOffset;
 		return {
-			a4: _Browser_getScene(),
-			bd: {
-				bj: x,
-				bk: y,
-				bi: _Browser_doc.documentElement.clientWidth,
-				aJ: _Browser_doc.documentElement.clientHeight
+			a$: _Browser_getScene(),
+			a9: {
+				bi: x,
+				bj: y,
+				bh: _Browser_doc.documentElement.clientWidth,
+				aE: _Browser_doc.documentElement.clientHeight
 			},
-			bs: {
-				bj: x + rect.left,
-				bk: y + rect.top,
-				bi: rect.width,
-				aJ: rect.height
+			bt: {
+				bi: x + rect.left,
+				bj: y + rect.top,
+				bh: rect.width,
+				aE: rect.height
 			}
 		};
 	});
@@ -4547,25 +4547,25 @@ var _Http_toTask = F3(function(router, toTask, request)
 	return _Scheduler_binding(function(callback)
 	{
 		function done(response) {
-			callback(toTask(request.bt.a(response)));
+			callback(toTask(request.bu.a(response)));
 		}
 
 		var xhr = new XMLHttpRequest();
 		xhr.addEventListener('error', function() { done($elm$http$Http$NetworkError_); });
 		xhr.addEventListener('timeout', function() { done($elm$http$Http$Timeout_); });
-		xhr.addEventListener('load', function() { done(_Http_toResponse(request.bt.b, xhr)); });
-		$elm$core$Maybe$isJust(request.bb) && _Http_track(router, xhr, request.bb.a);
+		xhr.addEventListener('load', function() { done(_Http_toResponse(request.bu.b, xhr)); });
+		$elm$core$Maybe$isJust(request.a7) && _Http_track(router, xhr, request.a7.a);
 
 		try {
-			xhr.open(request.bA, request.bU, true);
+			xhr.open(request.bB, request.bU, true);
 		} catch (e) {
 			return done($elm$http$Http$BadUrl_(request.bU));
 		}
 
 		_Http_configureRequest(xhr, request);
 
-		request.bn.a && xhr.setRequestHeader('Content-Type', request.bn.a);
-		xhr.send(request.bn.b);
+		request.bo.a && xhr.setRequestHeader('Content-Type', request.bo.a);
+		xhr.send(request.bo.b);
 
 		return function() { xhr.c = true; xhr.abort(); };
 	});
@@ -4576,13 +4576,13 @@ var _Http_toTask = F3(function(router, toTask, request)
 
 function _Http_configureRequest(xhr, request)
 {
-	for (var headers = request.aI; headers.b; headers = headers.b) // WHILE_CONS
+	for (var headers = request.aD; headers.b; headers = headers.b) // WHILE_CONS
 	{
 		xhr.setRequestHeader(headers.a.a, headers.a.b);
 	}
 	xhr.timeout = request.bR.a || 0;
-	xhr.responseType = request.bt.d;
-	xhr.withCredentials = request.bl;
+	xhr.responseType = request.bu.d;
+	xhr.withCredentials = request.bm;
 }
 
 
@@ -4606,7 +4606,7 @@ function _Http_toMetadata(xhr)
 		bU: xhr.responseURL,
 		bO: xhr.status,
 		bP: xhr.statusText,
-		aI: _Http_parseHeaders(xhr.getAllResponseHeaders())
+		aD: _Http_parseHeaders(xhr.getAllResponseHeaders())
 	};
 }
 
@@ -4702,14 +4702,14 @@ function _Http_track(router, xhr, tracker)
 		if (xhr.c) { return; }
 		_Scheduler_rawSpawn(A2($elm$core$Platform$sendToSelf, router, _Utils_Tuple2(tracker, $elm$http$Http$Sending({
 			bN: event.loaded,
-			a6: event.total
+			a1: event.total
 		}))));
 	});
 	xhr.addEventListener('progress', function(event) {
 		if (xhr.c) { return; }
 		_Scheduler_rawSpawn(A2($elm$core$Platform$sendToSelf, router, _Utils_Tuple2(tracker, $elm$http$Http$Receiving({
 			bJ: event.loaded,
-			a6: event.lengthComputable ? $elm$core$Maybe$Just(event.total) : $elm$core$Maybe$Nothing
+			a1: event.lengthComputable ? $elm$core$Maybe$Just(event.total) : $elm$core$Maybe$Nothing
 		}))));
 	});
 }
@@ -5187,7 +5187,7 @@ var $elm$core$Array$treeFromBuilder = F2(
 	});
 var $elm$core$Array$builderToArray = F2(
 	function (reverseNodeList, builder) {
-		if (!builder.h) {
+		if (!builder.i) {
 			return A4(
 				$elm$core$Array$Array_elm_builtin,
 				$elm$core$Elm$JsArray$length(builder.k),
@@ -5195,11 +5195,11 @@ var $elm$core$Array$builderToArray = F2(
 				$elm$core$Elm$JsArray$empty,
 				builder.k);
 		} else {
-			var treeLen = builder.h * $elm$core$Array$branchFactor;
+			var treeLen = builder.i * $elm$core$Array$branchFactor;
 			var depth = $elm$core$Basics$floor(
 				A2($elm$core$Basics$logBase, $elm$core$Array$branchFactor, treeLen - 1));
 			var correctNodeList = reverseNodeList ? $elm$core$List$reverse(builder.l) : builder.l;
-			var tree = A2($elm$core$Array$treeFromBuilder, correctNodeList, builder.h);
+			var tree = A2($elm$core$Array$treeFromBuilder, correctNodeList, builder.i);
 			return A4(
 				$elm$core$Array$Array_elm_builtin,
 				$elm$core$Elm$JsArray$length(builder.k) + treeLen,
@@ -5218,7 +5218,7 @@ var $elm$core$Array$initializeHelp = F5(
 				return A2(
 					$elm$core$Array$builderToArray,
 					false,
-					{l: nodeList, h: (len / $elm$core$Array$branchFactor) | 0, k: tail});
+					{l: nodeList, i: (len / $elm$core$Array$branchFactor) | 0, k: tail});
 			} else {
 				var leaf = $elm$core$Array$Leaf(
 					A3($elm$core$Elm$JsArray$initialize, $elm$core$Array$branchFactor, fromIndex, fn));
@@ -5285,7 +5285,7 @@ var $elm$url$Url$Http = 0;
 var $elm$url$Url$Https = 1;
 var $elm$url$Url$Url = F6(
 	function (protocol, host, port_, path, query, fragment) {
-		return {aH: fragment, aL: host, aS: path, aU: port_, aY: protocol, aZ: query};
+		return {aC: fragment, aG: host, aN: path, aP: port_, aT: protocol, aU: query};
 	});
 var $elm$core$String$contains = _String_contains;
 var $elm$core$String$length = _String_length;
@@ -5695,7 +5695,7 @@ var $justinmimbs$date$Date$toCalendarDateHelp = F3(
 				d = $temp$d;
 				continue toCalendarDateHelp;
 			} else {
-				return {bq: d, bD: m, bY: y};
+				return {br: d, bE: m, bY: y};
 			}
 		}
 	});
@@ -5735,33 +5735,33 @@ var $justinmimbs$date$Date$toOrdinalDate = function (_v0) {
 	var rd = _v0;
 	var y = $justinmimbs$date$Date$year(rd);
 	return {
-		ah: rd - $justinmimbs$date$Date$daysBeforeYear(y),
+		ag: rd - $justinmimbs$date$Date$daysBeforeYear(y),
 		bY: y
 	};
 };
 var $justinmimbs$date$Date$toCalendarDate = function (_v0) {
 	var rd = _v0;
 	var date = $justinmimbs$date$Date$toOrdinalDate(rd);
-	return A3($justinmimbs$date$Date$toCalendarDateHelp, date.bY, 0, date.ah);
+	return A3($justinmimbs$date$Date$toCalendarDateHelp, date.bY, 0, date.ag);
 };
 var $justinmimbs$date$Date$day = A2(
 	$elm$core$Basics$composeR,
 	$justinmimbs$date$Date$toCalendarDate,
 	function ($) {
-		return $.bq;
+		return $.br;
 	});
 var $justinmimbs$date$Date$month = A2(
 	$elm$core$Basics$composeR,
 	$justinmimbs$date$Date$toCalendarDate,
 	function ($) {
-		return $.bD;
+		return $.bE;
 	});
 var $justinmimbs$date$Date$monthNumber = A2($elm$core$Basics$composeR, $justinmimbs$date$Date$month, $justinmimbs$date$Date$monthToNumber);
 var $justinmimbs$date$Date$ordinalDay = A2(
 	$elm$core$Basics$composeR,
 	$justinmimbs$date$Date$toOrdinalDate,
 	function ($) {
-		return $.ah;
+		return $.ag;
 	});
 var $elm$core$String$cons = _String_cons;
 var $elm$core$String$fromChar = function (_char) {
@@ -5865,8 +5865,8 @@ var $justinmimbs$date$Date$toWeekDate = function (_v0) {
 	var wy = $justinmimbs$date$Date$year(rd + (4 - wdn));
 	var week1Day1 = $justinmimbs$date$Date$daysBeforeWeekYear(wy) + 1;
 	return {
-		bg: 1 + (((rd - week1Day1) / 7) | 0),
-		bh: wy,
+		be: 1 + (((rd - week1Day1) / 7) | 0),
+		bg: wy,
 		bW: $justinmimbs$date$Date$numberToWeekday(wdn)
 	};
 };
@@ -5874,13 +5874,13 @@ var $justinmimbs$date$Date$weekNumber = A2(
 	$elm$core$Basics$composeR,
 	$justinmimbs$date$Date$toWeekDate,
 	function ($) {
-		return $.bg;
+		return $.be;
 	});
 var $justinmimbs$date$Date$weekYear = A2(
 	$elm$core$Basics$composeR,
 	$justinmimbs$date$Date$toWeekDate,
 	function ($) {
-		return $.bh;
+		return $.bg;
 	});
 var $justinmimbs$date$Date$weekday = A2($elm$core$Basics$composeR, $justinmimbs$date$Date$weekdayNumber, $justinmimbs$date$Date$numberToWeekday);
 var $elm$core$Basics$min = F2(
@@ -5979,16 +5979,16 @@ var $justinmimbs$date$Date$formatField = F4(
 							$elm$core$String$fromInt(
 								$justinmimbs$date$Date$monthNumber(date)));
 					case 3:
-						return language.Y(
+						return language.X(
 							$justinmimbs$date$Date$month(date));
 					case 4:
-						return language.ae(
+						return language.ad(
 							$justinmimbs$date$Date$month(date));
 					case 5:
 						return A2(
 							$elm$core$String$left,
 							1,
-							language.Y(
+							language.X(
 								$justinmimbs$date$Date$month(date)));
 					default:
 						return '';
@@ -6021,7 +6021,7 @@ var $justinmimbs$date$Date$formatField = F4(
 							$elm$core$String$fromInt(
 								$justinmimbs$date$Date$day(date)));
 					case 3:
-						return language.ab(
+						return language.aa(
 							$justinmimbs$date$Date$day(date));
 					default:
 						return '';
@@ -6051,28 +6051,28 @@ var $justinmimbs$date$Date$formatField = F4(
 			case 'E':
 				switch (length) {
 					case 1:
-						return language.L(
+						return language.K(
 							$justinmimbs$date$Date$weekday(date));
 					case 2:
-						return language.L(
+						return language.K(
 							$justinmimbs$date$Date$weekday(date));
 					case 3:
-						return language.L(
+						return language.K(
 							$justinmimbs$date$Date$weekday(date));
 					case 4:
-						return language.at(
+						return language.ap(
 							$justinmimbs$date$Date$weekday(date));
 					case 5:
 						return A2(
 							$elm$core$String$left,
 							1,
-							language.L(
+							language.K(
 								$justinmimbs$date$Date$weekday(date)));
 					case 6:
 						return A2(
 							$elm$core$String$left,
 							2,
-							language.L(
+							language.K(
 								$justinmimbs$date$Date$weekday(date)));
 					default:
 						return '';
@@ -6220,7 +6220,7 @@ var $elm$parser$Parser$Advanced$AddRight = F2(
 	});
 var $elm$parser$Parser$Advanced$DeadEnd = F4(
 	function (row, col, problem, contextStack) {
-		return {aC: col, bp: contextStack, aV: problem, a3: row};
+		return {ax: col, bq: contextStack, aQ: problem, a_: row};
 	});
 var $elm$parser$Parser$Advanced$Empty = {$: 0};
 var $elm$parser$Parser$Advanced$fromState = F2(
@@ -6228,7 +6228,7 @@ var $elm$parser$Parser$Advanced$fromState = F2(
 		return A2(
 			$elm$parser$Parser$Advanced$AddRight,
 			$elm$parser$Parser$Advanced$Empty,
-			A4($elm$parser$Parser$Advanced$DeadEnd, s.a3, s.aC, x, s.d));
+			A4($elm$parser$Parser$Advanced$DeadEnd, s.a_, s.ax, x, s.d));
 	});
 var $elm$parser$Parser$Advanced$isSubString = _Parser_isSubString;
 var $elm$core$Basics$not = _Basics_not;
@@ -6237,7 +6237,7 @@ var $elm$parser$Parser$Advanced$token = function (_v0) {
 	var expecting = _v0.b;
 	var progress = !$elm$core$String$isEmpty(str);
 	return function (s) {
-		var _v1 = A5($elm$parser$Parser$Advanced$isSubString, str, s.c, s.a3, s.aC, s.a);
+		var _v1 = A5($elm$parser$Parser$Advanced$isSubString, str, s.c, s.a_, s.ax, s.a);
 		var newOffset = _v1.a;
 		var newRow = _v1.b;
 		var newCol = _v1.c;
@@ -6248,7 +6248,7 @@ var $elm$parser$Parser$Advanced$token = function (_v0) {
 			$elm$parser$Parser$Advanced$Good,
 			progress,
 			0,
-			{aC: newCol, d: s.d, e: s.e, c: newOffset, a3: newRow, a: s.a});
+			{ax: newCol, d: s.d, f: s.f, c: newOffset, a_: newRow, a: s.a});
 	};
 };
 var $elm$parser$Parser$token = function (str) {
@@ -6273,11 +6273,11 @@ var $elm$parser$Parser$Advanced$chompIf = F2(
 				$elm$parser$Parser$Advanced$Good,
 				true,
 				0,
-				{aC: 1, d: s.d, e: s.e, c: s.c + 1, a3: s.a3 + 1, a: s.a}) : A3(
+				{ax: 1, d: s.d, f: s.f, c: s.c + 1, a_: s.a_ + 1, a: s.a}) : A3(
 				$elm$parser$Parser$Advanced$Good,
 				true,
 				0,
-				{aC: s.aC + 1, d: s.d, e: s.e, c: newOffset, a3: s.a3, a: s.a}));
+				{ax: s.ax + 1, d: s.d, f: s.f, c: newOffset, a_: s.a_, a: s.a}));
 		};
 	});
 var $elm$parser$Parser$chompIf = function (isGood) {
@@ -6297,7 +6297,7 @@ var $elm$parser$Parser$Advanced$chompWhileHelp = F5(
 					$elm$parser$Parser$Advanced$Good,
 					_Utils_cmp(s0.c, offset) < 0,
 					0,
-					{aC: col, d: s0.d, e: s0.e, c: offset, a3: row, a: s0.a});
+					{ax: col, d: s0.d, f: s0.f, c: offset, a_: row, a: s0.a});
 			} else {
 				if (_Utils_eq(newOffset, -2)) {
 					var $temp$isGood = isGood,
@@ -6329,7 +6329,7 @@ var $elm$parser$Parser$Advanced$chompWhileHelp = F5(
 	});
 var $elm$parser$Parser$Advanced$chompWhile = function (isGood) {
 	return function (s) {
-		return A5($elm$parser$Parser$Advanced$chompWhileHelp, isGood, s.c, s.a3, s.aC, s);
+		return A5($elm$parser$Parser$Advanced$chompWhileHelp, isGood, s.c, s.a_, s.ax, s);
 	};
 };
 var $elm$parser$Parser$chompWhile = $elm$parser$Parser$Advanced$chompWhile;
@@ -6603,10 +6603,10 @@ var $justinmimbs$date$Pattern$patternHelp = function (tokens) {
 };
 var $elm$parser$Parser$DeadEnd = F3(
 	function (row, col, problem) {
-		return {aC: col, aV: problem, a3: row};
+		return {ax: col, aQ: problem, a_: row};
 	});
 var $elm$parser$Parser$problemToDeadEnd = function (p) {
-	return A3($elm$parser$Parser$DeadEnd, p.a3, p.aC, p.aV);
+	return A3($elm$parser$Parser$DeadEnd, p.a_, p.ax, p.aQ);
 };
 var $elm$parser$Parser$Advanced$bagToList = F2(
 	function (bag, list) {
@@ -6638,7 +6638,7 @@ var $elm$parser$Parser$Advanced$run = F2(
 	function (_v0, src) {
 		var parse = _v0;
 		var _v1 = parse(
-			{aC: 1, d: _List_Nil, e: 1, c: 0, a3: 1, a: src});
+			{ax: 1, d: _List_Nil, f: 1, c: 0, a_: 1, a: src});
 		if (!_v1.$) {
 			var value = _v1.b;
 			return $elm$core$Result$Ok(value);
@@ -6734,14 +6734,14 @@ var $justinmimbs$date$Date$weekdayToName = function (wd) {
 	}
 };
 var $justinmimbs$date$Date$language_en = {
-	ab: $justinmimbs$date$Date$withOrdinalSuffix,
-	ae: $justinmimbs$date$Date$monthToName,
-	Y: A2(
+	aa: $justinmimbs$date$Date$withOrdinalSuffix,
+	ad: $justinmimbs$date$Date$monthToName,
+	X: A2(
 		$elm$core$Basics$composeR,
 		$justinmimbs$date$Date$monthToName,
 		$elm$core$String$left(3)),
-	at: $justinmimbs$date$Date$weekdayToName,
-	L: A2(
+	ap: $justinmimbs$date$Date$weekdayToName,
+	K: A2(
 		$elm$core$Basics$composeR,
 		$justinmimbs$date$Date$weekdayToName,
 		$elm$core$String$left(3))
@@ -6753,7 +6753,7 @@ var $author$project$Liturgie$dateToIsoString = function (date) {
 	return A2($justinmimbs$date$Date$format, 'y-MM-dd', date);
 };
 var $author$project$Main$modeToString = function (mode) {
-	switch (mode) {
+	switch (mode.$) {
 		case 0:
 			return 'jaarweergave';
 		case 4:
@@ -6762,12 +6762,15 @@ var $author$project$Main$modeToString = function (mode) {
 			return 'maandweergave';
 		case 2:
 			return 'weekweergave';
-		default:
+		case 3:
 			return 'dagweergave';
+		default:
+			var eindDatum = mode.a;
+			return 'customweergave';
 	}
 };
 var $author$project$Main$buildLogString = function (liturgischeKalender) {
-	var modus = $author$project$Main$modeToString(liturgischeKalender.j);
+	var modus = $author$project$Main$modeToString(liturgischeKalender.h);
 	var datum = function () {
 		var _v0 = liturgischeKalender.g;
 		if (_v0.$ === 1) {
@@ -6830,13 +6833,13 @@ var $justinmimbs$date$Date$add = F3(
 				return A3($justinmimbs$date$Date$add, 1, 12 * n, rd);
 			case 1:
 				var date = $justinmimbs$date$Date$toCalendarDate(rd);
-				var wholeMonths = ((12 * (date.bY - 1)) + ($justinmimbs$date$Date$monthToNumber(date.bD) - 1)) + n;
+				var wholeMonths = ((12 * (date.bY - 1)) + ($justinmimbs$date$Date$monthToNumber(date.bE) - 1)) + n;
 				var m = $justinmimbs$date$Date$numberToMonth(
 					A2($elm$core$Basics$modBy, 12, wholeMonths) + 1);
 				var y = A2($justinmimbs$date$Date$floorDiv, wholeMonths, 12) + 1;
 				return ($justinmimbs$date$Date$daysBeforeYear(y) + A2($justinmimbs$date$Date$daysBeforeMonth, y, m)) + A2(
 					$elm$core$Basics$min,
-					date.bq,
+					date.br,
 					A2($justinmimbs$date$Date$daysInMonth, y, m));
 			case 2:
 				return rd + (7 * n);
@@ -6976,13 +6979,13 @@ var $elm$core$String$replace = F3(
 var $author$project$Liturgie$buildParameters = F3(
 	function (mode, filter, date) {
 		var startDate = function () {
-			switch (mode) {
+			switch (mode.$) {
 				case 3:
 					return date;
 				case 2:
 					var sd = A2($justinmimbs$date$Date$floor, 10, date);
-					var _v2 = A2($justinmimbs$date$Date$compare, sd, $author$project$Liturgie$minimumDate);
-					switch (_v2) {
+					var _v4 = A2($justinmimbs$date$Date$compare, sd, $author$project$Liturgie$minimumDate);
+					switch (_v4) {
 						case 0:
 							return $author$project$Liturgie$minimumDate;
 						case 1:
@@ -6994,8 +6997,11 @@ var $author$project$Liturgie$buildParameters = F3(
 					return A2($justinmimbs$date$Date$floor, 2, date);
 				case 0:
 					return A2($justinmimbs$date$Date$floor, 0, date);
-				default:
+				case 4:
 					return A2($justinmimbs$date$Date$floor, 0, date);
+				default:
+					var mssEindDatum = mode.a;
+					return date;
 			}
 		}();
 		var start = A3(
@@ -7003,9 +7009,24 @@ var $author$project$Liturgie$buildParameters = F3(
 			'-',
 			'',
 			$author$project$Liturgie$dateToIsoString(startDate));
-		var filterString = (!filter.W) ? '&filter=1' : '';
+		var filterString = function () {
+			var _v2 = _Utils_Tuple2(filter.Q, filter.V);
+			if (!_v2.a) {
+				if (!_v2.b) {
+					return '&filter=8' + '&bisdom=32768';
+				} else {
+					return '&filter=8' + '&bisdom=8192';
+				}
+			} else {
+				if (!_v2.b) {
+					return '&filter=8' + '&bisdom=128';
+				} else {
+					return '&filter=8';
+				}
+			}
+		}();
 		var endDate = function () {
-			switch (mode) {
+			switch (mode.$) {
 				case 3:
 					return date;
 				case 2:
@@ -7028,7 +7049,7 @@ var $author$project$Liturgie$buildParameters = F3(
 							$justinmimbs$date$Date$ceiling,
 							0,
 							A3($justinmimbs$date$Date$add, 3, 1, date)));
-				default:
+				case 4:
 					return A3(
 						$justinmimbs$date$Date$add,
 						3,
@@ -7037,6 +7058,14 @@ var $author$project$Liturgie$buildParameters = F3(
 							$justinmimbs$date$Date$ceiling,
 							0,
 							A3($justinmimbs$date$Date$add, 3, 1, date)));
+				default:
+					var mssEindDatum = mode.a;
+					if (mssEindDatum.$ === 1) {
+						return date;
+					} else {
+						var eindDatum = mssEindDatum.a;
+						return eindDatum;
+					}
 			}
 		}();
 		var end = A3(
@@ -7048,7 +7077,7 @@ var $author$project$Liturgie$buildParameters = F3(
 	});
 var $author$project$Liturgie$DayInfo = F9(
 	function (weekTitle, weekISO, weekISOCorrected, weekDay, weekDayCorrected, yearABC, year12, season, items) {
-		return {aP: items, al: season, be: weekDay, ar: weekDayCorrected, bf: weekISO, as: weekISOCorrected, _: weekTitle, av: year12, aw: yearABC};
+		return {aK: items, ak: season, ba: weekDay, bb: weekDayCorrected, bc: weekISO, bd: weekISOCorrected, bf: weekTitle, bk: year12, bl: yearABC};
 	});
 var $author$project$Liturgie$andMap = $elm$json$Json$Decode$map2($elm$core$Basics$apR);
 var $elm$json$Json$Decode$andThen = _Json_andThen;
@@ -7064,7 +7093,7 @@ var $author$project$Liturgie$Item = function (priority) {
 							return function (codeCommon) {
 								return function (codeDay) {
 									return function (codeExtra) {
-										return {aA: codeCommon, X: codeDay, aB: codeExtra, M: codeProper, aa: color, aj: priority, ba: titleCode, ap: titleLong, aq: titleShort, J: typeShort};
+										return {au: codeCommon, av: codeDay, aw: codeExtra, W: codeProper, _: color, ai: priority, a5: titleCode, ao: titleLong, a6: titleShort, Z: typeShort};
 									};
 								};
 							};
@@ -7825,7 +7854,7 @@ var $elm$http$Http$Request = function (a) {
 };
 var $elm$http$Http$State = F2(
 	function (reqs, subs) {
-		return {a$: reqs, a8: subs};
+		return {aW: reqs, a3: subs};
 	});
 var $elm$http$Http$init = $elm$core$Task$succeed(
 	A2($elm$http$Http$State, $elm$core$Dict$empty, _List_Nil));
@@ -7869,7 +7898,7 @@ var $elm$http$Http$updateReqs = F3(
 					return A2(
 						$elm$core$Task$andThen,
 						function (pid) {
-							var _v4 = req.bb;
+							var _v4 = req.a7;
 							if (_v4.$ === 1) {
 								return A3($elm$http$Http$updateReqs, router, otherCmds, reqs);
 							} else {
@@ -7899,7 +7928,7 @@ var $elm$http$Http$onEffects = F4(
 				return $elm$core$Task$succeed(
 					A2($elm$http$Http$State, reqs, subs));
 			},
-			A3($elm$http$Http$updateReqs, router, cmds, state.a$));
+			A3($elm$http$Http$updateReqs, router, cmds, state.aW));
 	});
 var $elm$core$List$maybeCons = F3(
 	function (f, mx, xs) {
@@ -7942,7 +7971,7 @@ var $elm$http$Http$onSelfMsg = F3(
 				A2(
 					$elm$core$List$filterMap,
 					A3($elm$http$Http$maybeSend, router, tracker, progress),
-					state.a8)));
+					state.a3)));
 	});
 var $elm$http$Http$Cancel = function (a) {
 	return {$: 0, a: a};
@@ -7956,13 +7985,13 @@ var $elm$http$Http$cmdMap = F2(
 			var r = cmd.a;
 			return $elm$http$Http$Request(
 				{
-					bl: r.bl,
-					bn: r.bn,
-					bt: A2(_Http_mapExpect, func, r.bt),
-					aI: r.aI,
-					bA: r.bA,
+					bm: r.bm,
+					bo: r.bo,
+					bu: A2(_Http_mapExpect, func, r.bu),
+					aD: r.aD,
+					bB: r.bB,
 					bR: r.bR,
-					bb: r.bb,
+					a7: r.a7,
 					bU: r.bU
 				});
 		}
@@ -7986,11 +8015,11 @@ var $elm$http$Http$subscription = _Platform_leaf('Http');
 var $elm$http$Http$request = function (r) {
 	return $elm$http$Http$command(
 		$elm$http$Http$Request(
-			{bl: false, bn: r.bn, bt: r.bt, aI: r.aI, bA: r.bA, bR: r.bR, bb: r.bb, bU: r.bU}));
+			{bm: false, bo: r.bo, bu: r.bu, aD: r.aD, bB: r.bB, bR: r.bR, a7: r.a7, bU: r.bU}));
 };
 var $elm$http$Http$get = function (r) {
 	return $elm$http$Http$request(
-		{bn: $elm$http$Http$emptyBody, bt: r.bt, aI: _List_Nil, bA: 'GET', bR: $elm$core$Maybe$Nothing, bb: $elm$core$Maybe$Nothing, bU: r.bU});
+		{bo: $elm$http$Http$emptyBody, bu: r.bu, aD: _List_Nil, bB: 'GET', bR: $elm$core$Maybe$Nothing, a7: $elm$core$Maybe$Nothing, bU: r.bU});
 };
 var $elm$core$Platform$Cmd$none = $elm$core$Platform$Cmd$batch(_List_Nil);
 var $author$project$Liturgie$GotLiturgieHttpError = function (a) {
@@ -8016,7 +8045,7 @@ var $author$project$Liturgie$getCalender = F4(
 			var d = date.a;
 			return $elm$http$Http$get(
 				{
-					bt: A2(
+					bu: A2(
 						$elm$http$Http$expectJson,
 						A2($author$project$Liturgie$resultToMsg, toParentMsg, $author$project$Liturgie$GotCalender),
 						$author$project$Liturgie$calenderDecoder),
@@ -8027,33 +8056,33 @@ var $author$project$Liturgie$getCalender = F4(
 var $author$project$Liturgie$getCommand = function (_v0) {
 	var toParentMsg = _v0.a;
 	var model = _v0.b;
-	var _v1 = model.f;
+	var _v1 = model.e;
 	switch (_v1.$) {
 		case 2:
 			return $elm$core$Platform$Cmd$none;
 		case 0:
 			return $elm$core$Platform$Cmd$none;
 		default:
-			return A4($author$project$Liturgie$getCalender, toParentMsg, model.j, model.y, model.g);
+			return A4($author$project$Liturgie$getCalender, toParentMsg, model.h, model.t, model.g);
 	}
 };
 var $author$project$Liturgie$Filter = F3(
 	function (romeinseKalender, nederlandseKalender, vlaamseKalender) {
-		return {bF: nederlandseKalender, bL: romeinseKalender, W: vlaamseKalender};
+		return {Q: nederlandseKalender, bL: romeinseKalender, V: vlaamseKalender};
 	});
 var $author$project$Liturgie$Loading = function (a) {
 	return {$: 1, a: a};
 };
-var $author$project$Liturgie$MonthMode = 1;
+var $author$project$Liturgie$MonthMode = {$: 1};
 var $author$project$Liturgie$initMaandkalender = {
-	f: $author$project$Liturgie$Loading($elm$core$Dict$empty),
+	e: $author$project$Liturgie$Loading($elm$core$Dict$empty),
 	g: $elm$core$Maybe$Nothing,
-	y: A3($author$project$Liturgie$Filter, true, true, true),
-	j: 1,
-	q: $elm$core$Maybe$Nothing,
-	E: true,
-	x: false,
-	o: $elm$core$Maybe$Nothing
+	t: A3($author$project$Liturgie$Filter, true, true, true),
+	h: $author$project$Liturgie$MonthMode,
+	p: $elm$core$Maybe$Nothing,
+	A: true,
+	w: false,
+	m: $elm$core$Maybe$Nothing
 };
 var $author$project$Liturgie$ChangeMode = function (a) {
 	return {$: 4, a: a};
@@ -8064,16 +8093,16 @@ var $author$project$Liturgie$SetModelDate = function (a) {
 var $author$project$Liturgie$Failure = function (a) {
 	return {$: 0, a: a};
 };
-var $author$project$Liturgie$ListMode = 4;
+var $author$project$Liturgie$ListMode = {$: 4};
 var $author$project$Liturgie$Success = function (a) {
 	return {$: 2, a: a};
 };
-var $author$project$Liturgie$YearMode = 0;
+var $author$project$Liturgie$YearMode = {$: 0};
 var $author$project$Liturgie$changeDate = F2(
 	function (model, direction) {
 		var unit = function () {
-			var _v2 = model.j;
-			switch (_v2) {
+			var _v2 = model.h;
+			switch (_v2.$) {
 				case 0:
 					return 0;
 				case 1:
@@ -8082,8 +8111,11 @@ var $author$project$Liturgie$changeDate = F2(
 					return 2;
 				case 3:
 					return 3;
-				default:
+				case 4:
 					return 0;
+				default:
+					var eindDatum = _v2.a;
+					return 3;
 			}
 		}();
 		var _v0 = model.g;
@@ -8157,10 +8189,15 @@ var $author$project$Liturgie$setLoadingCalenderData = F2(
 				return $author$project$Liturgie$Loading($elm$core$Dict$empty);
 		}
 	});
+var $author$project$Liturgie$toggleNederlandseKalender = function (filter) {
+	return _Utils_update(
+		filter,
+		{Q: !filter.Q});
+};
 var $author$project$Liturgie$toggleVlaamseKalender = function (filter) {
 	return _Utils_update(
 		filter,
-		{W: !filter.W});
+		{V: !filter.V});
 };
 var $author$project$Liturgie$update = F3(
 	function (toParentMsg, msg, model) {
@@ -8172,14 +8209,14 @@ var $author$project$Liturgie$update = F3(
 				return _Utils_update(
 					model,
 					{
-						f: $author$project$Liturgie$Success(calendar)
+						e: $author$project$Liturgie$Success(calendar)
 					});
 			case 3:
 				var error = msg.a;
 				return _Utils_update(
 					model,
 					{
-						f: $author$project$Liturgie$Failure(
+						e: $author$project$Liturgie$Failure(
 							$author$project$Liturgie$httpError(error))
 					});
 			case 1:
@@ -8196,64 +8233,64 @@ var $author$project$Liturgie$update = F3(
 						return d;
 					}
 				}();
-				var newCalenderData = A2($author$project$Liturgie$setLoadingCalenderData, model.f, newDate);
+				var newCalenderData = A2($author$project$Liturgie$setLoadingCalenderData, model.e, newDate);
 				return _Utils_update(
 					model,
 					{
-						f: newCalenderData,
+						e: newCalenderData,
 						g: $elm$core$Maybe$Just(newDate),
-						o: $elm$core$Maybe$Just(today)
+						m: $elm$core$Maybe$Just(today)
 					});
 			case 4:
 				var newMode = msg.a;
-				return _Utils_eq(model.j, newMode) ? model : ((((!model.j) && (newMode === 4)) || ((model.j === 4) && (!newMode))) ? _Utils_update(
+				return _Utils_eq(model.h, newMode) ? model : (((_Utils_eq(model.h, $author$project$Liturgie$YearMode) && _Utils_eq(newMode, $author$project$Liturgie$ListMode)) || (_Utils_eq(model.h, $author$project$Liturgie$ListMode) && _Utils_eq(newMode, $author$project$Liturgie$YearMode))) ? _Utils_update(
 					model,
-					{j: newMode}) : _Utils_update(
+					{h: newMode}) : _Utils_update(
 					model,
 					{
-						f: $author$project$Liturgie$Loading(
-							$author$project$Liturgie$getCalenderLijst(model.f)),
-						j: newMode
+						e: $author$project$Liturgie$Loading(
+							$author$project$Liturgie$getCalenderLijst(model.e)),
+						h: newMode
 					}));
 			case 5:
 				return _Utils_update(
 					model,
 					{
-						f: $author$project$Liturgie$Loading(
-							$author$project$Liturgie$getCalenderLijst(model.f)),
+						e: $author$project$Liturgie$Loading(
+							$author$project$Liturgie$getCalenderLijst(model.e)),
 						g: A2($author$project$Liturgie$changeDate, model, 1)
 					});
 			case 6:
 				return _Utils_update(
 					model,
 					{
-						f: $author$project$Liturgie$Loading(
-							$author$project$Liturgie$getCalenderLijst(model.f)),
+						e: $author$project$Liturgie$Loading(
+							$author$project$Liturgie$getCalenderLijst(model.e)),
 						g: A2($author$project$Liturgie$changeDate, model, -1)
 					});
 			case 7:
 				return _Utils_update(
 					model,
 					{
-						f: $author$project$Liturgie$Loading(
-							$author$project$Liturgie$getCalenderLijst(model.f)),
-						g: model.o
+						e: $author$project$Liturgie$Loading(
+							$author$project$Liturgie$getCalenderLijst(model.e)),
+						g: model.m
 					});
 			case 8:
 				return _Utils_update(
 					model,
-					{E: !model.E});
+					{A: !model.A});
 			case 9:
 				var mssDate = msg.a;
 				return _Utils_update(
 					model,
-					{q: mssDate});
+					{p: mssDate});
 			case 10:
 				var date = msg.a;
 				return _Utils_update(
 					model,
 					{
-						f: A2($author$project$Liturgie$setLoadingCalenderData, model.f, date),
+						e: A2($author$project$Liturgie$setLoadingCalenderData, model.e, date),
 						g: $elm$core$Maybe$Just(date)
 					});
 			case 11:
@@ -8262,7 +8299,7 @@ var $author$project$Liturgie$update = F3(
 					model,
 					{
 						g: $elm$core$Maybe$Just(date),
-						q: $elm$core$Maybe$Just(date)
+						p: $elm$core$Maybe$Just(date)
 					});
 			case 12:
 				var _v2 = msg.a;
@@ -8273,28 +8310,36 @@ var $author$project$Liturgie$update = F3(
 					{
 						g: $elm$core$Maybe$Just(
 							A3($justinmimbs$date$Date$fromCalendarDate, year, month, 1)),
-						q: $elm$core$Maybe$Just(
+						p: $elm$core$Maybe$Just(
 							A3($justinmimbs$date$Date$fromCalendarDate, year, month, 1))
 					});
 			case 13:
 				return _Utils_update(
 					model,
 					{
-						f: $author$project$Liturgie$Loading(
-							$author$project$Liturgie$getCalenderLijst(model.f)),
-						y: $author$project$Liturgie$toggleVlaamseKalender(model.y)
+						e: $author$project$Liturgie$Loading(
+							$author$project$Liturgie$getCalenderLijst(model.e)),
+						t: $author$project$Liturgie$toggleVlaamseKalender(model.t)
 					});
 			case 14:
 				return _Utils_update(
 					model,
-					{x: !model.x});
+					{
+						e: $author$project$Liturgie$Loading(
+							$author$project$Liturgie$getCalenderLijst(model.e)),
+						t: $author$project$Liturgie$toggleNederlandseKalender(model.t)
+					});
+			case 15:
+				return _Utils_update(
+					model,
+					{w: !model.w});
 			default:
 				return _Utils_update(
 					model,
 					{
-						f: $author$project$Liturgie$Loading($elm$core$Dict$empty),
-						g: model.o,
-						j: 1
+						e: $author$project$Liturgie$Loading($elm$core$Dict$empty),
+						g: model.m,
+						h: $author$project$Liturgie$MonthMode
 					});
 		}
 	});
@@ -8320,15 +8365,15 @@ var $author$project$Main$initUrl = F2(
 var $elm$url$Url$Parser$Parser = $elm$core$Basics$identity;
 var $elm$url$Url$Parser$State = F5(
 	function (visited, unvisited, params, frag, value) {
-		return {G: frag, H: params, F: unvisited, A: value, K: visited};
+		return {G: frag, H: params, F: unvisited, B: value, J: visited};
 	});
 var $elm$url$Url$Parser$mapState = F2(
 	function (func, _v0) {
-		var visited = _v0.K;
+		var visited = _v0.J;
 		var unvisited = _v0.F;
 		var params = _v0.H;
 		var frag = _v0.G;
-		var value = _v0.A;
+		var value = _v0.B;
 		return A5(
 			$elm$url$Url$Parser$State,
 			visited,
@@ -8341,11 +8386,11 @@ var $elm$url$Url$Parser$map = F2(
 	function (subValue, _v0) {
 		var parseArg = _v0;
 		return function (_v1) {
-			var visited = _v1.K;
+			var visited = _v1.J;
 			var unvisited = _v1.F;
 			var params = _v1.H;
 			var frag = _v1.G;
-			var value = _v1.A;
+			var value = _v1.B;
 			return A2(
 				$elm$core$List$map,
 				$elm$url$Url$Parser$mapState(value),
@@ -8359,11 +8404,11 @@ var $elm$core$Tuple$pair = F2(
 	});
 var $elm$url$Url$Parser$s = function (str) {
 	return function (_v0) {
-		var visited = _v0.K;
+		var visited = _v0.J;
 		var unvisited = _v0.F;
 		var params = _v0.H;
 		var frag = _v0.G;
-		var value = _v0.A;
+		var value = _v0.B;
 		if (!unvisited.b) {
 			return _List_Nil;
 		} else {
@@ -8412,11 +8457,11 @@ var $elm$url$Url$Parser$slash = F2(
 var $elm$url$Url$Parser$custom = F2(
 	function (tipe, stringToSomething) {
 		return function (_v0) {
-			var visited = _v0.K;
+			var visited = _v0.J;
 			var unvisited = _v0.F;
 			var params = _v0.H;
 			var frag = _v0.G;
-			var value = _v0.A;
+			var value = _v0.B;
 			if (!unvisited.b) {
 				return _List_Nil;
 			} else {
@@ -8443,7 +8488,7 @@ var $elm$url$Url$Parser$custom = F2(
 	});
 var $elm$url$Url$Parser$string = A2($elm$url$Url$Parser$custom, 'STRING', $elm$core$Maybe$Just);
 var $justinmimbs$date$Date$deadEndToString = function (_v0) {
-	var problem = _v0.aV;
+	var problem = _v0.aQ;
 	if (problem.$ === 12) {
 		var message = problem.a;
 		return message;
@@ -8811,22 +8856,22 @@ var $author$project$Liturgie$stringToDate = function (string) {
 		return A2($justinmimbs$date$Date$fromOrdinalDate, 1984, 1);
 	}
 };
-var $author$project$Liturgie$DayMode = 3;
-var $author$project$Liturgie$WeekMode = 2;
+var $author$project$Liturgie$DayMode = {$: 3};
+var $author$project$Liturgie$WeekMode = {$: 2};
 var $author$project$Main$stringToMode = function (string) {
 	switch (string) {
 		case 'jaar':
-			return 0;
+			return $author$project$Liturgie$YearMode;
 		case 'lijst':
-			return 4;
+			return $author$project$Liturgie$ListMode;
 		case 'maand':
-			return 1;
+			return $author$project$Liturgie$MonthMode;
 		case 'week':
-			return 2;
+			return $author$project$Liturgie$WeekMode;
 		case 'dag':
-			return 3;
+			return $author$project$Liturgie$DayMode;
 		default:
-			return 1;
+			return $author$project$Liturgie$MonthMode;
 	}
 };
 var $author$project$Main$kruimelParser = A2(
@@ -8863,10 +8908,10 @@ var $elm$url$Url$Parser$getFirstMatch = function (states) {
 			var rest = states.b;
 			var _v1 = state.F;
 			if (!_v1.b) {
-				return $elm$core$Maybe$Just(state.A);
+				return $elm$core$Maybe$Just(state.B);
 			} else {
 				if ((_v1.a === '') && (!_v1.b.b)) {
-					return $elm$core$Maybe$Just(state.A);
+					return $elm$core$Maybe$Just(state.B);
 				} else {
 					var $temp$states = rest;
 					states = $temp$states;
@@ -8963,9 +9008,9 @@ var $elm$url$Url$Parser$parse = F2(
 				A5(
 					$elm$url$Url$Parser$State,
 					_List_Nil,
-					$elm$url$Url$Parser$preparePath(url.aS),
-					$elm$url$Url$Parser$prepareQuery(url.aZ),
-					url.aH,
+					$elm$url$Url$Parser$preparePath(url.aN),
+					$elm$url$Url$Parser$prepareQuery(url.aU),
+					url.aC,
 					$elm$core$Basics$identity)));
 	});
 var $author$project$Main$init = F3(
@@ -8976,8 +9021,8 @@ var $author$project$Main$init = F3(
 			$author$project$Liturgie$initMaandkalender);
 		return _Utils_Tuple2(
 			{
-				n: newLiturgischeKalender,
-				t: _List_fromArray(
+				o: newLiturgischeKalender,
+				u: _List_fromArray(
 					[
 						A2(
 						$elm$core$String$join,
@@ -8988,9 +9033,9 @@ var $author$project$Main$init = F3(
 								$author$project$Main$buildLogString(newLiturgischeKalender)
 							]))
 					]),
-				Z: navKey,
-				af: $elm$core$Maybe$Nothing,
-				ak: A2($elm$url$Url$Parser$parse, $author$project$Main$kruimelParser, url)
+				Y: navKey,
+				ae: $elm$core$Maybe$Nothing,
+				aj: A2($elm$url$Url$Parser$parse, $author$project$Main$kruimelParser, url)
 			},
 			$elm$core$Platform$Cmd$batch(
 				_List_fromArray(
@@ -9009,7 +9054,7 @@ var $author$project$Liturgie$GotToday = F3(
 	function (a, b, c) {
 		return {$: 1, a: a, b: b, c: c};
 	});
-var $author$project$Liturgie$SoftReset = {$: 15};
+var $author$project$Liturgie$SoftReset = {$: 16};
 var $elm$url$Url$Builder$toQueryPair = function (_v0) {
 	var key = _v0.a;
 	var value = _v0.b;
@@ -9032,7 +9077,7 @@ var $elm$url$Url$Builder$absolute = F2(
 var $author$project$Main$buildNavUrl = F2(
 	function (mode, date) {
 		var modus = function () {
-			switch (mode) {
+			switch (mode.$) {
 				case 0:
 					return 'jaar';
 				case 4:
@@ -9041,8 +9086,11 @@ var $author$project$Main$buildNavUrl = F2(
 					return 'maand';
 				case 2:
 					return 'week';
-				default:
+				case 3:
 					return 'dag';
+				default:
+					var eindDatum = mode.a;
+					return 'lijst';
 			}
 		}();
 		var datum = function () {
@@ -9080,7 +9128,7 @@ var $elm$time$Time$toAdjustedMinutesHelp = F3(
 			} else {
 				var era = eras.a;
 				var olderEras = eras.b;
-				if (_Utils_cmp(era.an, posixMinutes) < 0) {
+				if (_Utils_cmp(era.am, posixMinutes) < 0) {
 					return posixMinutes + era.c;
 				} else {
 					var $temp$defaultOffset = defaultOffset,
@@ -9118,20 +9166,20 @@ var $elm$time$Time$toCivil = function (minutes) {
 	var month = mp + ((mp < 10) ? 3 : (-9));
 	var year = yearOfEra + (era * 400);
 	return {
-		bq: (dayOfYear - ((((153 * mp) + 2) / 5) | 0)) + 1,
-		bD: month,
+		br: (dayOfYear - ((((153 * mp) + 2) / 5) | 0)) + 1,
+		bE: month,
 		bY: year + ((month <= 2) ? 1 : 0)
 	};
 };
 var $elm$time$Time$toDay = F2(
 	function (zone, time) {
 		return $elm$time$Time$toCivil(
-			A2($elm$time$Time$toAdjustedMinutes, zone, time)).bq;
+			A2($elm$time$Time$toAdjustedMinutes, zone, time)).br;
 	});
 var $elm$time$Time$toMonth = F2(
 	function (zone, time) {
 		var _v0 = $elm$time$Time$toCivil(
-			A2($elm$time$Time$toAdjustedMinutes, zone, time)).bD;
+			A2($elm$time$Time$toAdjustedMinutes, zone, time)).bE;
 		switch (_v0) {
 			case 1:
 				return 0;
@@ -9167,8 +9215,8 @@ var $elm$time$Time$toYear = F2(
 var $elm$time$Time$utc = A2($elm$time$Time$Zone, 0, _List_Nil);
 var $PanagiotisGeorgiadis$elm_datetime$Calendar$Internal$fromPosix = function (posix) {
 	return {
-		bq: A2($elm$time$Time$toDay, $elm$time$Time$utc, posix),
-		bD: A2($elm$time$Time$toMonth, $elm$time$Time$utc, posix),
+		br: A2($elm$time$Time$toDay, $elm$time$Time$utc, posix),
+		bE: A2($elm$time$Time$toMonth, $elm$time$Time$utc, posix),
 		bY: A2($elm$time$Time$toYear, $elm$time$Time$utc, posix)
 	};
 };
@@ -9213,9 +9261,9 @@ var $elm$time$Time$toSecond = F2(
 	});
 var $PanagiotisGeorgiadis$elm_datetime$Clock$Internal$fromPosix = function (posix) {
 	return {
-		bw: A2($elm$time$Time$toHour, $elm$time$Time$utc, posix),
-		bB: A2($elm$time$Time$toMillis, $elm$time$Time$utc, posix),
-		bC: A2($elm$time$Time$toMinute, $elm$time$Time$utc, posix),
+		bx: A2($elm$time$Time$toHour, $elm$time$Time$utc, posix),
+		bC: A2($elm$time$Time$toMillis, $elm$time$Time$utc, posix),
+		bD: A2($elm$time$Time$toMinute, $elm$time$Time$utc, posix),
 		bM: A2($elm$time$Time$toSecond, $elm$time$Time$utc, posix)
 	};
 };
@@ -9241,13 +9289,13 @@ var $PanagiotisGeorgiadis$elm_datetime$Calendar$Internal$dayToInt = function (_v
 };
 var $PanagiotisGeorgiadis$elm_datetime$Calendar$Internal$getDay = function (_v0) {
 	var date = _v0;
-	return date.bq;
+	return date.br;
 };
 var $PanagiotisGeorgiadis$elm_datetime$Calendar$getDay = A2($elm$core$Basics$composeL, $PanagiotisGeorgiadis$elm_datetime$Calendar$Internal$dayToInt, $PanagiotisGeorgiadis$elm_datetime$Calendar$Internal$getDay);
 var $PanagiotisGeorgiadis$elm_datetime$DateTime$Internal$getDay = A2($elm$core$Basics$composeL, $PanagiotisGeorgiadis$elm_datetime$Calendar$getDay, $PanagiotisGeorgiadis$elm_datetime$DateTime$Internal$getDate);
 var $PanagiotisGeorgiadis$elm_datetime$DateTime$getDay = $PanagiotisGeorgiadis$elm_datetime$DateTime$Internal$getDay;
 var $PanagiotisGeorgiadis$elm_datetime$Calendar$Internal$getMonth = function (_v0) {
-	var month = _v0.bD;
+	var month = _v0.bE;
 	return month;
 };
 var $PanagiotisGeorgiadis$elm_datetime$Calendar$getMonth = $PanagiotisGeorgiadis$elm_datetime$Calendar$Internal$getMonth;
@@ -9315,6 +9363,8 @@ var $author$project$Liturgie$liturgieMsgToString = function (msg) {
 		case 13:
 			return 'ToggleVlaamseKalender';
 		case 14:
+			return 'ToggleNederlandseKalender';
+		case 15:
 			return 'ToggleSundaysOnly';
 		default:
 			return 'SoftReset';
@@ -9348,7 +9398,7 @@ var $elm$url$Url$addPrefixed = F3(
 	});
 var $elm$url$Url$toString = function (url) {
 	var http = function () {
-		var _v0 = url.aY;
+		var _v0 = url.aT;
 		if (!_v0) {
 			return 'http://';
 		} else {
@@ -9358,17 +9408,17 @@ var $elm$url$Url$toString = function (url) {
 	return A3(
 		$elm$url$Url$addPrefixed,
 		'#',
-		url.aH,
+		url.aC,
 		A3(
 			$elm$url$Url$addPrefixed,
 			'?',
-			url.aZ,
+			url.aU,
 			_Utils_ap(
 				A2(
 					$elm$url$Url$addPort,
-					url.aU,
-					_Utils_ap(http, url.aL)),
-				url.aS)));
+					url.aP,
+					_Utils_ap(http, url.aG)),
+				url.aN)));
 };
 var $author$project$Main$update = F2(
 	function (msg, model) {
@@ -9380,7 +9430,7 @@ var $author$project$Main$update = F2(
 				var newRoute = A2($elm$url$Url$Parser$parse, $author$project$Main$kruimelParser, url);
 				var newLiturgischeKalender = function () {
 					if (newRoute.$ === 1) {
-						return A3($author$project$Liturgie$update, $author$project$Main$KalenderMsg, $author$project$Liturgie$SoftReset, model.n);
+						return A3($author$project$Liturgie$update, $author$project$Main$KalenderMsg, $author$project$Liturgie$SoftReset, model.o);
 					} else {
 						var r = newRoute.a;
 						return A3(
@@ -9391,19 +9441,19 @@ var $author$project$Main$update = F2(
 								$author$project$Liturgie$update,
 								$author$project$Main$KalenderMsg,
 								$author$project$Liturgie$ChangeMode(r.a),
-								model.n));
+								model.o));
 					}
 				}();
 				return _Utils_Tuple2(
 					_Utils_update(
 						model,
 						{
-							n: newLiturgischeKalender,
-							t: A2(
+							o: newLiturgischeKalender,
+							u: A2(
 								$elm$core$List$cons,
 								'ChangeUrl ' + ($elm$url$Url$toString(url) + (' ' + $author$project$Main$buildLogString(newLiturgischeKalender))),
-								model.t),
-							ak: newRoute
+								model.u),
+							aj: newRoute
 						}),
 					$author$project$Liturgie$getCommand(
 						_Utils_Tuple2($author$project$Main$KalenderMsg, newLiturgischeKalender)));
@@ -9415,11 +9465,11 @@ var $author$project$Main$update = F2(
 						_Utils_update(
 							model,
 							{
-								t: A2($elm$core$List$cons, 'ClickLink Internal', model.t)
+								u: A2($elm$core$List$cons, 'ClickLink Internal', model.u)
 							}),
 						A2(
 							$elm$browser$Browser$Navigation$pushUrl,
-							model.Z,
+							model.Y,
 							$elm$url$Url$toString(url)));
 				} else {
 					var url = urlRequest.a;
@@ -9427,7 +9477,7 @@ var $author$project$Main$update = F2(
 						_Utils_update(
 							model,
 							{
-								t: A2($elm$core$List$cons, 'ClickLink External', model.t)
+								u: A2($elm$core$List$cons, 'ClickLink External', model.u)
 							}),
 						$elm$browser$Browser$Navigation$load(url));
 				}
@@ -9442,17 +9492,17 @@ var $author$project$Main$update = F2(
 						$PanagiotisGeorgiadis$elm_datetime$DateTime$getYear(nu),
 						$PanagiotisGeorgiadis$elm_datetime$DateTime$getMonth(nu),
 						$PanagiotisGeorgiadis$elm_datetime$DateTime$getDay(nu)),
-					model.n);
+					model.o);
 				return _Utils_Tuple2(
 					_Utils_update(
 						model,
 						{
-							n: newLiturgischeKalender,
-							t: A2(
+							o: newLiturgischeKalender,
+							u: A2(
 								$elm$core$List$cons,
 								'GotNow ' + $author$project$Main$buildLogString(newLiturgischeKalender),
-								model.t),
-							af: $elm$core$Maybe$Just(nu)
+								model.u),
+							ae: $elm$core$Maybe$Just(nu)
 						}),
 					$author$project$Liturgie$getCommand(
 						_Utils_Tuple2($author$project$Main$KalenderMsg, newLiturgischeKalender)));
@@ -9465,8 +9515,8 @@ var $author$project$Main$update = F2(
 							return A3(
 								$author$project$Liturgie$update,
 								$author$project$Main$KalenderMsg,
-								$author$project$Liturgie$ChangeMode(3),
-								A3($author$project$Liturgie$update, $author$project$Main$KalenderMsg, subMsg, model.n));
+								$author$project$Liturgie$ChangeMode($author$project$Liturgie$DayMode),
+								A3($author$project$Liturgie$update, $author$project$Main$KalenderMsg, subMsg, model.o));
 						case 12:
 							var _v4 = subMsg.a;
 							var month = _v4.a;
@@ -9474,25 +9524,25 @@ var $author$project$Main$update = F2(
 							return A3(
 								$author$project$Liturgie$update,
 								$author$project$Main$KalenderMsg,
-								$author$project$Liturgie$ChangeMode(1),
-								A3($author$project$Liturgie$update, $author$project$Main$KalenderMsg, subMsg, model.n));
+								$author$project$Liturgie$ChangeMode($author$project$Liturgie$MonthMode),
+								A3($author$project$Liturgie$update, $author$project$Main$KalenderMsg, subMsg, model.o));
 						default:
-							return A3($author$project$Liturgie$update, $author$project$Main$KalenderMsg, subMsg, model.n);
+							return A3($author$project$Liturgie$update, $author$project$Main$KalenderMsg, subMsg, model.o);
 					}
 				}();
-				var pushUrlCommand = ((!_Utils_eq(model.n.j, newLiturgischeKalender.j)) || (!_Utils_eq(model.n.g, newLiturgischeKalender.g))) ? A2(
+				var pushUrlCommand = ((!_Utils_eq(model.o.h, newLiturgischeKalender.h)) || (!_Utils_eq(model.o.g, newLiturgischeKalender.g))) ? A2(
 					$elm$browser$Browser$Navigation$pushUrl,
-					model.Z,
-					A2($author$project$Main$buildNavUrl, newLiturgischeKalender.j, newLiturgischeKalender.g)) : $elm$core$Platform$Cmd$none;
+					model.Y,
+					A2($author$project$Main$buildNavUrl, newLiturgischeKalender.h, newLiturgischeKalender.g)) : $elm$core$Platform$Cmd$none;
 				return _Utils_Tuple2(
 					_Utils_update(
 						model,
 						{
-							n: newLiturgischeKalender,
-							t: A2(
+							o: newLiturgischeKalender,
+							u: A2(
 								$elm$core$List$cons,
 								'KalenderMsg ' + ($author$project$Liturgie$liturgieMsgToString(subMsg) + (' ' + $author$project$Main$buildLogString(newLiturgischeKalender))),
-								model.t)
+								model.u)
 						}),
 					$elm$core$Platform$Cmd$batch(
 						_List_fromArray(
@@ -9568,8 +9618,8 @@ var $author$project$Main$liturgieModelToHistoryString = function (liturgischeKal
 		return '';
 	} else {
 		var date = _v0.a;
-		var _v1 = liturgischeKalender.j;
-		switch (_v1) {
+		var _v1 = liturgischeKalender.h;
+		switch (_v1.$) {
 			case 0:
 				return $elm$core$String$concat(
 					_List_fromArray(
@@ -9606,12 +9656,22 @@ var $author$project$Main$liturgieModelToHistoryString = function (liturgischeKal
 							$author$project$Liturgie$dateToYearInt(date)),
 							')'
 						]));
-			default:
+			case 3:
 				return $elm$core$String$concat(
 					_List_fromArray(
 						[
 							': ',
 							$author$project$Liturgie$dateToString(date)
+						]));
+			default:
+				var eindDatum = _v1.a;
+				return $elm$core$String$concat(
+					_List_fromArray(
+						[
+							': ',
+							$elm$core$String$fromInt(
+							$author$project$Liturgie$dateToYearInt(date)),
+							' (lijst)'
 						]));
 		}
 	}
@@ -9693,16 +9753,6 @@ var $elm_community$list_extra$List$Extra$uniqueHelp = F4(
 	});
 var $elm_community$list_extra$List$Extra$unique = function (list) {
 	return A4($elm_community$list_extra$List$Extra$uniqueHelp, $elm$core$Basics$identity, _List_Nil, list, _List_Nil);
-};
-var $elm$core$Dict$values = function (dict) {
-	return A3(
-		$elm$core$Dict$foldr,
-		F3(
-			function (key, value, valueList) {
-				return A2($elm$core$List$cons, value, valueList);
-			}),
-		_List_Nil,
-		dict);
 };
 var $author$project$Liturgie$dateToWeekdayString = function (date) {
 	var _v0 = $justinmimbs$date$Date$weekday(date);
@@ -9836,17 +9886,6 @@ var $elm$core$List$singleton = function (value) {
 		[value]);
 };
 var $elm$html$Html$Attributes$target = $elm$html$Html$Attributes$stringProperty('target');
-var $elm$core$String$toUpper = _String_toUpper;
-var $elm$html$Html$Attributes$classList = function (classes) {
-	return $elm$html$Html$Attributes$class(
-		A2(
-			$elm$core$String$join,
-			' ',
-			A2(
-				$elm$core$List$map,
-				$elm$core$Tuple$first,
-				A2($elm$core$List$filter, $elm$core$Tuple$second, classes))));
-};
 var $author$project$Liturgie$colorToString = function (kleur) {
 	switch (kleur) {
 		case 0:
@@ -9904,6 +9943,19 @@ var $justinmimbs$date$Date$isBetween = F3(
 var $author$project$Liturgie$viewEucharistie = F3(
 	function (date, season, item) {
 		var className = 'gloria';
+		var welCredo = _List_fromArray(
+			[
+				A2(
+				$elm$html$Html$div,
+				_List_fromArray(
+					[
+						$elm$html$Html$Attributes$class(className)
+					]),
+				_List_fromArray(
+					[
+						$elm$html$Html$text('De Geloofsbelijdenis (Credo) wordt gezongen / gebeden.')
+					]))
+			]);
 		var beginGloria = 'Het Eer aan God (Gloria) ';
 		var nietGloria = _List_fromArray(
 			[
@@ -9928,34 +9980,7 @@ var $author$project$Liturgie$viewEucharistie = F3(
 					]),
 				_List_fromArray(
 					[
-						$elm$html$Html$text(beginGloria + 'wordt gebeden.')
-					]))
-			]);
-		var beginCredo = 'De Geloofsbelijdenis (Credo) ';
-		var nietCredo = _List_fromArray(
-			[
-				A2(
-				$elm$html$Html$div,
-				_List_fromArray(
-					[
-						$elm$html$Html$Attributes$class(className)
-					]),
-				_List_fromArray(
-					[
-						$elm$html$Html$text(beginCredo + 'blijft achterwege.')
-					]))
-			]);
-		var welCredo = _List_fromArray(
-			[
-				A2(
-				$elm$html$Html$div,
-				_List_fromArray(
-					[
-						$elm$html$Html$Attributes$class(className)
-					]),
-				_List_fromArray(
-					[
-						$elm$html$Html$text(beginCredo + 'wordt gebeden.')
+						$elm$html$Html$text(beginGloria + 'wordt gezongen / gebeden.')
 					]))
 			]);
 		var _v0 = function () {
@@ -9979,42 +10004,34 @@ var $author$project$Liturgie$viewEucharistie = F3(
 			} else {
 				if (A2(
 					$elm$core$List$member,
-					item.J,
+					item.Z,
 					_List_fromArray(
-						['f']))) {
-					return _Utils_Tuple2(welGloria, _List_Nil);
+						['f', 'h']))) {
+					return _Utils_Tuple2(welGloria, welCredo);
 				} else {
-					if (A2(
-						$elm$core$List$member,
-						item.J,
-						_List_fromArray(
-							['h']))) {
+					if (A3(
+						$justinmimbs$date$Date$isBetween,
+						A3(
+							$justinmimbs$date$Date$fromCalendarDate,
+							$justinmimbs$date$Date$year(date),
+							11,
+							26),
+						A3(
+							$justinmimbs$date$Date$fromCalendarDate,
+							$justinmimbs$date$Date$year(date),
+							11,
+							31),
+						date)) {
 						return _Utils_Tuple2(welGloria, welCredo);
 					} else {
-						if (A3(
-							$justinmimbs$date$Date$isBetween,
-							A3(
-								$justinmimbs$date$Date$fromCalendarDate,
-								$justinmimbs$date$Date$year(date),
-								11,
-								26),
-							A3(
-								$justinmimbs$date$Date$fromCalendarDate,
-								$justinmimbs$date$Date$year(date),
-								11,
-								31),
-							date)) {
+						if (A2(
+							$elm$core$List$member,
+							item.W,
+							_List_fromArray(
+								['100', '101', '102', '103', '104', '105']))) {
 							return _Utils_Tuple2(welGloria, welCredo);
 						} else {
-							if (A2(
-								$elm$core$List$member,
-								item.M,
-								_List_fromArray(
-									['100', '101', '102', '103', '104', '105']))) {
-								return _Utils_Tuple2(welGloria, welCredo);
-							} else {
-								return _Utils_Tuple2(_List_Nil, _List_Nil);
-							}
+							return _Utils_Tuple2(_List_Nil, _List_Nil);
 						}
 					}
 				}
@@ -10048,125 +10065,15 @@ var $author$project$Liturgie$viewEucharistie = F3(
 				_List_fromArray(
 					[kopje, inhoud])));
 	});
-var $author$project$Liturgie$getPsalmboek = function (item) {
-	var intro = 'Psalmboek week ';
-	var codeProper = function () {
-		var _v1 = item.M;
-		if (_v1 === '') {
-			return -1;
-		} else {
-			return A2(
-				$elm$core$Maybe$withDefault,
-				-1,
-				$elm$core$String$toInt(item.M));
-		}
-	}();
-	var codeDay = function () {
-		var _v0 = item.X;
-		if (_v0 === '') {
-			return -1;
-		} else {
-			return A2(
-				$elm$core$Maybe$withDefault,
-				-1,
-				$elm$core$String$toInt(item.X));
-		}
-	}();
-	return ((codeDay >= 1) && (codeDay <= 20)) ? _Utils_ap(
-		intro,
-		$elm$core$String$fromInt(
-			A2($elm$core$Basics$modBy, 4, ((codeDay - 1) / 7) | 0) + 1)) : ((codeDay === 21) ? _Utils_ap(
-		intro,
-		$elm$core$String$fromInt(4)) : (((codeDay >= 159) && (codeDay <= 187)) ? _Utils_ap(
-		intro,
-		$elm$core$String$fromInt(
-			A2($elm$core$Basics$modBy, 4, (((codeDay - 160) / 7) | 0) + 3) + 1)) : ((codeProper === 53) ? (intro + '4 (in het morgengebed kan men de psalmen en antifonen nemen van vrijdag van de derde week)') : (((codeDay >= 54) && (codeDay <= 91)) ? _Utils_ap(
-		intro,
-		$elm$core$String$fromInt(
-			A2($elm$core$Basics$modBy, 4, ((codeDay - 1) / 7) | 0) + 1)) : (A2(
-		$elm$core$List$member,
-		codeProper,
-		_List_fromArray(
-			[92, 93, 94, 95])) ? _Utils_ap(
-		intro,
-		$elm$core$String$fromInt(2)) : ((codeProper === 96) ? (intro + '2 (in de lezingendienst kan men de psalmen en antifonen nemen van vrijdag van de derde week; in het avondgebed neemt men de psalmen en lofzang van donderdag van de tweede week)') : (((codeProper === 97) || (codeProper === 98)) ? 'Psalmen zoals aangegeven in het eigen van de dag.' : (((codeDay >= 600) && (codeDay <= 837)) ? _Utils_ap(
-		intro,
-		$elm$core$String$fromInt(
-			A2($elm$core$Basics$modBy, 4, ((codeDay - 600) / 7) | 0) + 1)) : 'Psalmboek week onbekend'))))))));
-};
-var $author$project$Liturgie$viewGetijdengebed = function (item) {
-	var psalmboek = _List_fromArray(
-		[
-			A2(
-			$elm$html$Html$div,
-			_List_fromArray(
-				[
-					$elm$html$Html$Attributes$class('psalmboek')
-				]),
-			_List_fromArray(
-				[
-					$elm$html$Html$text(
-					$author$project$Liturgie$getPsalmboek(item))
-				]))
-		]);
-	var inhoud = $elm$core$List$concat(
-		_List_fromArray(
-			[psalmboek]));
-	var kopje = _Utils_eq(inhoud, _List_Nil) ? _List_Nil : _List_fromArray(
-		[
-			A2(
-			$elm$html$Html$div,
-			_List_fromArray(
-				[
-					$elm$html$Html$Attributes$class('kopje')
-				]),
-			_List_fromArray(
-				[
-					$elm$html$Html$text('Getijdengebed')
-				]))
-		]);
-	return A2(
-		$elm$html$Html$div,
-		_List_fromArray(
-			[
-				$elm$html$Html$Attributes$class('getijdengebed')
-			]),
-		$elm$core$List$concat(
-			_List_fromArray(
-				[kopje, inhoud])));
-};
-var $author$project$Liturgie$viewItem = F5(
-	function (date, season, weekTitle, weekDayCorrected, item) {
-		var titleShort = function () {
-			var _v0 = item.aq;
-			if (_v0 === '') {
-				var weekTitles = A2($elm$core$String$split, ' / ', weekTitle);
-				var title = (weekDayCorrected < 4) ? $elm$core$List$head(weekTitles) : $elm$core$List$head(
-					$elm$core$List$reverse(weekTitles));
-				if (title.$ === 1) {
-					return 'Van de dag';
-				} else {
-					var t = title.a;
-					return t;
-				}
-			} else {
-				return item.aq;
-			}
-		}();
-		var classNames = _List_fromArray(
-			[
-				_Utils_Tuple2(
-				'item ' + $author$project$Liturgie$colorToString(item.aa),
-				true),
-				_Utils_Tuple2('feest', item.J === 'f'),
-				_Utils_Tuple2('hoogfeest', item.J === 'h')
-			]);
+var $author$project$Liturgie$viewItem = F3(
+	function (date, season, item) {
+		var className = 'item ' + $author$project$Liturgie$colorToString(item._);
 		return A2(
 			$elm$html$Html$div,
 			_List_fromArray(
 				[
-					$elm$html$Html$Attributes$classList(classNames),
-					$elm$html$Html$Attributes$title(item.ap)
+					$elm$html$Html$Attributes$class(className),
+					$elm$html$Html$Attributes$title(item.ao)
 				]),
 			_List_fromArray(
 				[
@@ -10174,31 +10081,30 @@ var $author$project$Liturgie$viewItem = F5(
 					$author$project$Liturgie$viewLabelTextDiv,
 					'priority',
 					'Prioriteit:',
-					$elm$core$String$fromInt(item.aj)),
+					$elm$core$String$fromInt(item.ai)),
 					A3(
 					$author$project$Liturgie$viewLabelTextDiv,
 					'typeShort',
 					'Korte weergave type:',
-					$author$project$Liturgie$getTypeShort(item.J)),
+					$author$project$Liturgie$getTypeShort(item.Z)),
 					A3(
 					$author$project$Liturgie$viewLabelTextDiv,
 					'typeLong',
 					'Lange weergave type:',
-					A3($author$project$Liturgie$getTypeLong, item.M, item.aj, item.J)),
-					A3($author$project$Liturgie$viewLabelTextDiv, 'titleLong', 'Lange titel:', item.ap),
-					A3($author$project$Liturgie$viewLabelTextDiv, 'titleShort', 'Korte titel:', titleShort),
-					A3($author$project$Liturgie$viewLabelTextDiv, 'titleCode', 'Titelcode:', item.ba),
+					A3($author$project$Liturgie$getTypeLong, item.W, item.ai, item.Z)),
+					A3($author$project$Liturgie$viewLabelTextDiv, 'titleLong', 'Lange titel:', item.ao),
+					A3($author$project$Liturgie$viewLabelTextDiv, 'titleShort', 'Korte titel:', item.a6),
+					A3($author$project$Liturgie$viewLabelTextDiv, 'titleCode', 'Titelcode:', item.a5),
 					A3(
 					$author$project$Liturgie$viewLabelTextDiv,
 					'color',
 					'Liturgische kleur:',
-					$author$project$Liturgie$colorToString(item.aa)),
-					A3($author$project$Liturgie$viewLabelTextDiv, 'codeProper', 'Code eigen:', item.M),
-					A3($author$project$Liturgie$viewLabelTextDiv, 'codeCommon', 'Code gemeenschappelijk:', item.aA),
-					A3($author$project$Liturgie$viewLabelTextDiv, 'codeDay', 'Code van de dag:', item.X),
-					A3($author$project$Liturgie$viewLabelTextDiv, 'codeExtra', 'Code aanvullende psalmodie:', item.aB),
-					A3($author$project$Liturgie$viewEucharistie, date, season, item),
-					$author$project$Liturgie$viewGetijdengebed(item)
+					$author$project$Liturgie$colorToString(item._)),
+					A3($author$project$Liturgie$viewLabelTextDiv, 'codeProper', 'Code eigen:', item.W),
+					A3($author$project$Liturgie$viewLabelTextDiv, 'codeCommon', 'Code gemeenschappelijk:', item.au),
+					A3($author$project$Liturgie$viewLabelTextDiv, 'codeDay', 'Code van de dag:', item.av),
+					A3($author$project$Liturgie$viewLabelTextDiv, 'codeExtra', 'Code aanvullende psalmodie:', item.aw),
+					A3($author$project$Liturgie$viewEucharistie, date, season, item)
 				]));
 	});
 var $author$project$Liturgie$viewDay = F6(
@@ -10280,47 +10186,43 @@ var $author$project$Liturgie$viewDay = F6(
 							'Dagnummer:',
 							$elm$core$String$fromInt(
 								$justinmimbs$date$Date$day(date))),
-							A3($author$project$Liturgie$viewLabelTextDiv, 'weekTitle', 'Week titel:', dayInfo._),
+							A3($author$project$Liturgie$viewLabelTextDiv, 'weekTitle', 'Week titel:', dayInfo.bf),
 							A3(
 							$author$project$Liturgie$viewLabelTextDiv,
 							'weekISO',
 							'ISO week:',
-							$elm$core$String$fromInt(dayInfo.bf)),
+							$elm$core$String$fromInt(dayInfo.bc)),
 							A3(
 							$author$project$Liturgie$viewLabelTextDiv,
 							'weekISOCorrected',
 							'ISO week (gecorrigeerd):',
-							$elm$core$String$fromInt(dayInfo.as)),
+							$elm$core$String$fromInt(dayInfo.bd)),
 							A3(
 							$author$project$Liturgie$viewLabelTextDiv,
 							'weekDay',
 							'Weekdag (1-7):',
-							$elm$core$String$fromInt(dayInfo.be)),
+							$elm$core$String$fromInt(dayInfo.ba)),
 							A3(
 							$author$project$Liturgie$viewLabelTextDiv,
 							'weekDayCorrected',
 							'Weekdag (1-7) (gecorrigeerd):',
-							$elm$core$String$fromInt(dayInfo.ar)),
+							$elm$core$String$fromInt(dayInfo.bb)),
 							A3(
 							$author$project$Liturgie$viewLabelTextDiv,
 							'weekDayName',
 							'Dag in de week:',
 							$author$project$Liturgie$dateToWeekdayString(date)),
-							A3(
-							$author$project$Liturgie$viewLabelTextDiv,
-							'yearABC',
-							'Driejarige cyclus:',
-							'jaar ' + $elm$core$String$toUpper(dayInfo.aw)),
+							A3($author$project$Liturgie$viewLabelTextDiv, 'yearABC', 'Driejarige cyclus:', dayInfo.bl),
 							A3(
 							$author$project$Liturgie$viewLabelTextDiv,
 							'year12',
 							'Tweejarige cyclus:',
-							'jaar ' + $elm$core$String$fromInt(dayInfo.av)),
+							$elm$core$String$fromInt(dayInfo.bk)),
 							A3(
 							$author$project$Liturgie$viewLabelTextDiv,
 							'season',
 							'Liturgische tijd:',
-							$author$project$Liturgie$seasonToString(dayInfo.al)),
+							$author$project$Liturgie$seasonToString(dayInfo.ak)),
 							A2(
 							$elm$html$Html$a,
 							_List_fromArray(
@@ -10337,8 +10239,8 @@ var $author$project$Liturgie$viewDay = F6(
 						]),
 						A2(
 						$elm$core$List$map,
-						A4($author$project$Liturgie$viewItem, date, dayInfo.al, dayInfo._, dayInfo.ar),
-						dayInfo.aP)
+						A2($author$project$Liturgie$viewItem, date, dayInfo.ak),
+						dayInfo.aK)
 					])));
 	});
 var $author$project$Liturgie$viewDays = F6(
@@ -10444,7 +10346,7 @@ var $elm$core$Dict$filter = F2(
 	});
 var $author$project$Liturgie$filterByShowSundaysOnly = F3(
 	function (mode, showSundaysOnly, date) {
-		if (mode === 4) {
+		if (mode.$ === 4) {
 			return showSundaysOnly ? (($justinmimbs$date$Date$weekday(date) === 6) ? true : false) : true;
 		} else {
 			return true;
@@ -10545,85 +10447,6 @@ var $author$project$Liturgie$viewMonths = F7(
 			A7($author$project$Liturgie$viewMonth, toParentMsg, today, modelDate, selectedDate, mode, showSundaysOnly, cal),
 			months);
 	});
-var $author$project$Liturgie$viewWeekInfo = function (dayInfoList) {
-	var weektitel = A2(
-		$elm$core$String$join,
-		' & ',
-		$elm_community$list_extra$List$Extra$unique(
-			A2(
-				$elm$core$List$map,
-				function ($) {
-					return $._;
-				},
-				dayInfoList)));
-	var weeknummer = A2(
-		$elm$core$String$join,
-		'-',
-		A2(
-			$elm$core$List$map,
-			$elm$core$String$fromInt,
-			$elm_community$list_extra$List$Extra$unique(
-				A2(
-					$elm$core$List$map,
-					function ($) {
-						return $.as;
-					},
-					dayInfoList))));
-	var jaarABC = A2(
-		$elm$core$String$join,
-		'-',
-		A2(
-			$elm$core$List$map,
-			$elm$core$String$toUpper,
-			$elm_community$list_extra$List$Extra$unique(
-				A2(
-					$elm$core$List$map,
-					function ($) {
-						return $.aw;
-					},
-					dayInfoList))));
-	var jaar12 = A2(
-		$elm$core$String$join,
-		'-',
-		A2(
-			$elm$core$List$map,
-			$elm$core$String$fromInt,
-			$elm_community$list_extra$List$Extra$unique(
-				A2(
-					$elm$core$List$map,
-					function ($) {
-						return $.av;
-					},
-					dayInfoList))));
-	return _List_fromArray(
-		[
-			A2(
-			$elm$html$Html$div,
-			_List_fromArray(
-				[
-					$elm$html$Html$Attributes$class('weekinfo')
-				]),
-			_List_fromArray(
-				[
-					A2(
-					$elm$html$Html$div,
-					_List_Nil,
-					_List_fromArray(
-						[
-							A2(
-							$elm$html$Html$span,
-							_List_Nil,
-							_List_fromArray(
-								[
-									$elm$html$Html$text(weektitel)
-								]))
-						])),
-					A3($author$project$Liturgie$viewLabelTextDiv, '', 'Weeknummer:', 'week ' + weeknummer),
-					A3($author$project$Liturgie$viewLabelTextDiv, '', 'Driejarige cyclus:', 'jaar ' + jaarABC),
-					A3($author$project$Liturgie$viewLabelTextDiv, '', 'Tweejarige cyclus:', 'jaar ' + jaar12)
-				]))
-		]);
-};
 var $author$project$Liturgie$viewCalenderData = F3(
 	function (toParentMsg, model, cal) {
 		var aanwezigeDatums = A2(
@@ -10644,8 +10467,8 @@ var $author$project$Liturgie$viewCalenderData = F3(
 				aanwezigeDatums));
 		var aanwezigeWeeknummers = $elm_community$list_extra$List$Extra$unique(
 			A2($elm$core$List$map, $author$project$Liturgie$dateToWeeknumber, aanwezigeDatums));
-		var _v0 = model.j;
-		switch (_v0) {
+		var _v0 = model.h;
+		switch (_v0.$) {
 			case 0:
 				return A2(
 					$elm$html$Html$div,
@@ -10653,7 +10476,7 @@ var $author$project$Liturgie$viewCalenderData = F3(
 						[
 							$elm$html$Html$Attributes$class('yearMode')
 						]),
-					A7($author$project$Liturgie$viewMonths, toParentMsg, model.o, model.g, model.q, model.j, model.x, cal));
+					A7($author$project$Liturgie$viewMonths, toParentMsg, model.m, model.g, model.p, model.h, model.w, cal));
 			case 1:
 				return A2(
 					$elm$html$Html$div,
@@ -10672,7 +10495,7 @@ var $author$project$Liturgie$viewCalenderData = F3(
 								A2($elm$core$List$indexedMap, $author$project$Liturgie$viewWeeknumbers, aanwezigeWeeknummers),
 								A2(
 								$elm$core$List$map,
-								A5($author$project$Liturgie$viewDays, toParentMsg, model.o, model.g, model.q, cal),
+								A5($author$project$Liturgie$viewDays, toParentMsg, model.m, model.g, model.p, cal),
 								aanwezigeDatums)
 							])));
 			case 2:
@@ -10682,16 +10505,10 @@ var $author$project$Liturgie$viewCalenderData = F3(
 						[
 							$elm$html$Html$Attributes$class('weekMode')
 						]),
-					$elm$core$List$concat(
-						_List_fromArray(
-							[
-								A2(
-								$elm$core$List$map,
-								A5($author$project$Liturgie$viewDays, toParentMsg, model.o, model.g, model.q, cal),
-								aanwezigeDatums),
-								$author$project$Liturgie$viewWeekInfo(
-								$elm$core$Dict$values(cal))
-							])));
+					A2(
+						$elm$core$List$map,
+						A5($author$project$Liturgie$viewDays, toParentMsg, model.m, model.g, model.p, cal),
+						aanwezigeDatums));
 			case 3:
 				return A2(
 					$elm$html$Html$div,
@@ -10705,22 +10522,31 @@ var $author$project$Liturgie$viewCalenderData = F3(
 								A2($elm$core$List$map, $author$project$Liturgie$viewDateheader, aanwezigeDatums),
 								A2(
 								$elm$core$List$map,
-								A5($author$project$Liturgie$viewDays, toParentMsg, model.o, model.g, model.q, cal),
+								A5($author$project$Liturgie$viewDays, toParentMsg, model.m, model.g, model.p, cal),
 								aanwezigeDatums)
 							])));
-			default:
+			case 4:
 				return A2(
 					$elm$html$Html$div,
 					_List_fromArray(
 						[
 							$elm$html$Html$Attributes$class('listMode')
 						]),
-					A7($author$project$Liturgie$viewMonths, toParentMsg, model.o, model.g, model.q, model.j, model.x, cal));
+					A7($author$project$Liturgie$viewMonths, toParentMsg, model.m, model.g, model.p, model.h, model.w, cal));
+			default:
+				var eindDatum = _v0.a;
+				return A2(
+					$elm$html$Html$div,
+					_List_fromArray(
+						[
+							$elm$html$Html$Attributes$class('customMode')
+						]),
+					_List_Nil);
 		}
 	});
 var $author$project$Liturgie$viewCalender = F2(
 	function (toParentMsg, model) {
-		var _v0 = model.f;
+		var _v0 = model.e;
 		switch (_v0.$) {
 			case 0:
 				var error = _v0.a;
@@ -10869,10 +10695,10 @@ var $author$project$Liturgie$viewModeTabs = F2(
 					_List_fromArray(
 						[
 							$elm$html$Html$Attributes$class(
-							A2(className, mode, 0)),
+							A2(className, mode, $author$project$Liturgie$YearMode)),
 							$elm$html$Html$Events$onClick(
 							toParentMsg(
-								$author$project$Liturgie$ChangeMode(0)))
+								$author$project$Liturgie$ChangeMode($author$project$Liturgie$YearMode)))
 						]),
 					_List_fromArray(
 						[
@@ -10883,10 +10709,10 @@ var $author$project$Liturgie$viewModeTabs = F2(
 					_List_fromArray(
 						[
 							$elm$html$Html$Attributes$class(
-							A2(className, mode, 4)),
+							A2(className, mode, $author$project$Liturgie$ListMode)),
 							$elm$html$Html$Events$onClick(
 							toParentMsg(
-								$author$project$Liturgie$ChangeMode(4)))
+								$author$project$Liturgie$ChangeMode($author$project$Liturgie$ListMode)))
 						]),
 					_List_fromArray(
 						[
@@ -10897,10 +10723,10 @@ var $author$project$Liturgie$viewModeTabs = F2(
 					_List_fromArray(
 						[
 							$elm$html$Html$Attributes$class(
-							A2(className, mode, 1)),
+							A2(className, mode, $author$project$Liturgie$MonthMode)),
 							$elm$html$Html$Events$onClick(
 							toParentMsg(
-								$author$project$Liturgie$ChangeMode(1)))
+								$author$project$Liturgie$ChangeMode($author$project$Liturgie$MonthMode)))
 						]),
 					_List_fromArray(
 						[
@@ -10911,10 +10737,10 @@ var $author$project$Liturgie$viewModeTabs = F2(
 					_List_fromArray(
 						[
 							$elm$html$Html$Attributes$class(
-							A2(className, mode, 2)),
+							A2(className, mode, $author$project$Liturgie$WeekMode)),
 							$elm$html$Html$Events$onClick(
 							toParentMsg(
-								$author$project$Liturgie$ChangeMode(2)))
+								$author$project$Liturgie$ChangeMode($author$project$Liturgie$WeekMode)))
 						]),
 					_List_fromArray(
 						[
@@ -10925,10 +10751,10 @@ var $author$project$Liturgie$viewModeTabs = F2(
 					_List_fromArray(
 						[
 							$elm$html$Html$Attributes$class(
-							A2(className, mode, 3)),
+							A2(className, mode, $author$project$Liturgie$DayMode)),
 							$elm$html$Html$Events$onClick(
 							toParentMsg(
-								$author$project$Liturgie$ChangeMode(3)))
+								$author$project$Liturgie$ChangeMode($author$project$Liturgie$DayMode)))
 						]),
 					_List_fromArray(
 						[
@@ -10936,7 +10762,8 @@ var $author$project$Liturgie$viewModeTabs = F2(
 						]))
 				]));
 	});
-var $author$project$Liturgie$ToggleSundaysOnly = {$: 14};
+var $author$project$Liturgie$ToggleNederlandseKalender = {$: 14};
+var $author$project$Liturgie$ToggleSundaysOnly = {$: 15};
 var $author$project$Liturgie$ToggleVlaamseKalender = {$: 13};
 var $elm$html$Html$Attributes$checked = $elm$html$Html$Attributes$boolProperty('checked');
 var $elm$html$Html$input = _VirtualDom_node('input');
@@ -10981,7 +10808,7 @@ var $author$project$Liturgie$viewCheckbox = F4(
 var $author$project$Liturgie$viewSettings = F4(
 	function (toParentMsg, filter, mode, showSundaysOnly) {
 		var viewShowSundaysCheckbox = function () {
-			if (mode === 4) {
+			if (mode.$ === 4) {
 				return _List_fromArray(
 					[
 						A4(
@@ -11008,10 +10835,16 @@ var $author$project$Liturgie$viewSettings = F4(
 						[
 							A4(
 							$author$project$Liturgie$viewCheckbox,
-							filter.W,
+							filter.V,
 							false,
 							toParentMsg($author$project$Liturgie$ToggleVlaamseKalender),
-							'Inclusief Vlaamse kalender')
+							'Inclusief Vlaamse kalender'),
+							A4(
+							$author$project$Liturgie$viewCheckbox,
+							filter.Q,
+							false,
+							toParentMsg($author$project$Liturgie$ToggleNederlandseKalender),
+							'Inclusief Nederlandse kalender')
 						]),
 						viewShowSundaysCheckbox
 					])));
@@ -11050,7 +10883,7 @@ var $author$project$Liturgie$viewVandaag = function (today) {
 };
 var $author$project$Liturgie$view = F2(
 	function (toParentMsg, model) {
-		var _v0 = model.E;
+		var _v0 = model.A;
 		if (_v0) {
 			return A2(
 				$elm$html$Html$div,
@@ -11060,11 +10893,11 @@ var $author$project$Liturgie$view = F2(
 					]),
 				_List_fromArray(
 					[
-						A3($author$project$Liturgie$viewControls, toParentMsg, model.g, model.o),
-						A2($author$project$Liturgie$viewModeTabs, toParentMsg, model.j),
-						A4($author$project$Liturgie$viewSettings, toParentMsg, model.y, model.j, model.x),
+						A3($author$project$Liturgie$viewControls, toParentMsg, model.g, model.m),
+						A2($author$project$Liturgie$viewModeTabs, toParentMsg, model.h),
+						A4($author$project$Liturgie$viewSettings, toParentMsg, model.t, model.h, model.w),
 						A2($author$project$Liturgie$viewCalender, toParentMsg, model),
-						$author$project$Liturgie$viewVandaag(model.o)
+						$author$project$Liturgie$viewVandaag(model.m)
 					]));
 		} else {
 			return A2($elm$html$Html$div, _List_Nil, _List_Nil);
@@ -11072,7 +10905,7 @@ var $author$project$Liturgie$view = F2(
 	});
 var $author$project$Main$view = function (model) {
 	return {
-		bn: _List_fromArray(
+		bo: _List_fromArray(
 			[
 				A2(
 				$elm$html$Html$div,
@@ -11082,13 +10915,13 @@ var $author$project$Main$view = function (model) {
 					]),
 				_List_fromArray(
 					[
-						A2($author$project$Liturgie$view, $author$project$Main$KalenderMsg, model.n)
+						A2($author$project$Liturgie$view, $author$project$Main$KalenderMsg, model.o)
 					]))
 			]),
-		bS: 'Kerkkalender' + $author$project$Main$liturgieModelToHistoryString(model.n)
+		bS: 'Kerkkalender' + $author$project$Main$liturgieModelToHistoryString(model.o)
 	};
 };
 var $author$project$Main$main = $elm$browser$Browser$application(
-	{by: $author$project$Main$init, bG: $author$project$Main$ChangeUrl, bH: $author$project$Main$ClickLink, bQ: $author$project$Main$subscriptions, bT: $author$project$Main$update, bV: $author$project$Main$view});
+	{bz: $author$project$Main$init, bG: $author$project$Main$ChangeUrl, bH: $author$project$Main$ClickLink, bQ: $author$project$Main$subscriptions, bT: $author$project$Main$update, bV: $author$project$Main$view});
 _Platform_export({'Main':{'init':$author$project$Main$main(
 	$elm$json$Json$Decode$succeed(0))(0)}});}(this));
