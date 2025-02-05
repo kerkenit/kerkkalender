@@ -276,7 +276,7 @@ function jaarkalender($y, $filter, $bisdom)
 						break;
 					case 12: /* Mirakel van Amsterdam */
 						$woensdag=($zondag+3)%7;
-						$n=dmy2n(13,3,$y);
+						$n=dmy2n(12,3,$y);
 						while($n%7!=$woensdag)
 						{
 							$n++;
