@@ -297,7 +297,8 @@ div#kalender	.vandaag { text-align: center; font-size: 0.8em; padding-top: 0.2em
 
 .dayMode	{ background-color: #ADD1EB; padding: 1em; }
 
-.dayMode	.datum	{ display: block; background-color: white; padding: 0.3em 0.3em 0.3em 0.3em; font-weight: bold; text-transform: capitalize; }
+.dayMode	.datum	{ display: block; background-color: white; padding: 0.3em 0.3em 0.3em 0.3em; font-weight: bold; }
+.dayMode	.datum:first-letter { text-transform: uppercase;}
 .dayMode	.datum	.label	{ display: none; }
 
 .dayMode 	.day >	div,
